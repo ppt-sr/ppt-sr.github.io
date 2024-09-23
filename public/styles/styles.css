@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --text: #f4f4ef;
+    --bg: #0b0b08;
+    --primary: #e5383e;
+    --secondary: #087c9f;
+    --accent: #ffeb0f;
+    --textcontrast: #64d97b;
+    --bgcontrast: #64d97b;
+    --primarycontrast: #ffdd00;
+    --secondarycontrast: #ff8f8f;
+    --accentcontrast: #64d97b;
+    --text5: hsl(60, 19%, 95%, 5%);
+    --text10: hsl(60, 19%, 95%, 10%);
+    --text15: hsl(60, 19%, 95%, 15%);
+    --text20: hsl(60, 19%, 95%, 20%);
+    --text25: hsl(60, 19%, 95%, 25%);
+    --text30: hsl(60, 19%, 95%, 30%);
+    --text35: hsl(60, 19%, 95%, 35%);
+    --text40: hsl(60, 19%, 95%, 40%);
+    --text45: hsl(60, 19%, 95%, 45%);
+    --text50: hsl(60, 19%, 95%, 50%);
+    --text55: hsl(60, 19%, 95%, 55%);
+    --text60: hsl(60, 19%, 95%, 60%);
+    --text65: hsl(60, 19%, 95%, 65%);
+    --text70: hsl(60, 19%, 95%, 70%);
+    --text75: hsl(60, 19%, 95%, 75%);
+    --text80: hsl(60, 19%, 95%, 80%);
+    --text85: hsl(60, 19%, 95%, 85%);
+    --text90: hsl(60, 19%, 95%, 90%);
+    --text95: hsl(60, 19%, 95%, 95%);
+    --primary5: hsl(358, 77%, 56%, 5%);
+    --primary10: hsl(358, 77%, 56%, 10%);
+    --primary15: hsl(358, 77%, 56%, 15%);
+    --primary20: hsl(358, 77%, 56%, 20%);
+    --primary25: hsl(358, 77%, 56%, 25%);
+    --primary30: hsl(358, 77%, 56%, 30%);
+    --primary35: hsl(358, 77%, 56%, 35%);
+    --primary40: hsl(358, 77%, 56%, 40%);
+    --primary45: hsl(358, 77%, 56%, 45%);
+    --primary50: hsl(358, 77%, 56%, 50%);
+    --primary55: hsl(358, 77%, 56%, 55%);
+    --primary60: hsl(358, 77%, 56%, 60%);
+    --primary65: hsl(358, 77%, 56%, 65%);
+    --primary70: hsl(358, 77%, 56%, 70%);
+    --primary75: hsl(358, 77%, 56%, 75%);
+    --primary80: hsl(358, 77%, 56%, 80%);
+    --primary85: hsl(358, 77%, 56%, 85%);
+    --primary90: hsl(358, 77%, 56%, 90%);
+    --primary95: hsl(358, 77%, 56%, 95%);
+    --secondary5: hsl(194, 90%, 33%, 5%);
+    --secondary10: hsl(194, 90%, 33%, 10%);
+    --secondary15: hsl(194, 90%, 33%, 15%);
+    --secondary20: hsl(194, 90%, 33%, 20%);
+    --secondary25: hsl(194, 90%, 33%, 25%);
+    --secondary30: hsl(194, 90%, 33%, 30%);
+    --secondary35: hsl(194, 90%, 33%, 35%);
+    --secondary40: hsl(194, 90%, 33%, 40%);
+    --secondary45: hsl(194, 90%, 33%, 45%);
+    --secondary50: hsl(194, 90%, 33%, 50%);
+    --secondary55: hsl(194, 90%, 33%, 55%);
+    --secondary60: hsl(194, 90%, 33%, 60%);
+    --secondary65: hsl(194, 90%, 33%, 65%);
+    --secondary70: hsl(194, 90%, 33%, 70%);
+    --secondary75: hsl(194, 90%, 33%, 75%);
+    --secondary80: hsl(194, 90%, 33%, 80%);
+    --secondary85: hsl(194, 90%, 33%, 85%);
+    --secondary90: hsl(194, 90%, 33%, 90%);
+    --secondary95: hsl(194, 90%, 33%, 95%);
+    --accent5: hsl(55, 100%, 53%, 5%);
+    --accent10: hsl(55, 100%, 53%, 10%);
+    --accent15: hsl(55, 100%, 53%, 15%);
+    --accent20: hsl(55, 100%, 53%, 20%);
+    --accent25: hsl(55, 100%, 53%, 25%);
+    --accent30: hsl(55, 100%, 53%, 30%);
+    --accent35: hsl(55, 100%, 53%, 35%);
+    --accent40: hsl(55, 100%, 53%, 40%);
+    --accent45: hsl(55, 100%, 53%, 45%);
+    --accent50: hsl(55, 100%, 53%, 50%);
+    --accent55: hsl(55, 100%, 53%, 55%);
+    --accent60: hsl(55, 100%, 53%, 60%);
+    --accent65: hsl(55, 100%, 53%, 65%);
+    --accent70: hsl(55, 100%, 53%, 70%);
+    --accent75: hsl(55, 100%, 53%, 75%);
+    --accent80: hsl(55, 100%, 53%, 80%);
+    --accent85: hsl(55, 100%, 53%, 85%);
+    --accent90: hsl(55, 100%, 53%, 90%);
+    --accent95: hsl(55, 100%, 53%, 95%);
+    
+    --font_cursive: 'Caveat';
+    --font_main: 'Poppins';
+}
+
+@keyframes slideInFromTop {
+    0% {
+      opacity: 0;
+      transform: translateY(-100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+
+.slide-in {
+    opacity: 0;
+    animation: slideInFromTop 0.5s ease-out forwards;
+}
+  
+
+body {
+    font-family: var(--font_main);
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg);
+    color: var(--text);
+}
+
+#header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: top;
+    height: 10%;
+    color: var(--text);
+    background-color: var(--primary50);
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.8);
+}
+
+#header h1 {
+    font-size: 35px;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8em;
+    margin: 5rem 0;
+    width: 100%;
+}
+
+.hero {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 50%;
+    margin: 2rem;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.25em;
+    font-size: 25px;
+}
+
+p {
+    font-family: var(--font_cursive);
+    display: block;
+    margin: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+    font-size: 25px;
+}
+
+
+.color-text {
+    padding: 2px;
+    background: linear-gradient(145deg, var(--primary), var(--accent));
+    -webkit-background-clip: text; 
+    color: var(--bg); /* Color principal del texto */
+    
+    /* Para el borde del texto */
+    -webkit-text-stroke-width: 5px;
+    -webkit-text-stroke-color: transparent;
+}
+
+.chapters {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 1rem;
+}
+
+.chapter {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    gap: 20px;
+}
+
+.chapter img {
+    width: 100%;
+    transition: transform 0.35s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+}
+
+.chapter img:hover {
+    transform: scale(1.1); /* Agranda la imagen en hover */
+}
+
+
+.chapter h4{
+    font-size: 24px;
+}

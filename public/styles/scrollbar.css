@@ -1,0 +1,17 @@
+/* Personalización de las barras de desplazamiento */
+::-webkit-scrollbar {
+    width: 12px; /* Ancho de la scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: var(--text10);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--text10); /* Color del pulgar (parte que se mueve) */
+    border-radius: 2px; /* Bordes redondeados para el pulgar */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--text30); /* Color del pulgar al pasar el ratón por encima */
+}

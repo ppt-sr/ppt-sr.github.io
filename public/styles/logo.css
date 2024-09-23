@@ -1,0 +1,43 @@
+#logo-png {
+    border-radius: 3rem;
+    background-color: transparent;
+    position: relative; /* Asegúrate de que el contenedor sea relativo */
+    overflow: hidden; /* Para ocultar el pseudo-elemento fuera del contenedor */
+}
+
+#logo-png-background {
+    border-radius: 3rem;
+    position: relative; /* Necesario para el pseudo-elemento */
+    z-index: 1; /* Asegura que el contenido esté por encima */
+}
+
+#logo-png-background::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 3rem;
+    background: linear-gradient(145deg, var(--accent), var(--primary));
+    filter: hue-rotate(0deg); /* Inicialmente sin cambios en el matiz */
+    z-index: -1; /* Asegura que el pseudo-elemento esté detrás del contenido */
+    transform: translateZ(0); /* Asegura el estado inicial */
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0); /* Estado inicial */
+
+    /* Combina las transiciones en una sola línea */
+    transition: filter 0.5s ease-in-out, transform 0.35s cubic-bezier(0.250, 0.460, 0.450, 0.940), 
+                box-shadow 0.35s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+}
+
+#logo-png-background:hover::before {
+    filter: hue-rotate(-180deg); /* Cambia el matiz al pasar el mouse */
+    transform: translateZ(50px);
+    box-shadow: 0 0 20px 20px var(--primary30);
+}
+
+
+#logo-png-background a {
+    position: relative; /* Asegura que el enlace esté por encima */
+    z-index: 2; /* Asegura que el enlace no se vea afectado por el filtro */
+}
