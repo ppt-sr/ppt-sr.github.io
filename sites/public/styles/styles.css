@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+
 :root {
     --text: #f4f4ef;
     --bg: #0b0b08;
@@ -87,7 +88,74 @@
     --accent85: hsl(55, 100%, 53%, 85%);
     --accent90: hsl(55, 100%, 53%, 90%);
     --accent95: hsl(55, 100%, 53%, 95%);
-    
+
+    --cch1: hsl(197, 55%, 56%);
+
+    --cch1-5: hsl(197, 55%, 56%, 5%);
+    --cch1-10: hsl(197, 55%, 56%, 10%);
+    --cch1-15: hsl(197, 55%, 56%, 15%);
+    --cch1-20: hsl(197, 55%, 56%, 20%);
+    --cch1-25: hsl(197, 55%, 56%, 25%);
+    --cch1-30: hsl(197, 55%, 56%, 30%);
+    --cch1-35: hsl(197, 55%, 56%, 35%);
+    --cch1-40: hsl(197, 55%, 56%, 40%);
+    --cch1-45: hsl(197, 55%, 56%, 45%);
+    --cch1-50: hsl(197, 55%, 56%, 50%);
+    --cch1-55: hsl(197, 55%, 56%, 55%);
+    --cch1-60: hsl(197, 55%, 56%, 60%);
+    --cch1-65: hsl(197, 55%, 56%, 65%);
+    --cch1-70: hsl(197, 55%, 56%, 70%);
+    --cch1-75: hsl(197, 55%, 56%, 75%);
+    --cch1-80: hsl(197, 55%, 56%, 80%);
+    --cch1-85: hsl(197, 55%, 56%, 85%);
+    --cch1-90: hsl(197, 55%, 56%, 90%);
+    --cch1-95: hsl(197, 55%, 56%, 95%);
+
+    --cch2: hsl(340, 90%, 77%);
+
+    --cch2-5: hsl(340, 90%, 77%, 5%);
+    --cch2-10: hsl(340, 90%, 77%, 10%);
+    --cch2-15: hsl(340, 90%, 77%, 15%);
+    --cch2-20: hsl(340, 90%, 77%, 20%);
+    --cch2-25: hsl(340, 90%, 77%, 25%);
+    --cch2-30: hsl(340, 90%, 77%, 30%);
+    --cch2-35: hsl(340, 90%, 77%, 35%);
+    --cch2-40: hsl(340, 90%, 77%, 40%);
+    --cch2-45: hsl(340, 90%, 77%, 45%);
+    --cch2-50: hsl(340, 90%, 77%, 50%);
+    --cch2-55: hsl(340, 90%, 77%, 55%);
+    --cch2-60: hsl(340, 90%, 77%, 60%);
+    --cch2-65: hsl(340, 90%, 77%, 65%);
+    --cch2-70: hsl(340, 90%, 77%, 70%);
+    --cch2-75: hsl(340, 90%, 77%, 75%);
+    --cch2-80: hsl(340, 90%, 77%, 80%);
+    --cch2-85: hsl(340, 90%, 77%, 85%);
+    --cch2-90: hsl(340, 90%, 77%, 90%);
+    --cch2-95: hsl(340, 90%, 77%, 95%);
+
+    --cch3: hsl(272, 71%, 63%);
+
+    --cch3-5: hsl(272, 71%, 63%, 5%);
+    --cch3-10: hsl(272, 71%, 63%, 10%);
+    --cch3-15: hsl(272, 71%, 63%, 15%);
+    --cch3-20: hsl(272, 71%, 63%, 20%);
+    --cch3-25: hsl(272, 71%, 63%, 25%);
+    --cch3-30: hsl(272, 71%, 63%, 30%);
+    --cch3-35: hsl(272, 71%, 63%, 35%);
+    --cch3-40: hsl(272, 71%, 63%, 40%);
+    --cch3-45: hsl(272, 71%, 63%, 45%);
+    --cch3-50: hsl(272, 71%, 63%, 50%);
+    --cch3-55: hsl(272, 71%, 63%, 55%);
+    --cch3-60: hsl(272, 71%, 63%, 60%);
+    --cch3-65: hsl(272, 71%, 63%, 65%);
+    --cch3-70: hsl(272, 71%, 63%, 70%);
+    --cch3-75: hsl(272, 71%, 63%, 75%);
+    --cch3-80: hsl(272, 71%, 63%, 80%);
+    --cch3-85: hsl(272, 71%, 63%, 85%);
+    --cch3-90: hsl(272, 71%, 63%, 90%);
+    --cch3-95: hsl(272, 71%, 63%, 95%);
+
+
     --font_cursive: 'Caveat';
     --font_main: 'Poppins';
 }
@@ -118,20 +186,91 @@ body {
     color: var(--text);
 }
 
-#header {
+.header {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: top;
-    height: 10%;
+    height: 10vh;
     color: var(--text);
-    background-color: var(--primary50);
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.8);
 }
 
-#header h1 {
+#header {
+    background-color: var(--primary50);
+}
+
+#header-ch1 {
+    background-color: var(--cch1);
+}
+
+#header-ch2 {
+    background-color: var(--cch2);
+}
+
+#header-ch3 {
+    background-color: var(--cch3);
+}
+
+#header-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.header h1 {
     font-size: 35px;
 }
+
+.header a {
+    display: flex;
+    height: 100%;
+    position: absolute;
+}
+
+.wip-png {
+    width: 20%;
+    height: 20%;
+}
+
+#wip-container-ch1 {
+    background-color: var(--cch1-30);
+    box-shadow: 10px 10px var(--cch1-80);
+}
+
+#wip-container-ch2 {
+    background-color: var(--cch2-30);
+    box-shadow: 10px 10px var(--cch2-80);
+}
+
+#wip-container-ch3 {
+    background-color: var(--cch3-30);
+    box-shadow: 10px 10px var(--cch3-80);
+}
+
+.wip-container {
+    display: flex;
+    width: 50%;
+    margin: 2rem;
+    flex-direction: row;
+    align-items: center;
+    padding: 1rem 0.5rem;
+    border-radius: 1rem;
+}
+
+#wip-text-container {
+    margin: 2rem;
+    margin-left: 3rem;
+}
+
+
+.wip-container h4 {
+    font-size: 35px;
+    margin: 0px;
+}
+
+
 
 #main {
     display: flex;
@@ -180,7 +319,7 @@ p {
     -webkit-text-stroke-color: transparent;
 }
 
-.chapters {
+.triple-menu {
     width: 80%;
     display: flex;
     align-items: center;
@@ -190,7 +329,7 @@ p {
     gap: 1rem;
 }
 
-.chapter {
+.triple-div {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -199,20 +338,36 @@ p {
     position: relative;
 }
 
-.chapter img {
+.triple-div img {
     width: 100%;
     transition: transform 0.35s cubic-bezier(0.250, 0.460, 0.450, 0.940);
 }
 
-.chapter img:hover {
+.triple-div img:hover {
     transform: scale(1.1); /* Agranda la imagen en hover */
 }
 
-.chapter a {
+.triple-div a {
     text-decoration: none;
 }
 
-.chapter h4{
+.triple-div h4{
     font-size: 24px;
     color: var(--text);
+    height: 100%;
+    width: 100%;
+}
+
+.platform-pc-div a {
+    width: 90%;
+    height: 90%;
+}
+
+.platform-pc-div {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center; /* centers horizontally */
+    justify-content: center; /* centers vertically */
 }

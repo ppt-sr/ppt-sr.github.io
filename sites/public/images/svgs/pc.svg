@@ -1,0 +1,11 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+	<title>New Project</title>
+	<style>
+		.s0 { fill: #f4f4ef } 
+		.s1 { fill: #0b0b08 } 
+	</style>
+	<path id="Layer 6" class="s0" d="m115 899h850c11 0 20 9 20 20v17c0 11-9 20-20 20h-850c-11 0-20-9-20-20v-17c0-11 9-20 20-20z"/>
+	<path id="Shape 3" class="s0" d="m576 467v453h-72v-453z"/>
+	<path id="Shape 4" class="s0" d="m77 124h926c27.6 0 50 22.4 50 50v462c0 27.6-22.4 50-50 50h-926c-27.6 0-50-22.4-50-50v-462c0-27.6 22.4-50 50-50z"/>
+	<path id="Shape 4 copy" class="s1" d="m104 168h872c19.3 0 35 15.7 35 35v404c0 19.3-15.7 35-35 35h-872c-19.3 0-35-15.7-35-35v-404c0-19.3 15.7-35 35-35z"/>
+</svg>

@@ -1,0 +1,16 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+	<title>New Project</title>
+	<style>
+		.s0 { fill: #f4f4ef;stroke: #;stroke-miterlimit:100;stroke-width: 58 } 
+		.s1 { fill: #f4f4ef } 
+		.s2 { fill: #0b0b08 } 
+		.s3 { fill: none;stroke: #0b0b08;stroke-linecap: round;stroke-linejoin: round;stroke-width: 40;stroke-dasharray: 0,80 } 
+	</style>
+	<path id="Shape 1" class="s0" d="m540 284c-189.4 0-265.7 5.2-297 95-31.3 89.8-78.6 233.7-97 295-18.4 61.3 45.1 182.6 114 78 68.9-104.6 8.9-111 280-111m0.3-357c189.4 0 265.7 5.2 297 95 31.3 89.8 78.6 233.7 97 295 18.4 61.3-45 182.6-114 78-68.9-104.6-8.9-111-280-111"/>
+	<path id="Shape 2 copy 3" class="s1" d="m542 313v299h-3v-299zm0 0v299h-3v-299z"/>
+	<path id="Shape 2" class="s2" d="m550 612v58h-17v-58zm0 0v58h-17v-58z"/>
+	<path id="Shape 2 copy 2" class="s2" d="m550 612v58h-17v-58zm0 0v58h-17v-58z"/>
+	<path id="Shape 2 copy" class="s2" d="m550 255v58h-17v-58zm0 0v58h-17v-58z"/>
+	<path id="Layer 5" class="s3" d="m703.2 483.5c-28 0.5-50.9-21.7-51.4-49.6-0.5-27.9 21.6-50.9 49.5-51.4 28-0.5 50.9 21.6 51.4 49.6 0.5 27.9-21.6 50.9-49.5 51.4z"/>
+	<path id="Layer 5 copy" class="s2" d="m379.2 483.5c-28 0.5-50.9-21.7-51.4-49.6-0.5-27.9 21.6-50.9 49.5-51.4 28-0.5 50.9 21.6 51.4 49.6 0.5 27.9-21.6 50.9-49.5 51.4z"/>
+</svg>
