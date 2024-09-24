@@ -197,7 +197,6 @@ p {
     justify-content: flex-start;
     align-items: center;
     position: relative;
-    gap: 20px;
 }
 
 .chapter img {
@@ -209,7 +208,11 @@ p {
     transform: scale(1.1); /* Agranda la imagen en hover */
 }
 
+.chapter a {
+    text-decoration: none;
+}
 
 .chapter h4{
     font-size: 24px;
+    color: var(--text);
 }
