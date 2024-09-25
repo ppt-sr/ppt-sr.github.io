@@ -30,19 +30,29 @@
         <div class="platforms triple-menu">
             <div class="platform triple-div phone">
               <a href="/chapter-2/mobile/"><img draggable="false" id="phone-svg" src="/images/svgs/phone.svg"></a>
-              <a href="/chapter-2/mobile/"><h4>Mobile</h4>
+              <a href="/chapter-2/mobile/"><h4>Mobile</h4></a>
             </div>
             <div class="platform triple-div pc">
               <div class="platform-pc-div">
-                <a href="/chapter-2/pc/"><img draggable="false" id="pc-svg" src="/images/svgs/pc.svg"></a>
+                <button id="pc-button-img"><img draggable="false" id="pc-svg" src="/images/svgs/pc.svg"></button>
               </div>
-              <a href="/chapter-2/pc/"><h4>PC</h4>
+              <button id="pc-button-text"><h4>PC</h4></button>
             </div>
+
+            <!-- Popup structure -->
+            <div id="pc-popup" class="popup hidden popup-ch2">
+              <div class="popup-content">
+                <button class="popup-button" onclick="window.location.href='/chapter-2/pc/strats/'" id="left-button">Strats</button>
+                <button class="popup-button" onclick="window.location.href='/chapter-2/pc/guides/'" id="right-button">Guides</button>
+            </div>
+            </div>
+
             <div class="platform triple-div controller">
               <a href="/chapter-2/console/"><img draggable="false" id="controller-svg" src="/images/svgs/controller.svg"></a>
-              <a href="/chapter-2/console/"><h4>Console</h4>
+              <a href="/chapter-2/console/"><h4>Console</h4></a>
             </div>
           </div>
       </main>
+      <script src="/src/pc-popup.js"></script>
   </body>
 </html>

@@ -356,6 +356,7 @@ p {
     color: var(--text);
     height: 100%;
     width: 100%;
+    font-weight: 800;
 }
 
 .double-menu {
@@ -395,11 +396,19 @@ p {
     color: var(--text);
     height: 70%;
     width: 70%;
+    font-weight: 800;
 }
 
-.platform-pc-div a {
+.platform-pc-div button {
     width: 90%;
     height: 90%;
+}
+
+.platform.pc button {
+    background-color: var(--bg);
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .platform-pc-div {
@@ -411,3 +420,150 @@ p {
     justify-content: center; /* centers vertically */
 }
 
+/* Popup styling */
+.popup {
+    display: none;
+    position: absolute;
+    background-color: var(--bg);
+    padding: 10px;
+    z-index: 1000;
+    border-radius: 10px;
+    width: 300px;
+    height: 100px;
+}
+
+.popup::after {
+    content: "";
+    position: absolute;
+    bottom: -45px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 20px;
+    border-style: solid;
+    border-color: var(--bg) transparent transparent transparent;
+}
+
+/* Button Container */
+.popup-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+/* Line */
+.popup-content::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: calc(50% - 2.5px);
+    width: 5px;
+    border-radius: 2rem;
+    transform: rotate(20deg);
+}
+
+/* Button Styles */
+.popup-button {
+    background-color: var(--bg);
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    color: var(--text);
+    width: 125px; /* Ancho de los botones */
+    height: 100px; /* Altura de los botones */
+    font-size: 24px;
+    font-weight: 800;
+}
+
+/* Different pop-up Styles */
+.popup-ch1 {
+    border: 5px solid var(--cch1-20);
+}
+.popup-ch1::after {
+    border-color: var(--cch1-20) transparent transparent transparent;
+}
+.popup-ch1 .popup-content::before {
+    background-color: var(--cch1-20);
+}
+.popup-ch1 .popup-button:hover {
+    background-color: var(--cch1-20);
+}
+
+.popup-ch2 {
+    border: 5px solid var(--cch2-20);
+}
+.popup-ch2::after {
+    border-color: var(--cch2-20) transparent transparent transparent;
+}
+.popup-ch2 .popup-content::before {
+    background-color: var(--cch2-20);
+}
+.popup-ch2 .popup-button:hover {
+    background-color: var(--cch2-20);
+}
+
+.popup-ch3 {
+    border: 5px solid var(--cch3-20);
+}
+.popup-ch3::after {
+    border-color: var(--cch3-20) transparent transparent transparent;
+}
+.popup-ch3 .popup-content::before {
+    background-color: var(--cch3-20);
+}
+.popup-ch3 .popup-button:hover {
+    background-color: var(--cch3-20);
+}
+
+.hidden {
+    display: none;
+}
+
+
+#guides-container-ch3 {
+    flex-direction: column;
+    display: flex;
+    width: 80%;
+    gap: 3rem;
+}
+
+#guides-container-ch3 iframe {
+    border-radius: 1.5rem;
+    border: solid 3px var(--cch3-50);
+}
+
+#guides-container-ch2 iframe {
+    border-radius: 1.5rem;
+    border: solid 3px var(--cch2-50);
+}
+
+#guides-container-ch1 iframe {
+    border-radius: 1.5rem;
+    border: solid 3px var(--cch1-50);
+}
+
+.strat-div {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+    gap: 2em;
+    width: 100%;
+    position: relative;
+}
+
+.video-description-div {
+    margin-top: 5rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: flex-start;
+    gap: 2rem;
+    position: relative;
+}
+
+.text-30 {
+    color: var(--text30)
+}
