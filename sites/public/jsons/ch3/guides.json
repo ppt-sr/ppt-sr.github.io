@@ -3,12 +3,14 @@
         "title": "Autosplitter & Load Remover - Tutorial",
         "id": "mAGW9vZM564",
         "version": "Any",
-        "description": "This is a tutorial that explains how to make the Autosplitter & Load Remover work."
+        "description": "This is a tutorial that explains how to make the Autosplitter & Load Remover work.",
+        "author": "TheDementedSalad"
     },
     {
         "title": "Downpatching - Tutorial",
-        "id": "VIDEO_ID_2",
-        "version": "1.1",
-        "description": "This is a tutorial to downpatch to version 1.1. \n Code: [CODE]"
+        "id": "6ahQYdI00Co",
+        "version": "Any",
+        "description": "This is a tutorial to downpatch any Poppy Playtime Chapter. <br> <button style='display: none;'></button> Steam Console code: <label class='code'>steam://open/console</label><button class='copy-btn'>COPY CODE</button> <br> Depot: <label class='code'>download_depot 1817490 1817491 3472064775658982753</label><button class='copy-btn'>COPY CODE</button>",
+        "author": "n0kitsune"
     }
 ]

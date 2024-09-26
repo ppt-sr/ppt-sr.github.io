@@ -20,17 +20,23 @@ fetch('/jsons/ch3/guides.json')
                         </iframe>
                     </div>
                 </div>
-                <div class="video-description-div">
-                    <div>
-                        <label>Version:</label> <label class="text-30">${video.version}</label>
+                <div class="video-description-credits-div">
+                    <div class="video-description-div">
+                        <div>
+                            <label>Version:</label> <label class="text-30">${video.version}</label>
+                        </div>
+                        <div>
+                            <label>Description:</label> <label class="text-30">${video.description}</label>
+                        </div>
                     </div>
                     <div>
-                        <label>Description:</label> <label class="text-30">${video.description}</label>
+                        <label>Video by:</label> <label class="text-30">${video.author}</label>
                     </div>
                 </div>
             `;
 
             videoContainer.appendChild(videoDiv);
         });
+        addCopyButtonListeners();
     })
     .catch(error => console.error('Error loading the JSON:', error));

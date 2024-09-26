@@ -1,0 +1,30 @@
+[
+    {
+        "title": "Autosplitter & Load Remover - Tutorial",
+        "id": "uRdQF2G-p7g",
+        "version": "Any",
+        "description": "This is a tutorial that explains how to make the Autosplitter & Load Remover work. <br> In-case you need the old patch NMG autosplitter file: <a target='_blank' href='https://drive.usercontent.google.com/download?id=1HDb6iPB3f00q0st6nlnx3HiziCkHLjwS&export=download&authuser=0'>Download Old patch NMG autosplitter</a>",
+        "author": "n0kitsune"
+    },
+    {
+        "title": "Downpatching - Tutorial",
+        "id": "6ahQYdI00Co",
+        "version": "Any",
+        "description": "This is a tutorial to downpatch any Poppy Playtime Chapter. <br> <button style='display: none;'></button> Steam Console code: <label class='code'>steam://open/console</label><button class='copy-btn'>COPY CODE</button> <br> Any% code: <label class='code'>download_depot 1721470 1721471 8897518061680100138</label><button class='copy-btn'>COPY CODE</button><br> Old Patch NMG Code: <label class='code'>download_depot 1721470 1721471 5760656490992572463</label><button class='copy-btn'>COPY CODE</button>",
+        "author": "n0kitsune"
+    },
+    {
+        "title": "NMG Speedrun Tutorial (Out-dated)",
+        "id": "UvC0YA-y4g0",
+        "version": "1.1",
+        "description": "Sadly this video is now outdated. If you wanna make a new version of these video let us know through Discord.",
+        "author": "Law_ (Frame)"
+    },
+    {
+        "title": "Replace Checkpoints - Tutorial",
+        "id": "iQgDAEKBTmk",
+        "version": "Any",
+        "description": "This is a tutorial that explains how to replace the checkpoints for Chapter 1. <br> <a target='_blank' href='https://www.speedrun.com/static/resource/rb23d.rar?v=3b07711'>Download the Chapter 1 Checkpoints</a>",
+        "author": "Holo"
+    }
+]

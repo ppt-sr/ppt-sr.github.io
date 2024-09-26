@@ -171,6 +171,68 @@
     }
 }
 
+.copy-btn {
+    margin-left: 10px;
+    background-color: var(--bg);
+    border: solid 2px var(--text30);
+    border-radius: 0.5rem;
+    cursor: pointer;
+    color: var(--text30);
+    height: 23px;
+}
+
+.copy-btn:hover {
+    border: solid 2px var(--text70);
+    color: var(--text70);
+}
+
+.ch1 .copy-btn:active {
+    border: solid 2px var(--cch1-50);
+    color: var(--cch1-50);
+}
+.ch2 .copy-btn :active {
+    border: solid 2px var(--cch2-50);
+    color: var(--cch2-50);
+}
+.ch3 .copy-btn:active {
+    border: solid 2px var(--cch3-50);
+    color: var(--cch3-50);
+}
+
+.ch1 .copy-btn.copied {
+    border: solid 2px var(--cch1-50);
+    color: var(--cch1-50);
+}
+.ch2 .copy-btn.copied {
+    border: solid 2px var(--cch2-50);
+    color: var(--cch2-50);
+}
+.ch3 .copy-btn.copied {
+    border: solid 2px var(--cch3-50);
+    color: var(--cch3-50);
+}
+
+
+/* Default link color */
+a {
+    color: #007BFF; /* Change this to the color you want */
+}
+
+/* Link color on hover */
+a:hover {
+    color: #0056b3; /* Slightly darker shade for hover effect */
+}
+
+/* Visited link color */
+a:visited {
+    color: #800080; /* Purple for visited links */
+}
+
+/* Active link color */
+a:active {
+    color: #ff5722; /* Orange for active (clicked) links */
+}
+
 .slide-in {
     opacity: 0;
     animation: slideInFromTop 0.5s ease-out forwards;
@@ -200,15 +262,15 @@ body {
     background-color: var(--primary50);
 }
 
-#header-ch1 {
+.ch1 .header {
     background-color: var(--cch1);
 }
 
-#header-ch2 {
+.ch2 .header{
     background-color: var(--cch2);
 }
 
-#header-ch3 {
+.ch3 .header {
     background-color: var(--cch3);
 }
 
@@ -234,17 +296,17 @@ body {
     height: 20%;
 }
 
-#wip-container-ch1 {
+.ch1 .wip-container {
     background-color: var(--cch1-30);
     box-shadow: 10px 10px var(--cch1-80);
 }
 
-#wip-container-ch2 {
+.ch2 .wip-container {
     background-color: var(--cch2-30);
     box-shadow: 10px 10px var(--cch2-80);
 }
 
-#wip-container-ch3 {
+.ch3 .wip-container {
     background-color: var(--cch3-30);
     box-shadow: 10px 10px var(--cch3-80);
 }
@@ -521,24 +583,24 @@ p {
 }
 
 
-#guides-container-ch3 {
+.guides-container {
     flex-direction: column;
     display: flex;
     width: 80%;
     gap: 3rem;
 }
 
-#guides-container-ch3 iframe {
+.ch3 .guides-container iframe {
     border-radius: 1.5rem;
     border: solid 3px var(--cch3-50);
 }
 
-#guides-container-ch2 iframe {
+.ch2 .guides-container iframe {
     border-radius: 1.5rem;
     border: solid 3px var(--cch2-50);
 }
 
-#guides-container-ch1 iframe {
+.ch1 .guides-container iframe {
     border-radius: 1.5rem;
     border: solid 3px var(--cch1-50);
 }
@@ -551,19 +613,112 @@ p {
     gap: 2em;
     width: 100%;
     position: relative;
+    height: 440px;
 }
 
 .video-description-div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+}
+
+.video-description-credits-div {
     margin-top: 5rem;
     width: 100%;
+    height: calc(100% - 8rem);
     display: flex;
     flex-direction: column;
     align-items: left;
-    justify-content: flex-start;
-    gap: 2rem;
     position: relative;
+    justify-content: space-between; /* Distributes space between items */
+    line-height: 2rem;
 }
 
 .text-30 {
     color: var(--text30)
+}
+
+.code {
+    font-family: monospace;
+    font-size: 16px;
+    background-color: var(--text5); /* Light gray background */
+    color: var(--primary80);           /* Distinctive color for the code */
+    padding: 2px 0.5rem 3px 0.5rem;
+    border-radius: 0.5rem;
+    border: solid 2px var(--text20)
+}
+
+#error-code-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5rem;
+    gap: 1rem;
+    margin: 5rem;
+}
+
+#error-code {
+    margin:0px;
+}
+
+#not-found {
+    font-size: 20px;
+}
+
+#return-link {
+    border: solid #007BFF;
+    padding: 1rem;
+    border-radius: 50rem;
+    background-color: hsl(211, 100%, 35%, 10%);
+    text-decoration: none;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0); /* Estado inicial */
+    transition: box-shadow 0.35s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+}
+
+/* Link color on hover */
+#return-link:hover {
+    border: solid #0056b3; /* Slightly darker shade for hover effect */
+    color: #0056b3;
+    text-decoration: none;
+    box-shadow: 0 0 20px 20px hsl(211, 100%, 35%, 40%);
+    
+}
+
+/* Visited link color */
+#return-link:visited {
+    color: #007BFF;
+}
+
+#return-link:hover {
+    color: #0056b3;
+}
+
+/* Active link color */
+#return-link:active {
+    border: solid #0056b3; /* Orange for active (clicked) links */
+    color: #0056b3;
+}
+
+#bunzo-nerdge {
+    position: absolute;
+    width: 25%;
+    left: 10%;
+}
+
+#cat-bee-paint {
+    position: absolute;
+    width: 25%;
+    right: 10%;
+    transform: scaleX(-1);
+}
+
+#different-error-color {
+    background-image: url('/images/paint.png'); /* Tu imagen de fondo */
+    background-size: cover; /* Ajusta el tamaño de la imagen */
+    background-position: center; /* Centra la imagen en el texto */
+    -webkit-background-clip: text; /* Recorta la imagen al contorno del texto */
+    background-clip: text; /* Para navegadores no WebKit */
+    -webkit-text-fill-color: transparent; /* Hace el texto transparente */
 }
