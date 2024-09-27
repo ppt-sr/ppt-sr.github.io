@@ -1,11 +1,30 @@
 [
     {
         "title": "Hyperspeed Swing (HSH)",
-        "id": "RI_O4bd5Nsc",
+        "id": "Sh0JLIJpudE",
         "version": "<1.2, 1.3+",
         "description": "Explanation on how to do HSH. <br> Requires 30fps",
         "author": "n0kitsune",
-        "tags": "Out of Bounds, Inbounds, No Major Glitches, Any% <1.2, Any% 1.3+, All Minigames <1.2 All Minigames 1.3+, 100% <1.2, 100% 1.3+"
+        "category": {
+            "Any%": {
+                "Out of Bounds": true,
+                "Inbounds": true,
+                "No Major Glitches": true,
+                "No Major Skips": true
+            },
+            "All Minigames": {
+                "Out of Bounds": true,
+                "Inbounds": true,
+                "No Major Glitches": true,
+                "No Major Skips": true
+            },
+            "100%": {
+                "Out of Bounds": true,
+                "Inbounds": true,
+                "No Major Glitches": true,
+                "No Major Skips": true
+            }
+        }
     },
     {
         "title": "NAM Skip",
@@ -13,7 +32,14 @@
         "version": "<1.2",
         "description": "You need to click rapidly in order to add up momentum. <br> Requires 30fps",
         "author": "Nam (JMK)",
-        "tags": "Out of Bounds, Any% <1.2, All Minigames <1.2"
+        "category": {
+            "Any%": {
+                "Out of Bounds": true
+            },
+            "All Minigames": {
+                "Out of Bounds": true
+            }
+        }
     },
     {
         "title": "100% NAM Skip",
@@ -21,31 +47,50 @@
         "version": "<1.2",
         "description": "You need to click rapidly in order to add up momentum. (You need more control and be good at Normal NAM) <br> Requires 30fps",
         "author": "LilQuince",
-        "tags": "Out of Bounds, 100% <1.2"
+        "category": {
+            "100%": {
+                "Out of Bounds": true
+            }
+        }
     },
     {
-        "title": "New NAM Skip",
+        "title": "NAM Skip",
         "id": "o37M1CTMeOw",
         "version": "1.3+",
         "description": "Getting the Green Hand is not Necessary.",
         "author": "Nia",
-        "tags": "Out of Bounds, Any% 1.3+, All Minigames 1.3+, 100% 1.3+"
+        "category": {
+            "Any%": {
+                "Out of Bounds": true
+            },
+            "All Minigames": {
+                "Out of Bounds": true
+            },
+            "100%": {
+                "Out of Bounds": true
+            }
+        }
     },
     {
         "title": "Green Hand Early (Need Video)",
         "id": "NEED VIDEO",
         "version": "<1.2",
-        "description": "",
+        "description": "Please provide us with a video",
         "author": "UNKNOWN",
-        "tags": "Out of Bounds, Inbounds, Any% <1.2, All Minigames <1.2, 100% <1.2"
-    },
-    {
-        "title": "Small Green Hand Skip",
-        "id": "BK2MMxyq5Mg",
-        "version": "<1.2, 1.3+",
-        "description": "",
-        "author": "MutantEye",
-        "tags": "No Major Glitches, No Major Skips, Any% <1.2, Any% 1.3+, All Minigames <1.2, All Minigames, 100% <1.2, 100%"
+        "category": {
+            "Any%": {
+                "Out of Bounds": true,
+                "Inbounds": true
+            },
+            "All Minigames": {
+                "Out of Bounds": true,
+                "Inbounds": true
+            },
+            "100%": {
+                "Out of Bounds": true,
+                "Inbounds": true
+            }
+        }
     },
     {
         "title": "Mommy Hand Grab Skip",
@@ -53,7 +98,35 @@
         "version": "<1.2, 1.3+",
         "description": "As video Shows, stand around those tiles.",
         "author": "n0kitusne",
-        "tags": "Inbounds, Any%, All Minigames, 100%"
+        "category": {
+            "Any%": {
+                "Inbounds": true
+            },
+            "All Minigames": {
+                "Inbounds": true
+            },
+            "100%": {
+                "Inbounds": true
+            }
+        }
+    },
+    {
+        "title": "Small Green Hand Skip",
+        "id": "BK2MMxyq5Mg",
+        "version": "<1.2, 1.3+",
+        "description": "Grab the hand earlier!",
+        "author": "MutantEye",
+        "category": {
+            "Any%": {
+                "No Major Skips": true
+            },
+            "All Minigames": {
+                "No Major Skips": true
+            },
+            "100%": {
+                "No Major Skips": true
+            }
+        }
     },
     {
         "title": "Green Hand Room Skip",
@@ -61,55 +134,121 @@
         "version": "<1.2, 1.3+",
         "description": "You can use any prop but Kissy Sign since you can’t crouch on it. (Unless you put something on-top of it)",
         "author": "Nia",
-        "tags": "Out of Bounds"
+        "category": {
+            "Any%": {
+                "No Major Glitches": true
+            },
+            "All Minigames": {
+                "Out of Bounds": true,
+                "Inbounds": true,
+                "No Major Glitches": true
+            },
+            "100%": {
+                "Out of Bounds": true,
+                "Inbounds": true,
+                "No Major Glitches": true
+            }
+        }
     },
     {
         "title": "Standing on Buttons in Musical Memory",
         "id": "qBB-ICLxX4w",
         "version": "<1.2, 1.3+",
-        "description": "",
+        "description": "Video is self explanatory!",
         "author": "Hawkz",
-        "tags": ""
+        "category": {
+            "Any%": {
+                "No Major Glitches": true
+            },
+            "All Minigames": {
+                "Inbounds": true,
+                "No Major Glitches": true
+            },
+            "100%": {
+                "Inbounds": true,
+                "No Major Glitches": true
+            }
+        }
     },
     {
         "title": "Musical Memory Skip (MMS) | Hard Version",
         "id": "hNH0PRbAbs0",
         "version": "<1.2, 1.3+",
-        "description": "Requires RNG",
+        "description": "Requires RNG. <br> Requires 30fps",
         "author": "Mello",
-        "tags": ""
+        "category": {
+            "All Minigames": {
+                "Out of Bounds": true
+            },
+            "100%": {
+                "Out of Bounds": true
+            }
+        }
     },
     {
-        "title": "Musical Memory Skip (MMS) | Easy Version (slower)",
+        "title": "Musical Memory Skip (MMS) | Easy Version (Slower)",
         "id": "OBT-0fPhT2U",
         "version": "<1.2, 1.3+",
-        "description": "Doesn't Require RNG",
+        "description": "Doesn't Require RNG.",
         "author": "n0kitsune",
-        "tags": ""
+        "category": {
+            "All Minigames": {
+                "Out of Bounds": true
+            },
+            "100%": {
+                "Out of Bounds": true
+            }
+        }
     },
     {
         "title": "Musical Memory Load Manipulation",
         "id": "BZ4Bdkj1k2U",
         "version": "<1.2, 1.3+",
-        "description": "Loading After kid says YAY removes 1 cycle from next step.",
+        "description": "Loading After kid says \"YAY!\" removes 1 cycle from next stage.",
         "author": "n0kitsune",
-        "tags": ""
+        "category": {
+            "Any%": {
+                "No Major Skips": true
+            },
+            "All Minigames": {
+                "No Major Skips": true
+            },
+            "100%": {
+                "No Major Skips": true
+            }
+        }
     },
     {
-        "title": "Whack-a-Wuggy Skip Old Patch (Need Video)",
+        "title": "Whack-a-Wuggy Skip Out of Bounds",
         "id": "NEED VIDEO",
         "version": "<1.2",
-        "description": "",
+        "description": "Please provide us with a video",
         "author": "UNKNOWN",
-        "tags": ""
+        "category": {
+            "All Minigames": {
+                "Out of Bounds": true
+            },
+            "100%": {
+                "Out of Bounds": true
+            }
+        }
     },
     {
         "title": "Whack-a-Wuggy Skip New Patch",
         "id": "_94xLVzYOXs",
         "version": "<1.2, 1.3+",
-        "description": "Follow instructions",
+        "description": "Follow instructions!",
         "author": "Nerd Squared",
-        "tags": ""
+        "category": {
+            "All Minigames": {
+                "Out of Bounds": true,
+                "Inbounds": true
+            },
+            "100%": {
+                "Out of Bounds": true,
+                "Inbounds": true
+            }
+        }
     },
     {
         "title": "Barry Skip",
@@ -117,31 +256,47 @@
         "version": "<1.2",
         "description": "You need to touch the load right after the planks by the rails.",
         "author": "Sangohanvde",
-        "tags": ""
+        "category": {
+            "All Minigames": {
+                "Out of Bounds": true
+            }
+        }
     },
     {
         "title": "Barry Skip | Hard Version",
         "id": "WG877Aaafrc",
         "version": "1.3+",
-        "description": "Requires a lot of clicks.",
+        "description": "You need to touch the load right after the planks by the rails. <br> Requires a lot of clicks.",
         "author": "Nia",
-        "tags": ""
+        "category": {
+            "All Minigames": {
+                "Out of Bounds": true
+            }
+        }
     },
     {
         "title": "Barry Skip | Easy Version",
         "id": "YFk9bjBmJ8E",
         "version": "1.3+",
-        "description": "Doesn't Require that many clicks.",
+        "description": "You need to touch the load right after the planks by the rails. <br> Doesn't Require that many clicks.",
         "author": "n0kitsune",
-        "tags": ""
+        "category": {
+            "All Minigames": {
+                "Out of Bounds": true
+            }
+        }
     },
     {
         "title": "100% Barry Skip",
         "id": "yaClb5aj5Fo",
         "version": "<1.2, 1.3+",
-        "description": "",
+        "description": "The Jump Glitches by pausing the game so it's easier to time, in order to stop jumping press Jump Again!",
         "author": "Nerd Squared",
-        "tags": ""
+        "category": {
+            "100%": {
+                "Out of Bounds": true
+            }
+        }
     },
     {
         "title": "Statues Skip w/ Objects",
@@ -149,86 +304,191 @@
         "version": "<1.2, 1.3+",
         "description": "You cannot pull the box with the hands you need to use your body.",
         "author": "Nia",
-        "tags": ""
+        "category": {
+            "All Minigames": {
+                "Out of Bounds": true,
+                "Inbounds": true,
+                "No Major Glitches": true
+            },
+            "100%": {
+                "Out of Bounds": true,
+                "Inbounds": true,
+                "No Major Glitches": true
+            }
+        }
     },
     {
-        "title": "Statues Skip by crouching (Need updated Video)",
+        "title": "Statues Skip w/ crouching (Need updated Video)",
         "id": "ZN8YzGuwAjI",
         "version": "<1.2, 1.3+",
         "description": "There is a few spots it works better on.",
         "author": "Wheremysalsa",
-        "tags": ""
+        "category": {
+            "All Minigames": {
+                "Out of Bounds": true,
+                "Inbounds": true
+            },
+            "100%": {
+                "Out of Bounds": true,
+                "Inbounds": true
+            }
+        }
     },
     {
         "title": "Hyperspeed Swing Over Tubes",
         "id": "k-eF3a7cwfI",
         "version": "<1.2",
-        "description": "",
+        "description": "Video is self explanatory!",
         "author": "n0kitsune",
-        "tags": ""
+        "category": {
+            "All Minigames": {
+                "Out of Bounds": true,
+                "Inbounds": true,
+                "No Major Glitches": true
+            },
+            "100%": {
+                "Out of Bounds": true,
+                "Inbounds": true,
+                "No Major Glitches": true
+            }
+        }
     },
     {
         "title": "Ruby Skip",
         "id": "-xpfAY8EOLE",
         "version": "<1.2, 1.3+",
-        "description": "",
+        "description": "Video is self explanatory!",
         "author": "n0kitsune",
-        "tags": ""
+        "category": {
+            "All Minigames": {
+                "Inbounds": true,
+                "No Major Glitches": true
+            },
+            "100%": {
+                "Inbounds": true,
+                "No Major Glitches": true
+            }
+        }
     },
     {
         "title": "Water Treatment Skip",
         "id": "2lUwAA8QJa8",
         "version": "<1.2, 1.3+",
-        "description": "Using the Yellow Canister is easier since it's easier to manipulate.",
+        "description": "The Yellow Canister is easier to manipulate.",
         "author": "Laupig",
-        "tags": ""
+        "category": {
+            "All Minigames": {
+                "Out of Bounds": true
+            },
+            "100%": {
+                "Out of Bounds": true
+            }
+        }
     },
     {
         "title": "GGD Skip",
         "id": "Qg8z2TaWu-I",
         "version": "<1.2",
-        "description": "",
+        "description": "You cannot get much further.",
         "author": "Sangohanvde",
-        "tags": ""
+        "category": {
+            "All Minigames": {
+                "Out of Bounds": true
+            },
+            "100%": {
+                "Out of Bounds": true
+            }
+        }
     },
     {
         "title": "GGD Skip",
-        "id": "gE2DgVK5oxI",
+        "id": "Qg8z2TaWu-I",
         "version": "1.3+",
-        "description": "",
+        "description": "You can get really far on 1.3+!",
         "author": "Nia",
-        "tags": ""
+        "category": {
+            "Any%": {
+                "Out of Bounds": true
+            },
+            "All Minigames": {
+                "Out of Bounds": true
+            },
+            "100%": {
+                "Out of Bounds": true
+            }
+        }
+    },
+    {
+        "title": "Proac Skip",
+        "id": "NEED VIDEO",
+        "version": "1.3+",
+        "description": "Another version of GGD Skip this one Skips Mommy Chase aswell. It needs a lot more precision!",
+        "author": "UNKNOWN",
+        "category": {
+            "Any%": {
+                "Out of Bounds": true
+            },
+            "All Minigames": {
+                "Out of Bounds": true
+            }
+        }
     },
     {
         "title": "Mommy Chase Skip",
         "id": "kso--tLYwf8",
         "version": "<1.2, 1.3+",
-        "description": "",
+        "description": "Really easy skip, for 1.3+ you'll need to stack boxes but in <1.2 u can just jump in the leaver!",
         "author": "Sangohanvde",
-        "tags": ""
+        "category": {
+            "All Minigames": {
+                "Out of Bounds": true
+            }
+        }
     },
     {
         "title": "Mommy Chase Skip",
         "id": "bG2Hd3GGgOI",
         "version": "<1.2, 1.3+",
-        "description": "",
+        "description": "Barrel Stacking method, a lot harder but Inbounds.",
         "author": "Nia",
-        "tags": ""
+        "category": {
+            "All Minigames": {
+                "Inbounds": true,
+                "No Major Glitches": true
+            }
+        }
     },
     {
         "title": "Robin/Office Skip",
         "id": "IDJreYBRPEQ",
         "version": "<1.2, 1.3+",
-        "description": "",
-        "author": "RubyRain",
-        "tags": ""
+        "description": "Video is self explanatory!",
+        "author": "Ruby Rain",
+        "category": {
+            "All Minigames": {
+                "Out of Bounds": true,
+                "Inbounds": true,
+                "No Major Glitches": true
+            },
+            "100%": {
+                "Out of Bounds": true,
+                "Inbounds": true,
+                "No Major Glitches": true
+            }
+        }
     },
     {
-        "title": "100% Office Skip (Need Video)",
-        "id": "NEED VIDEO",
+        "title": "100% Office Skip",
+        "id": "JwJ-NZRR6x0",
         "version": "<1.2, 1.3+",
-        "description": "",
-        "author": "UNKNOWN",
-        "tags": ""
+        "description": "Video is self explanatory!",
+        "author": "n0kitsune",
+        "category": {
+            "100%": {
+                "Out of Bounds": true,
+                "Inbounds": true,
+                "No Major Glitches": true
+            }
+        }
     }
 ]

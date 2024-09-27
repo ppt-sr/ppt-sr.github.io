@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="/public/styles/styles.css">
+    <link rel="stylesheet" href="/public/icomoon/icons.css">
     <link rel="stylesheet" href="/public/styles/scrollbar.css">
     <link rel="icon" type="image/png" href="/images/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -26,9 +27,33 @@
             <h4>PAGE CURRECTLY IN DEVELOPMENT!</h4>
             </div>
         </div>
+        <div id="filters">
+          <hr class="thin-separator"></hr>
+          <div id="filters-info" class="icon-info"></div>
+          <!-- Pop-up structure -->
+          <div id="info-popup" class="popup hidden">
+            <div class="popup-div">
+              <p>You can change what you want to see here by clicking on the different Tags!</p>
+            </div>
+          </div>
+          <div id="filters-container" class="container">
+            <div id="categories-container" class="container">
+              <div id="any-div"><input id="any-cb" type="checkbox"></input><label class="checkboxlabel" for="any-cb">Any%</label></div>
+              <div id="all-minigames-div"><input id="all-minigames-cb" type="checkbox"></input><label class="checkboxlabel" for="all-minigames-cb">All Minigames</label></div>
+              <div id="hundred-div"><input id="hundred-cb" type="checkbox"></input><label class="checkboxlabel" for="hundred-cb">100%</label></div>
+            </div>
+            <div id="routes-container">
+              <div id="oob-div"><input id="oob-cb" type="checkbox"></input><label class="checkboxlabel" for="oob-cb">Out of Bounds</label></div>
+              <div id="ib"><input id="ib-cb" type="checkbox"></input><label class="checkboxlabel" for="ib-cb">Inbounds</label></div>
+              <div id="nmg-div"><input id="nmg-cb" type="checkbox"></input><label class="checkboxlabel" for="nmg-cb">No Major Glitches</label></div>
+              <div id="nms-div"><input id="nms-cb" type="checkbox"></input><label class="checkboxlabel" for="nms-cb">No Major Skips</label></div>
+            </div>
+          </div>
+          <hr class="thin-separator"></hr>
+        </div>
         <div id="strats-container-ch2" class="strats-container"></div>
       </main>
       <script src="/src/video-loaders/ch2/pc-strats.js"></script>
-      </main>
+      <script src="/src/info-popup.js"></script>
   </body>
 </html>
