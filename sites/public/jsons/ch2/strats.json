@@ -1,0 +1,234 @@
+[
+    {
+        "title": "Hyperspeed Swing (HSH)",
+        "id": "RI_O4bd5Nsc",
+        "version": "<1.2, 1.3+",
+        "description": "Explanation on how to do HSH. <br> Requires 30fps",
+        "author": "n0kitsune",
+        "tags": "Out of Bounds, Inbounds, No Major Glitches, Any% <1.2, Any% 1.3+, All Minigames <1.2 All Minigames 1.3+, 100% <1.2, 100% 1.3+"
+    },
+    {
+        "title": "NAM Skip",
+        "id": "a6CpFrU5WQo",
+        "version": "<1.2",
+        "description": "You need to click rapidly in order to add up momentum. <br> Requires 30fps",
+        "author": "Nam (JMK)",
+        "tags": "Out of Bounds, Any% <1.2, All Minigames <1.2"
+    },
+    {
+        "title": "100% NAM Skip",
+        "id": "7jYyGEOUBAc",
+        "version": "<1.2",
+        "description": "You need to click rapidly in order to add up momentum. (You need more control and be good at Normal NAM) <br> Requires 30fps",
+        "author": "LilQuince",
+        "tags": "Out of Bounds, 100% <1.2"
+    },
+    {
+        "title": "New NAM Skip",
+        "id": "o37M1CTMeOw",
+        "version": "1.3+",
+        "description": "Getting the Green Hand is not Necessary.",
+        "author": "Nia",
+        "tags": "Out of Bounds, Any% 1.3+, All Minigames 1.3+, 100% 1.3+"
+    },
+    {
+        "title": "Green Hand Early (Need Video)",
+        "id": "NEED VIDEO",
+        "version": "<1.2",
+        "description": "",
+        "author": "UNKNOWN",
+        "tags": "Out of Bounds, Inbounds, Any% <1.2, All Minigames <1.2, 100% <1.2"
+    },
+    {
+        "title": "Small Green Hand Skip",
+        "id": "BK2MMxyq5Mg",
+        "version": "<1.2, 1.3+",
+        "description": "",
+        "author": "MutantEye",
+        "tags": "No Major Glitches, No Major Skips, Any% <1.2, Any% 1.3+, All Minigames <1.2, All Minigames, 100% <1.2, 100%"
+    },
+    {
+        "title": "Mommy Hand Grab Skip",
+        "id": "0S0KuGMnrg4",
+        "version": "<1.2, 1.3+",
+        "description": "As video Shows, stand around those tiles.",
+        "author": "n0kitusne",
+        "tags": "Inbounds, Any%, All Minigames, 100%"
+    },
+    {
+        "title": "Green Hand Room Skip",
+        "id": "OIv0kd9y-bo",
+        "version": "<1.2, 1.3+",
+        "description": "You can use any prop but Kissy Sign since you can’t crouch on it. (Unless you put something on-top of it)",
+        "author": "Nia",
+        "tags": "Out of Bounds"
+    },
+    {
+        "title": "Standing on Buttons in Musical Memory",
+        "id": "qBB-ICLxX4w",
+        "version": "<1.2, 1.3+",
+        "description": "",
+        "author": "Hawkz",
+        "tags": ""
+    },
+    {
+        "title": "Musical Memory Skip (MMS) | Hard Version",
+        "id": "hNH0PRbAbs0",
+        "version": "<1.2, 1.3+",
+        "description": "Requires RNG",
+        "author": "Mello",
+        "tags": ""
+    },
+    {
+        "title": "Musical Memory Skip (MMS) | Easy Version (slower)",
+        "id": "OBT-0fPhT2U",
+        "version": "<1.2, 1.3+",
+        "description": "Doesn't Require RNG",
+        "author": "n0kitsune",
+        "tags": ""
+    },
+    {
+        "title": "Musical Memory Load Manipulation",
+        "id": "BZ4Bdkj1k2U",
+        "version": "<1.2, 1.3+",
+        "description": "Loading After kid says YAY removes 1 cycle from next step.",
+        "author": "n0kitsune",
+        "tags": ""
+    },
+    {
+        "title": "Whack-a-Wuggy Skip Old Patch (Need Video)",
+        "id": "NEED VIDEO",
+        "version": "<1.2",
+        "description": "",
+        "author": "UNKNOWN",
+        "tags": ""
+    },
+    {
+        "title": "Whack-a-Wuggy Skip New Patch",
+        "id": "_94xLVzYOXs",
+        "version": "<1.2, 1.3+",
+        "description": "Follow instructions",
+        "author": "Nerd Squared",
+        "tags": ""
+    },
+    {
+        "title": "Barry Skip",
+        "id": "gGNH_aNCqXI",
+        "version": "<1.2",
+        "description": "You need to touch the load right after the planks by the rails.",
+        "author": "Sangohanvde",
+        "tags": ""
+    },
+    {
+        "title": "Barry Skip | Hard Version",
+        "id": "WG877Aaafrc",
+        "version": "1.3+",
+        "description": "Requires a lot of clicks.",
+        "author": "Nia",
+        "tags": ""
+    },
+    {
+        "title": "Barry Skip | Easy Version",
+        "id": "YFk9bjBmJ8E",
+        "version": "1.3+",
+        "description": "Doesn't Require that many clicks.",
+        "author": "n0kitsune",
+        "tags": ""
+    },
+    {
+        "title": "100% Barry Skip",
+        "id": "yaClb5aj5Fo",
+        "version": "<1.2, 1.3+",
+        "description": "",
+        "author": "Nerd Squared",
+        "tags": ""
+    },
+    {
+        "title": "Statues Skip w/ Objects",
+        "id": "eEp6xB-ebOE",
+        "version": "<1.2, 1.3+",
+        "description": "You cannot pull the box with the hands you need to use your body.",
+        "author": "Nia",
+        "tags": ""
+    },
+    {
+        "title": "Statues Skip by crouching (Need updated Video)",
+        "id": "ZN8YzGuwAjI",
+        "version": "<1.2, 1.3+",
+        "description": "There is a few spots it works better on.",
+        "author": "Wheremysalsa",
+        "tags": ""
+    },
+    {
+        "title": "Hyperspeed Swing Over Tubes",
+        "id": "k-eF3a7cwfI",
+        "version": "<1.2",
+        "description": "",
+        "author": "n0kitsune",
+        "tags": ""
+    },
+    {
+        "title": "Ruby Skip",
+        "id": "-xpfAY8EOLE",
+        "version": "<1.2, 1.3+",
+        "description": "",
+        "author": "n0kitsune",
+        "tags": ""
+    },
+    {
+        "title": "Water Treatment Skip",
+        "id": "2lUwAA8QJa8",
+        "version": "<1.2, 1.3+",
+        "description": "Using the Yellow Canister is easier since it's easier to manipulate.",
+        "author": "Laupig",
+        "tags": ""
+    },
+    {
+        "title": "GGD Skip",
+        "id": "Qg8z2TaWu-I",
+        "version": "<1.2",
+        "description": "",
+        "author": "Sangohanvde",
+        "tags": ""
+    },
+    {
+        "title": "GGD Skip",
+        "id": "gE2DgVK5oxI",
+        "version": "1.3+",
+        "description": "",
+        "author": "Nia",
+        "tags": ""
+    },
+    {
+        "title": "Mommy Chase Skip",
+        "id": "kso--tLYwf8",
+        "version": "<1.2, 1.3+",
+        "description": "",
+        "author": "Sangohanvde",
+        "tags": ""
+    },
+    {
+        "title": "Mommy Chase Skip",
+        "id": "bG2Hd3GGgOI",
+        "version": "<1.2, 1.3+",
+        "description": "",
+        "author": "Nia",
+        "tags": ""
+    },
+    {
+        "title": "Robin/Office Skip",
+        "id": "IDJreYBRPEQ",
+        "version": "<1.2, 1.3+",
+        "description": "",
+        "author": "RubyRain",
+        "tags": ""
+    },
+    {
+        "title": "100% Office Skip (Need Video)",
+        "id": "NEED VIDEO",
+        "version": "<1.2, 1.3+",
+        "description": "",
+        "author": "UNKNOWN",
+        "tags": ""
+    }
+]

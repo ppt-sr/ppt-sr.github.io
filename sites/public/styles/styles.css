@@ -590,6 +590,13 @@ p {
     gap: 3rem;
 }
 
+.strats-container {
+    flex-direction: column;
+    display: flex;
+    width: 80%;
+    gap: 3rem;
+}
+
 .ch3 .guides-container iframe {
     border-radius: 1.5rem;
     border: solid 3px var(--cch3-50);
@@ -601,6 +608,21 @@ p {
 }
 
 .ch1 .guides-container iframe {
+    border-radius: 1.5rem;
+    border: solid 3px var(--cch1-50);
+}
+
+.ch3 .strats-container iframe {
+    border-radius: 1.5rem;
+    border: solid 3px var(--cch3-50);
+}
+
+.ch2 .strats-container iframe {
+    border-radius: 1.5rem;
+    border: solid 3px var(--cch2-50);
+}
+
+.ch1 .strats-container iframe {
     border-radius: 1.5rem;
     border: solid 3px var(--cch1-50);
 }
