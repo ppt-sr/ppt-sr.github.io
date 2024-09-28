@@ -854,7 +854,7 @@ input[type="checkbox"]:checked + .checkboxlabel::after {
 
 #filters-info {
     position: absolute;
-    left: calc(90% + 2rem);
+    left: calc(90% + 7%);
     top: 0.55rem;
     color: var(--text60);
     transition: color 0.2s ease;
@@ -872,6 +872,29 @@ input[type="checkbox"]:checked + .checkboxlabel::after {
 }
 
 #info-popup {
-    left: calc((90% + 5.8rem) - 50%);
-    top: calc((-2rem - 50%) - 10px);
+    left: calc((90% + 7%) - 23.5%);
+    top: calc((-2rem + 50%) - 10px);
+    height: auto;
+}
+
+.info-popup::after {
+    content: "";
+    position: absolute;
+    top: -45px;
+    height: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 20px;
+    border-style: solid;
+    border-color: var(--bg) transparent transparent transparent;
+}
+
+.ch1 .info-popup::after {
+    border-color: transparent transparent var(--cch1-20) transparent;
+}
+.ch2 .info-popup::after {
+    border-color: transparent transparent var(--cch2-20) transparent;
+}
+.ch3 .info-popup::after {
+    border-color: transparent transparent var(--cch3-20) transparent;
 }
