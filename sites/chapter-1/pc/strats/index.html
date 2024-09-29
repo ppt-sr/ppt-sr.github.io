@@ -3,13 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="/public/styles/styles.css">
+    <link rel="stylesheet" href="/public/icomoon/icons.css">
     <link rel="stylesheet" href="/public/styles/scrollbar.css">
     <link rel="icon" type="image/png" href="/images/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PPT SRD</title>
   </head>
   <body class="ch1">
-    <header id="header-ch1" class="header container slide-in">
+    <header id="header" class="header container slide-in">
       <a href="/">
         <img draggable="false" id="header-logo" src="/images/logo.png"></img>
       </a>
@@ -19,13 +20,48 @@
       </div>
     </header>
     <main id="main">
-        <div id="wip-container-ch1" class="wip-container">
+      <div id="wip-container-ch1" class="wip-container">
             <img draggable="false" class="wip-png" src="/images/wip.png"></img>
             <div id="wip-text-container">
             <h4>THIS IS A DRAFT.</h4>
             <h4>PAGE CURRECTLY IN DEVELOPMENT!</h4>
             </div>
         </div>
+        <div id="filters">
+          <hr class="thin-separator"></hr>
+          <div id="filters-info" class="icon-info"></div>
+          <!-- Pop-up structure -->
+          <div style="left: calc((90% + 6%) - 23.5%); top: calc((0.25rem + 50%) - 10px);" id="info-popup" class="popup hidden info-popup">
+            <div class="popup-div">
+              <p> - You can change what you want to see here by clicking on the different Tags! <br> - If no Category (Any%, No Major Glitches) is selected, nothing will show up!!!</p>
+            </div>
+          </div>
+          <div id="filters-container" class="container">
+            <div id="categories-container" class="container">
+              <div id="any-div"><input id="any-cb" type="checkbox"></input><label class="checkboxlabel" for="any-cb">Any%</label></div>
+              <div id="no-major-glitches-div"><input id="no-major-glitches-cb" type="checkbox"></input><label class="checkboxlabel" for="no-major-glitches-cb">No Major Glitches</label></div>
+            </div>
+            <div id="routes-container">
+              <div id="all-tapes-div"><input id="all-tapes-cb" type="checkbox"></input><label class="checkboxlabel" for="all-tapes-cb">All Tapes</label></div>
+              <div id="no-tapes"><input id="no-tapes-cb" type="checkbox"></input><label class="checkboxlabel" for="no-tapes-cb">No Tapes</label></div>
+            </div>
+            <div id="versions-container">
+              <div><input id="old-patch-cb" type="checkbox" data-version="Old Patch"><label class="checkboxlabel" for="old-patch-cb">Old Patch</label></div>
+              <div><input id="current-patch-cb" type="checkbox" data-version="Current Patch"><label class="checkboxlabel" for="current-patch-cb">Current Patch</label></div>
+            </div>
+          </div>
+          <hr class="thin-separator"></hr>
+        </div>
+        <div id="strats-container-ch1" class="strats-container"></div>
+      <!-- Back to Top Button -->
+      <button class="icon-arrow-up2" id="backToTop"></button>
+
       </main>
+
+
+      <script src="/src/video-loaders/ch1/pc-strats.js"></script>
+      <script src="/src/info-popup.js"></script>
+      <script src="/src/back-button.js"></script>
+      <script src="/src/show-header.js"></script>
   </body>
 </html>

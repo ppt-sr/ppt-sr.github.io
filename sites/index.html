@@ -5,15 +5,22 @@
     <link rel="stylesheet" href="/public/styles/styles.css">
     <link rel="stylesheet" href="/public/styles/logo.css">
     <link rel="stylesheet" href="/public/styles/scrollbar.css">
+    <link rel="stylesheet" href="/public/icomoon/icons.css">
     <link rel="icon" type="image/png" href="/images/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PPT SRD</title>
   </head>
   <body>
+    <div id="fake-header"></div>
     <header id="header" class="header container slide-in">
       <a href="/">
         <img draggable="false" id="header-logo" src="/images/logo.png"></img>
       </a>
+      <div id="search-bar">
+        <input id="search-bar-input" type="text" placeholder="Search..."></input><div id="search-icon" class="icon-search"></div>
+        <!-- Contenedor donde se mostrarán los resultados de la búsqueda -->
+        <div id="search-results" class="search-results"></div>
+      </div>
       <div class="container" id="header-title">
         <h1 data-translate="welcome_text">POPPY PLAYTIME SPEEDRUNNING DOCUMENTATION!</h1>
       </div>
@@ -51,5 +58,8 @@
         </div>
       </div>
     </main>
+    <script src="/src/show-header.js"></script>
+    <script src="/src/search-expand.js"></script>
+    <script src="/src/search.js"></script>
   </body>
 </html>

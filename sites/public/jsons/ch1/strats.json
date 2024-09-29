@@ -1,0 +1,194 @@
+[
+    {
+        "title": "Blue Hand Skip (BHS)",
+        "id": "jqwK8JXwF8s",
+        "version": "Old Patch, Current Patch",
+        "description": "Baby Head works better sometimes. <br> For all tapes place the tapes before performing the glitch!",
+        "author": "MythicCheese",
+        "category": {
+            "Any%": {
+                "All Tapes": true,
+                "No Tapes": true
+            }
+        }
+    },
+    {
+        "title": "Unopened Door",
+        "id": "QgDjy8MAOZ8",
+        "version": "Old Patch",
+        "description": "Weird tricky glitch. Not that consistent.",
+        "author": "MythicCheese",
+        "category": {
+            "Any%": {
+                "All Tapes": true,
+                "No Tapes": true
+            },
+            "No Major Glitches": {
+                "All Tapes": true,
+                "No Tapes": true
+            }
+        }
+    },
+    {
+        "title": "Hyperspeed Hallway (HSH)",
+        "id": "2bSGJwXH_w8",
+        "version": "Old Patch, Current Patch",
+        "description": "60FPS makes this trick a lot more consistent",
+        "author": "MythicCheese",
+        "category": {
+            "Any%": {
+                "All Tapes": true,
+                "No Tapes": true
+            },
+            "No Major Glitches": {
+                "All Tapes": true,
+                "No Tapes": true
+            }
+        }
+    },
+    {
+        "title": "Mythic Cubes | Old Patch",
+        "id": "l-0or95GWdE",
+        "version": "Old Patch",
+        "description": "Good luck getting the RNG. <br> For All Tapes, place the tape while the animation for Red Hand is happening",
+        "author": "MythicCheese",
+        "category": {
+            "No Major Glitches": {
+                "All Tapes": true,
+                "No Tapes": true
+            }
+        }
+    },
+    {
+        "title": "Mythic Cubes | Current Patch",
+        "id": "l-0or95GWdE",
+        "version": "Current Patch",
+        "description": "Good luck getting the RNG. <br> For All Tapes, place the tape while the animation for Red Hand is happening",
+        "author": "MythicCheese",
+        "category": {
+            "Any%": {
+                "All Tapes": true,
+                "No Tapes": true
+            },
+            "No Major Glitches": {
+                "All Tapes": true,
+                "No Tapes": true
+            }
+        }
+    },
+    {
+        "title": "Red Hand Skip (RHS) | Old Patch",
+        "id": "KAbUV4uBTzY",
+        "version": "Old Patch",
+        "description": "Tricky Jump. <br> To practice you will need to go back through the hallway to load the jump area.",
+        "author": "MythicCheese",
+        "category": {
+            "Any%": {
+                "All Tapes": true,
+                "No Tapes": true
+            }
+        }
+    },
+    {
+        "title": "Red Hand Skip (RHS) | Current Patch",
+        "id": "EKQ3hXL0jSk",
+        "version": "Old Patch",
+        "description": "Tricky Jumps. <br> AKA Vent Skip.",
+        "author": "Ajai",
+        "category": {
+            "Any%": {
+                "All Tapes": true,
+                "No Tapes": true
+            }
+        }
+    },
+    {
+        "title": "No Slide Reload",
+        "id": "Md7_Y-Kesb8",
+        "version": "Old Patch",
+        "description": "Sometimes when u reload the game the slides don't work correctly. Only in Old Patch.",
+        "author": "MythicCheese",
+        "category": {
+            "No Major Glitches": {
+                "All Tapes": true,
+                "No Tapes": true
+            }
+        }
+    },
+    {
+        "title": "Stair Clip",
+        "id": "rSWFhaQTHl8",
+        "version": "Old Patch",
+        "description": "Sadly since its a clip its not allowed in NMG.",
+        "author": "MythicCheese",
+        "category": {
+            "Any%": {
+                "All Tapes": true,
+                "No Tapes": true
+            }
+        }
+    },
+    {
+        "title": "Catclip | Old Patch",
+        "id": "v0039B49RTA",
+        "version": "Old Patch",
+        "description": "A lot tougher than it looks!",
+        "author": "MythicCheese",
+        "category": {
+            "Any%": {
+                "All Tapes": true,
+                "No Tapes": true
+            },
+            "No Major Glitches": {
+                "All Tapes": true,
+                "No Tapes": true
+            }
+        }
+    },
+    {
+        "title": "Catclip | Current Patch",
+        "id": "w3gDZGgijUg",
+        "version": "Current Patch",
+        "description": "Just get close to the corner and use your hand as shown in the video!",
+        "author": "Nia",
+        "category": {
+            "Any%": {
+                "All Tapes": true,
+                "No Tapes": true
+            },
+            "No Major Glitches": {
+                "All Tapes": true,
+                "No Tapes": true
+            }
+        }
+    },
+    {
+        "title": "Entarino Slide",
+        "id": "Z0jEhJsyJQ8",
+        "version": "Old Patch, Current Patch",
+        "description": "This trick is nearly impossible on Current Patch, it's a lot easier to do on Old Patch.",
+        "author": "MythicCheese",
+        "category": {
+            "Any%": {
+                "All Tapes": true,
+                "No Tapes": true
+            },
+            "No Major Glitches": {
+                "All Tapes": true,
+                "No Tapes": true
+            }
+        }
+    },
+    {
+        "title": "Catwalk Clip",
+        "id": "jrIoy7zHE3Q",
+        "version": "Old Patch",
+        "description": "This skip is insanely difficult and has never been done in a real speedrun yet, so good luck!",
+        "author": "MythicCheese",
+        "category": {
+            "Any%": {
+                "No Tapes": true
+            }
+        }
+    }
+]

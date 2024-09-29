@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+@import url("header.css");
 
 :root {
     --text: #f4f4ef;
@@ -233,11 +233,7 @@ a:active {
     color: #ff5722; /* Orange for active (clicked) links */
 }
 
-.slide-in {
-    opacity: 0;
-    animation: slideInFromTop 0.5s ease-out forwards;
-}
-  
+
 
 body {
     font-family: var(--font_main);
@@ -246,49 +242,6 @@ body {
     padding: 0;
     background-color: var(--bg);
     color: var(--text);
-}
-
-.header {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: top;
-    height: 10vh;
-    color: var(--text);
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.8);
-}
-
-#header {
-    background-color: var(--primary50);
-}
-
-.ch1 .header {
-    background-color: var(--cch1);
-}
-
-.ch2 .header{
-    background-color: var(--cch2);
-}
-
-.ch3 .header {
-    background-color: var(--cch3);
-}
-
-#header-title {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-}
-
-.header h1 {
-    font-size: 35px;
-}
-
-.header a {
-    display: flex;
-    height: 100%;
-    position: absolute;
 }
 
 .wip-png {
@@ -898,3 +851,52 @@ input[type="checkbox"]:checked + .checkboxlabel::after {
 .ch3 .info-popup::after {
     border-color: transparent transparent var(--cch3-20) transparent;
 }
+
+/* Style the back to top button */
+#backToTop {
+    position: fixed; /* Stay in place */
+    bottom: 30px; /* 30px from the bottom */
+    right: 40px; /* 30px from the right */
+    z-index: 99; /* Ensure it's on top of other content */
+    border: none; /* Remove borders */
+    outline: none;
+    background-color: var(--text30); /* Dark background */
+    color: var(--bg);
+    cursor: pointer; /* Pointer/hand icon */
+    padding: 15px; /* Some padding */
+    border-radius: 1rem;
+    font-size: 32px; /* Increase font size */
+    width: 75px;
+    height: 75px;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+
+    /* Start off hidden with slide down */
+    transform: translateY(100px);  /* Move it 100px down initially */
+    opacity: 0;  /* Set initial opacity to 0 */
+    transition: transform 0.3s ease, opacity 0.3s ease, background-color 0.35s cubic-bezier(0.250, 0.460, 0.450, 0.940),  /* Smooth animation for transform and opacity */
+                box-shadow 0.35s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+}
+
+
+/* Hover effects */
+.ch1 #backToTop:hover {
+    background-color: var(--cch1-50); /* Darker background on hover */
+    box-shadow: 0px 0px 10px 10px var(--cch1-5);
+}
+.ch2 #backToTop:hover {
+    background-color: var(--cch2-50); /* Darker background on hover */
+    box-shadow: 0px 0px 10px 10px var(--cch2-5);
+}
+.ch3 #backToTop:hover {
+    background-color: var(--cch3-50); /* Darker background on hover */
+    box-shadow: 0px 0px 10px 10px var(--cch3-5);
+}
+  
+/* When the button is visible (slide up) */
+#backToTop.show {
+    transform: translateY(0);  /* Move it back to its original position */
+    opacity: 1;  /* Make it fully visible */
+}
+
+
+

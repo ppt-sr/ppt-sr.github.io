@@ -39,11 +39,11 @@
         }
     },
     {
-        "title": "Green Hand Early (Need Video)",
-        "id": "NEED VIDEO",
+        "title": "Green Hand Early (GHE)",
+        "id": "SEfdsbruRI4",
         "version": "<1.2",
-        "description": "Please provide us with a video",
-        "author": "UNKNOWN",
+        "description": "Getting the greenhand early in order to get into the train early. You need to click before the load ends, load time depends on your PC and FPS.",
+        "author": "Nia",
         "category": {
             "Any%": {
                 "Out of Bounds": true,

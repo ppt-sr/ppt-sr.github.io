@@ -10,7 +10,7 @@
     <title>PPT SRD</title>
   </head>
   <body class="ch2">
-    <header id="header-ch2" class="header container slide-in">
+    <header id="header" class="header container slide-in">
       <a href="/">
         <img draggable="false" id="header-logo" src="/images/logo.png"></img>
       </a>
@@ -33,7 +33,7 @@
           <!-- Pop-up structure -->
           <div id="info-popup" class="popup hidden info-popup">
             <div class="popup-div">
-              <p> - You can change what you want to see here by clicking on the different Tags! <br> - If no Category (Any%, All Minigames...) is selected nothing will show up!!!</p>
+              <p> - You can change what you want to see here by clicking on the different Tags! <br> - If no Category (Any%, All Minigames...) is selected, nothing will show up!!!</p>
             </div>
           </div>
           <div id="filters-container" class="container">
@@ -56,8 +56,13 @@
           <hr class="thin-separator"></hr>
         </div>
         <div id="strats-container-ch2" class="strats-container"></div>
+      <!-- Back to Top Button -->
+      <button class="icon-arrow-up2" id="backToTop"></button>
+
       </main>
       <script src="/src/video-loaders/ch2/pc-strats.js"></script>
       <script src="/src/info-popup.js"></script>
+      <script src="/src/back-button.js"></script>
+      <script src="/src/show-header.js"></script>
   </body>
 </html>
