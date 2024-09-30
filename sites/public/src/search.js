@@ -1,28 +1,44 @@
+// Mapeo de archivos JSON según la URL
+const jsonFilesMapping = {
+    '/chapter-1/pc/strats/': '/jsons/ch1/strats.json',
+    '/chapter-2/pc/strats/': '/jsons/ch2/strats.json',
+    // Añadir más rutas y archivos JSON según sea necesario
+};
+
 // Seleccionar los elementos necesarios
 const searchResultsContainer = document.getElementById('search-results');
-const searchBarX = document.getElementById('search-bar-input'); // Cambiado a 'searchBarX'
-let data = [];
+const searchBarX = document.getElementById('search-bar-input');
+let allData = []; // Array para almacenar todos los datos de los JSON
 
-// Función para cargar datos desde el archivo JSON
-async function loadData() {
-    try {
-        const response = await fetch('/jsons/ch1/strats.json'); // Ruta al archivo JSON
-        if (!response.ok) {
-            throw new Error('Network response was not ok');
+// Función para cargar todos los datos de los archivos JSON
+async function loadAllData() {
+    const jsonFiles = Object.entries(jsonFilesMapping); // Obtener pares [ruta, archivo]
+
+    const loadPromises = jsonFiles.map(async ([url, jsonFile]) => {
+        try {
+            const response = await fetch(jsonFile);
+            if (!response.ok) {
+                throw new Error(`Network response was not ok: ${response.status} ${response.statusText}`);
+            }
+            const data = await response.json();
+            // Agregar la URL a cada elemento y asegurarse de que cada objeto tenga la URL
+            const enrichedData = data.map(item => ({ ...item, url })); // Añadir la URL a cada item
+            allData.push(...enrichedData);
+        } catch (error) {
+            console.error(`Error loading data from ${jsonFile}:`, error);
         }
-        data = await response.json(); // Convertir la respuesta en JSON
-    } catch (error) {
-        console.error('Error loading data:', error);
-    }
+    });
+
+    await Promise.all(loadPromises);
 }
 
-// Llama a la función para cargar los datos
-loadData();
+// Llama a la función para cargar todos los datos
+loadAllData();
 
 // Evento input para buscar en tiempo real
-searchBarX.addEventListener('input', () => { // Usar 'searchBarX'
+searchBarX.addEventListener('input', () => {
     const searchTerm = searchBarX.value.trim().toLowerCase();
-    
+
     // Si el campo de búsqueda está vacío, limpiar los resultados
     if (searchTerm === '') {
         searchResultsContainer.innerHTML = '';
@@ -31,7 +47,7 @@ searchBarX.addEventListener('input', () => { // Usar 'searchBarX'
     }
 
     // Filtrar los resultados que coincidan con el término de búsqueda en title y description
-    const filteredData = data.filter(item => 
+    const filteredData = allData.filter(item => 
         (item.title && item.title.toLowerCase().includes(searchTerm)) || 
         (item.description && item.description.toLowerCase().includes(searchTerm))
     );
@@ -42,30 +58,28 @@ searchBarX.addEventListener('input', () => { // Usar 'searchBarX'
 
 // Función para mostrar los resultados en el contenedor
 function displayResults(results) {
-    // Limpiar los resultados anteriores
-    searchResultsContainer.innerHTML = '';
+    searchResultsContainer.innerHTML = ''; // Limpiar los resultados anteriores
 
-    // Si no hay resultados, mostrar un mensaje
     if (results.length === 0) {
         searchResultsContainer.innerHTML = '<p>No results found.</p>';
         searchResultsContainer.style.display = 'block';
         return;
     }
 
-    // Crear un elemento para cada resultado
     results.forEach(item => {
         const resultItem = document.createElement('div');
         resultItem.classList.add('search-result-item');
         resultItem.textContent = item.title; // Mostrar solo el title
-        
+
         // Evento al hacer clic en un resultado
         resultItem.addEventListener('click', () => {
-            alert(`Selected: ${item.title}`); // O realizar otra acción
+            // Redirigir a la URL correspondiente con el ID del skip como hash
+            const targetUrl = item.url + '#' + item.id; // Usar el id del item del JSON
+            window.location.href = targetUrl; // Redirigir a la URL
         });
 
         searchResultsContainer.appendChild(resultItem);
     });
 
-    // Mostrar el contenedor de resultados
-    searchResultsContainer.style.display = 'block';
+    searchResultsContainer.style.display = 'block'; // Mostrar el contenedor de resultados
 }

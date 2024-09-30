@@ -9,7 +9,7 @@ fetch('/jsons/ch2/guides.json')
             videoDiv.className = 'strat-div';
             
             videoDiv.innerHTML = `
-                <div class="video-title-div">
+                <div id="${video.id}" class="video-title-div">
                     <h3>${video.title}</h3>
                     <div class="video-div">
                         <iframe width="640" height="360" 

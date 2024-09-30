@@ -2,12 +2,62 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="stylesheet" href="/public/styles/about.css">
+    <link rel="stylesheet" href="/public/styles/styles.css">
+    <link rel="stylesheet" href="/public/styles/scrollbar.css">
+    <link rel="stylesheet" href="/public/icomoon/icons.css">
     <link rel="icon" type="image/png" href="/images/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>POGCHAMP</title>
+    <title>PPT SRD</title>
   </head>
-  <body>
-    <h1>ABOUT WIP</h1>
+  <body class="about">
+    <div id="fake-header"></div>
+    <header id="header" class="header container slide-in">
+      <a href="/">
+        <img draggable="false" id="header-logo" src="/images/logo.png"></img>
+      </a>
+      <div class="container" id="header-title">
+        <h1 data-translate="welcome_text">ABOUT US!</h1>
+      </div>
+    </header>
+    <main>
+      <div class="hero about">
+        <div class="text">
+          <h1>About Us</h1>
+          <p>Welcome to the official Poppy Playtime Speedrunning resource hub! We are the <strong>Poppy Playtime Speedrunning Mod Team</strong>, dedicated to curating and maintaining an extensive collection of glitches, strategies, skips, and guides discovered and shared by the community. <br><br><br> <strong>Ready to dive in?</strong></p>
+        </div>
+        <div id="img">
+          <img draggable="false" src="/images/minihugblue.webp"></img>
+        </div>
+      </div>
+      <div class="hero our-mission">
+        <div class="text">
+          <h1>Our Mission</h1>
+          <p>Our mission is to provide a centralized and accessible platform where <strong>speedrunners & glitch-hunters</strong> can easily find and contribute valuable resources. We aim to foster collaboration and push the boundaries of Poppy Playtime Speedrunning. <br><br><br><strong>Your next world record could start here!</a></strong></p>
+        </div>
+        <div id="img">
+          <img draggable="false" src="/images/minihugpurple.webp"></img>
+        </div>
+      </div>
+      <div class="hero behind-scenes">
+        <div class="text">
+          <h1>Behind the Scenes</h1>
+          <p>We are more than just a collection of strategies and glitches — behind every guide, there’s a passionate team of moderators, speedrunners, and community members working together. From testing the latest skips to documenting key moments, we ensure every piece of content is thoroughly reviewed and verified. <br><br><br><strong>We put in the work so you can focus on the run!</strong></p>
+        </div>
+        <div id="img">
+          <img draggable="false" src="/images/minihugpink.webp"></img>
+        </div>
+      </div>
+      <div class="hero get-involved">
+        <div class="text">
+          <h1>Get Involved</h1>
+          <p>Have you found a new skip or strat? We encourage all community members to share their findings! Feel free to reach out to us on our <a target="_blank" href="https://discord.gg/EbxtqgcP4x">Discord</a> to contribute to the ever-evolving Poppy Playtime Speedrunning. <br><br><br><strong>Be part of this with us!</strong></p>
+        </div>
+        <div id="img">
+          <img draggable="false" src="/images/minihugred.webp"></img>
+        </div>
+      </div>
+    </main>
+    <script src="/src/show-header.js"></script>
   </body>
 </html>

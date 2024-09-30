@@ -1,17 +1,23 @@
 let currentBatch = 0;
 const batchSize = 5;
 let filteredData = [];
+let selectedVideoId = null; // Variable para almacenar el ID del video seleccionado
 
 const storagePrefix = 'pc-ch1-';
 
-// Cargar el JSON y mostrar los videos en lotes
+// Obtener el ID del video del hash en la URL
+const hash = window.location.hash.substring(1); // Remover el '#' del inicio
+if (hash) {
+    selectedVideoId = hash; // Establecer el ID del video seleccionado basado en el hash
+}
+
 fetch('/jsons/ch1/strats.json')
     .then(response => response.json())
     .then(data => {
         const videoContainer = document.getElementById('strats-container-ch1');
+        const searchInput = document.getElementById('search-bar-input'); // Obtener el campo de búsqueda
 
         const updateFilters = () => {
-            // Get the selected filters
             const selectedCategories = [];
             const selectedRoutes = [];
             const selectedVersions = [];
@@ -30,16 +36,25 @@ fetch('/jsons/ch1/strats.json')
                 if (cb.checked) selectedVersions.push(cb.dataset.version);
             });
 
-            // If no main categories are selected, set filteredData to an empty array
+            // Si no hay filtros seleccionados
             if (selectedCategories.length === 0) {
-                filteredData = []; // No videos should be displayed
+                // Si hay un video específico seleccionado, mostrar solo ese video
+                if (selectedVideoId) {
+                    filteredData = data.filter(video => video.id === selectedVideoId);
+                } else {
+                    filteredData = []; // No videos should be displayed
+                }
                 currentBatch = 0; // Reset batch count
                 videoContainer.innerHTML = ''; // Clear existing videos
+                loadNextBatch(); // Cargar el siguiente batch (que será solo el video específico)
                 return; // Exit the function early
             }
 
-            // Filter the videos based on selected categories, routes, and versions
+            // Filtrar los videos
             filteredData = data.filter(video => {
+                // Si hay un video seleccionado, mostrarlo sin importar los filtros
+                if (selectedVideoId && video.id === selectedVideoId) return true;
+
                 const categoryMatch = selectedCategories.length === 0 || selectedCategories.some(cat => {
                     if (video.category[cat]) {
                         const routeMatch = selectedRoutes.length === 0 || selectedRoutes.some(route => video.category[cat][route]);
@@ -55,6 +70,15 @@ fetch('/jsons/ch1/strats.json')
                 return categoryMatch;
             });
 
+            // Aplicar filtro de búsqueda
+            const searchTerm = searchInput.value.toLowerCase();
+            if (searchTerm) {
+                filteredData = filteredData.filter(video => 
+                    video.title.toLowerCase().includes(searchTerm) ||
+                    video.description.toLowerCase().includes(searchTerm)
+                );
+            }
+
             currentBatch = 0; // Reset batch count after filtering
             videoContainer.innerHTML = ''; // Clear existing videos
             loadNextBatch();
@@ -68,9 +92,9 @@ fetch('/jsons/ch1/strats.json')
             videosToLoad.forEach(video => {
                 const videoDiv = document.createElement('div');
                 videoDiv.className = 'strat-div';
-                
+
                 videoDiv.innerHTML = `
-                    <div class="video-title-div">
+                    <div id="${video.id}" class="video-title-div">
                         <h3>${video.title}</h3>
                         <div class="video-div">
                             <iframe width="640" height="360" 
@@ -84,7 +108,7 @@ fetch('/jsons/ch1/strats.json')
                     <div class="video-description-credits-div">
                         <div class="video-description-div">
                             <div>
-                                <label>Patch:</label> <label class="text-30">${video.version}</label>
+                                <label>Version:</label> <label class="text-30">${video.version}</label>
                             </div>
                             <div>
                                 <label>Description:</label> <label class="text-30">${video.description}</label>
@@ -112,22 +136,34 @@ fetch('/jsons/ch1/strats.json')
             }
         });
 
-        // Load checkbox states from localStorage
+        // Cargar el estado de los checkbox desde localStorage
         const checkboxes = document.querySelectorAll('#filters-container input[type="checkbox"]');
         checkboxes.forEach(cb => {
-            const isChecked = localStorage.getItem(storagePrefix+cb.id) === 'true';
+            const isChecked = localStorage.getItem(storagePrefix + cb.id) === 'true';
             cb.checked = isChecked;
         });
 
-        // Add event listeners to checkboxes
+        // Agregar event listeners a los checkboxes
         checkboxes.forEach(cb => {
             cb.addEventListener('change', () => {
-                localStorage.setItem(storagePrefix+cb.id, cb.checked); // Save checkbox state to localStorage
+                localStorage.setItem(storagePrefix + cb.id, cb.checked); // Save checkbox state to localStorage
                 updateFilters(); // Update filters when checkbox state changes
             });
         });
 
-        // Automatically apply filters after loading checkbox states
+        // Event listener para el campo de búsqueda
+        searchInput.addEventListener('input', updateFilters); // Actualizar filtros cuando el input cambia
+
+        // Aplicar filtros automáticamente después de cargar el estado de los checkbox
         updateFilters();
     })
     .catch(error => console.error('Error loading the JSON:', error));
+
+// Función para mostrar un video específico, ignorando los filtros
+function showSpecificVideo(videoId) {
+    selectedVideoId = videoId; // Establecer el ID del video seleccionado
+    currentBatch = 0; // Reiniciar el batch
+    const videoContainer = document.getElementById('strats-container-ch1');
+    videoContainer.innerHTML = ''; // Limpiar los videos existentes
+    updateFilters(); // Volver a aplicar los filtros para mostrar el video seleccionado
+}

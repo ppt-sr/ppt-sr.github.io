@@ -10,6 +10,7 @@
     <title>PPT SRD</title>
   </head>
   <body class="ch1">
+    <div id="fake-header"></div>
     <header id="header" class="header container slide-in">
       <a href="/">
         <img draggable="false" id="header-logo" src="/images/logo.png"></img>
@@ -18,6 +19,7 @@
         <h1 data-translate="welcome_text" style="margin-right:20px">CHAPTER 1 - PC STRATS</h1>
         <h1 data-translate="welcome_text" style="margin-left:20px">DOCUMENTATION!</h1>
       </div>
+      <a id="about-us" href="/about/"><div id="about-us-link">About Us</div></a>
     </header>
     <main id="main">
       <div id="wip-container-ch1" class="wip-container">
@@ -52,6 +54,9 @@
           </div>
           <hr class="thin-separator"></hr>
         </div>
+        <div id="filter-search-bar" class="filter-search-bar">
+          <input id="search-bar-input" type="text" placeholder="Filter Search..."></input><div id="search-icon" class="icon-search"></div>
+        </div>
         <div id="strats-container-ch1" class="strats-container"></div>
       <!-- Back to Top Button -->
       <button class="icon-arrow-up2" id="backToTop"></button>
@@ -63,5 +68,7 @@
       <script src="/src/info-popup.js"></script>
       <script src="/src/back-button.js"></script>
       <script src="/src/show-header.js"></script>
+      <script src="/src/scroll-to-hash.js"></script>
+      <script src="/src/filter-search-expand.js"></script>
   </body>
 </html>

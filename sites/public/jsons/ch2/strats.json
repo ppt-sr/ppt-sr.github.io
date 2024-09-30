@@ -3,7 +3,7 @@
         "title": "Hyperspeed Swing (HSH)",
         "id": "Sh0JLIJpudE",
         "version": "<1.2, 1.3+",
-        "description": "Explanation on how to do HSH. <br> Requires 30fps",
+        "description": "Explanation on how to do HSH. <br> All Skips that need a Hyperspeed Swing need to be done at 30fps.",
         "author": "n0kitsune",
         "category": {
             "Any%": {
@@ -63,7 +63,7 @@
         "title": "NAM Skip",
         "id": "a6CpFrU5WQo",
         "version": "<1.2",
-        "description": "You need to click rapidly in order to add up momentum. <br> Requires 30fps",
+        "description": "You need to click rapidly in order to add up momentum. ",
         "author": "Nam (JMK)",
         "category": {
             "Any%": {
@@ -78,7 +78,7 @@
         "title": "100% NAM Skip",
         "id": "7jYyGEOUBAc",
         "version": "<1.2",
-        "description": "You need to click rapidly in order to add up momentum. (You need more control and be good at Normal NAM) <br> Requires 30fps",
+        "description": "You need to click rapidly in order to add up momentum. (You need more control and be good at Normal NAM) ",
         "author": "LilQuince",
         "category": {
             "100%": {
@@ -186,7 +186,7 @@
         "title": "Musical Memory Skip (MMS) | Hard Version",
         "id": "hNH0PRbAbs0",
         "version": "<1.2, 1.3+",
-        "description": "Requires RNG. <br> Requires 30fps",
+        "description": "Requires RNG. ",
         "author": "Mello",
         "category": {
             "All Minigames": {
@@ -299,6 +299,21 @@
         }
     },
     {
+        "title": "Barry Skip Extended",
+        "id": "AsNVxIypWkc",
+        "version": "1.3+",
+        "description": "Get to the game station directly. You need to get Hyperspeed Swing state.",
+        "author": "Nia",
+        "category": {
+            "Any%": {
+                "Out of Bounds": true
+            },
+            "All Minigames": {
+                "Out of Bounds": true
+            }
+        }
+    },
+    {
         "title": "100% Barry Skip",
         "id": "yaClb5aj5Fo",
         "version": "<1.2, 1.3+",
@@ -366,6 +381,21 @@
         }
     },
     {
+        "title": "Caves Skip",
+        "id": "u_JQEKfLT2o",
+        "version": "1.3+",
+        "description": "One of the hardest skips, requires a hella ton of CPS (around 13-15)",
+        "author": "Nia",
+        "category": {
+            "Any%": {
+                "Out of Bounds": true
+            },
+            "All Minigames": {
+                "Out of Bounds": true
+            }
+        }
+    },
+    {
         "title": "Ruby Skip",
         "id": "-xpfAY8EOLE",
         "version": "<1.2, 1.3+",
@@ -389,6 +419,24 @@
         "description": "The Yellow Canister is easier to manipulate.",
         "author": "Laupig",
         "category": {
+            "All Minigames": {
+                "Out of Bounds": true
+            },
+            "100%": {
+                "Out of Bounds": true
+            }
+        }
+    },
+    {
+        "title": "Water Treatment Skip Swing Variant",
+        "id": "0OnrGhW8Jvw",
+        "version": "1.3+",
+        "description": "Easier than Caves Skip.",
+        "author": "Nia",
+        "category": {
+            "Any%": {
+                "Out of Bounds": true
+            },
             "All Minigames": {
                 "Out of Bounds": true
             },
