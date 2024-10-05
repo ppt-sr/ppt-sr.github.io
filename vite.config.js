@@ -12,6 +12,7 @@ export default defineConfig({
                 404: resolve(__dirname, "sites/404.html"),
                 about: resolve(__dirname, "sites/about/index.html"),
                 faq: resolve(__dirname, "sites/faq/index.html"),
+                credits: resolve(__dirname, "sites/credits/index.html"),
 
                 chapter1: resolve(__dirname, "sites/chapter-1/index.html"),
                     chapter1mobile: resolve(__dirname, "sites/chapter-1/mobile/index.html"),
