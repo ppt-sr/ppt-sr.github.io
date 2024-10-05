@@ -1,13 +1,14 @@
-// Cargar el JSON y mostrar los videos
+// Fetch the JSON and display the videos
 fetch('/jsons/ch2/guides.json')
     .then(response => response.json())
     .then(data => {
         const videoContainer = document.getElementById('guides-container-ch2');
 
+        // Load all videos
         data.forEach(video => {
             const videoDiv = document.createElement('div');
             videoDiv.className = 'strat-div';
-            
+
             videoDiv.innerHTML = `
                 <div id="${video.id}" class="video-title-div">
                     <h3>${video.title}</h3>
@@ -37,6 +38,38 @@ fetch('/jsons/ch2/guides.json')
 
             videoContainer.appendChild(videoDiv);
         });
+
         addCopyButtonListeners();
+        scrollToHash(); // Scroll to the video specified in the hash after loading all videos
     })
     .catch(error => console.error('Error loading the JSON:', error));
+
+// Function to scroll to the element based on the hash in the URL
+const scrollToHash = () => {
+    const targetHash = window.location.hash;
+    if (targetHash) {
+        const targetId = targetHash.substring(1); // Remove the '#' to get the ID
+        const scrollToElement = () => {
+            const targetElement = document.getElementById(targetId); // Select the element by ID
+
+            if (targetElement) {
+                // If the element is found, scroll to it smoothly
+                targetElement.scrollIntoView({ behavior: 'smooth' });
+            } else {
+                // If the element is not found, scroll down and check again
+                window.scrollBy(0, window.innerHeight); // Scroll down by the height of the window
+
+                // Retry checking if the element is now in view
+                setTimeout(scrollToElement, 500); // Retry after 500 ms
+            }
+        };
+
+        // Start the scrolling process
+        scrollToElement();
+    }
+};
+
+// Wait for the page to fully load before starting the hash check
+window.addEventListener('load', () => {
+    scrollToHash();
+});

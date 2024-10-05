@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poppy Playtime Speedrunning FAQ</title>
+    <link rel="stylesheet" href="/public/styles/styles.css">
+    <link rel="stylesheet" href="/public/styles/faq.css">
+    <link rel="stylesheet" href="/public/styles/scrollbar.css">
+    <link rel="stylesheet" href="/public/icomoon/icons.css">
+</head>
+<body class="faq">
+    <div id="fake-header"></div>
+    <header id="header" class="header container slide-in">
+      <a href="/">
+        <img draggable="false" id="header-logo" src="/images/logo.png"></img>
+      </a>
+      <div class="container" id="header-title">
+        <h1 data-translate="welcome_text">FREQUENT ASKED QUESTIONS!</h1>
+      </div>
+    </header>
+    <main id="main">
+        <div id="global-div">
+            <section class="faq-section">
+                <!-- Roles Section -->
+                <h2 id="roles" class="faq-title" onclick="toggleContent('roles-list')">DISCORD ROLES!</h2>
+                <div id="roles-list" class="roles-list faq-content">
+                    <p>There are different Roles in the server such as: @High-Skill, @Moderator, @Glitch Hunter...</p>
+                    <label class="high-skill toggle-btn" onclick="toggleContent('role-high-skill')">@High-Skill</label>
+                    <div id="role-high-skill" class="roles-list answer" >
+                        <p><strong>Chapter 1 PC / Mobile / Console</strong>: Top 10 in Main Category or Top 5 in Lesser Categories.</p>
+                        <p><strong>Chapter 2</strong>: Top 10 in Main Category or Top 5 in Lesser Categories.</p>
+                        <p><strong>Chapter 2 Mobile</strong>: Top 3 in Main Category.</p>
+                        <p><strong>Chapter 3</strong>: Top 5 in Main Category or Top 3 in Lesser Categories or Top 1 in Any IL.</p>
+                        <p>If a Game / Category is not here means that doesn't give High-Skill Role</p>
+                    </div>
+
+                    <label class="glitch-hunter toggle-btn" onclick="toggleContent('role-glitch-hunter')">@Glitch Hunter</label>
+                    <div id="role-glitch-hunter" class="roles-list answer" >
+                        <p>Have discovered at least 2 useful glitches or 1 big skip.</p>
+                    </div>
+
+                    <label class="verifier toggle-btn" onclick="toggleContent('role-verifier')">@Verifier</label>
+                    <div id="role-verifier" class="roles-list answer" >
+                        <p>Selected from Verifier Applications, we look for New Verifiers from time to time! Apply <a target="_blank" href="https://forms.gle/pMhahmhRMZ2NYzqt9">HERE</a>.</p>
+                    </div>
+
+                    <label class="service-badge toggle-btn" onclick="toggleContent('role-service-badge')">@Service Badge</label>
+                    <div id="role-service-badge" class="roles-list answer" >
+                        <p>Have contributed to the Mod Team by being Verifiers or Moderators, most of the time they can join back to the Mod Team whenever they want.</p>
+                    </div>
+
+                    <label class="moderator toggle-btn" onclick="toggleContent('role-moderator')">@Moderator</label>
+                    <div id="role-moderator" class="roles-list answer" >
+                        <p>Selected from verifiers who have proven themselves to be reliable, active, and a positive influence in the community.</p>
+                    </div>
+
+                    <label class="honorable toggle-btn" onclick="toggleContent('role-honorable')">@Honorable</label>
+                    <div id="role-honorable" class="roles-list answer" >
+                        <p>Have contributed to the Community in an important way, (Have made the community known, have helped the community, have given useful tools to the community...).</p>
+                    </div>
+
+                    <label class="playmate toggle-btn" onclick="toggleContent('role-playmate')">@Playmate</label>
+                    <div id="role-playmate" class="roles-list answer" >
+                        <p>Have completed <a target="_blank" href="https://www.speedrun.com/challenges/dz35e3g5-ppt_c1-src-series-poppy-playtime-duo-challenge">Poppy Playtime Duo Challenge</a>.</p>
+                    </div>
+
+                    <label class="dev toggle-btn" onclick="toggleContent('role-dev')">@Dev</label>
+                    <div id="role-dev" class="roles-list answer" >
+                        <p>Be a Mob Entertainment Developer or Employee.</p>
+                    </div>
+
+                    <label class="beans toggle-btn" onclick="toggleContent('role-beans')">@beans</label>
+                    <div id="role-beans" class="roles-list answer" >
+                        <p>Only Bots have this role.</p>
+                    </div>
+
+                    <label class="cheater toggle-btn" onclick="toggleContent('role-cheater')">@Cheater</label>
+                    <div id="role-cheater" class="roles-list answer" >
+                        <p>Pretty self-explanatory.</p>
+                    </div>
+                    
+                    <label class="weirdo toggle-btn" onclick="toggleContent('role-weirdo')">@weirdo</label>
+                    <div id="role-weirdo" class="roles-list answer" >
+                        <p>Shhhh, it's a secret!</p>
+                    </div>
+                    
+                    <label class="meme toggle-btn" onclick="toggleContent('role-meme')">@Meme</label>
+                    <div id="role-meme" class="roles-list answer" >
+                        <p>Shhhh, it's a secret!</p>
+                    </div>
+                    
+                </div>
+                <!-- FAQ about Gameplay -->
+                <h2 class="faq-title" onclick="toggleContent('gameplay-faq')">FAQ about GAMEPLAY!</h2>
+                <div id="gameplay-faq" class="faq-content">
+                    <div class="faq-item">
+                        <h3 class="question" onclick="toggleContent('q1')">Can I mod the game to change textures or models?</h3>
+                        <div id="q1" class="q answer">
+                            <p>Any form of modding the game is not allowed.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3 class="question" onclick="toggleContent('q2')">Can I use macros or bind keybinds to something else?</h3>
+                        <div id="q2" class="q answer">
+                            <p>No, the usage of macros or keybinds is not allowed.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3 class="question" onclick="toggleContent('q3')">How do I perform X glitch or strat?</h3>
+                        <div id="q3" class="q answer">
+                            <p>We have guides that can help you! <br> <br> Check the links in the main document for more details: <br> <a href="/chapter-1/pc/strats/">Chapter 1</a> <br> <a href="/chapter-2/pc/strats/">Chapter 2</a> <br> <a href="/chapter-3/pc/strats/">Chapter 3</a></p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3 class="question" onclick="toggleContent('q4')">How do I instantly Load in Chapter 2?</h3>
+                        <div id="q4" class="q answer">
+                            <p>There are Hotkeys in chapter 2 to load and pause: <br> <span class="code">p</span> for Loading <br> <span class="code">o</span> for Pause.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ about Technical Stuff -->
+                <h2 class="faq-title" onclick="toggleContent('technical-faq')">FAQ about TECHNICAL STUFF!</h2>
+                <div id="technical-faq" class="faq-content">
+                    <div class="faq-item">
+                        <h3 class="question" onclick="toggleContent('q5')">How to set up LiveSplit?</h3>
+                        <div id="q5" class="q answer">
+                            <p>We recommend <a href="https://youtu.be/xq2MCodtH34">Smallant's LiveSplit Tutorial</a> to set up your splits, layout, and more.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3 class="question" onclick="toggleContent('q6')">My Hotkeys don't work in-game, how do I fix it?</h3>
+                        <div id="q6" class="q answer">
+                            <p>If your Hotkeys don't work in-game, go to: <span class="code">Right Click -> Settings -> Global Hotkeys</span> and make sure it's checked.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3 class="question" onclick="toggleContent('q7')">How do I set up my autosplitter / load remover?</h3>
+                        <div id="q7" class="q answer">
+                            <p>We provide guides to set up autosplitters for every chapter. Check the main document for links.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3 class="question" onclick="toggleContent('qq')">How do I enable console?</h3>
+                        <div id="qq" class="q answer">
+                            <p>The console is a Tool called "Universal Unreal Unlocker" or "UUU" / "UUEU" for short download it here: <br> <a target="_blank" href="https://framedsc.com/GeneralGuides/universal_ue4_consoleunlocker.htm">UUEU</a> Full guide on how to use UUEU <strong>(For Chapter's 1 & 2)</strong>. <br> <a target="_blank" href="https://opm.fransbouma.com/uuuv5.htm">UUE5U</a> <strong>(For Chapter 3)</strong>.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3 class="question" onclick="toggleContent('qq1')">How do I Load any Save / checkpoint?</h3>
+                        <div id="qq1" class="q answer">
+                            <p>We provide a Checkpoint Loader for Chapter 3 and a guide to load checkpoints manually: <br> <a target="_blank" href="https://www.speedrun.com/ppt_c3/resources/f3uo0">Chapter 3 Checkpoint Loader</a>. <br><br> We also provide a guide by <strong>Holo</strong> to manually load checkpoints: <br> <a href="/chapter-1/pc/guides/#iQgDAEKBTmk">Chapter 1</a> <br> <a href="/chapter-2/pc/guides/#iQgDAEKBTmk">Chapter 2</a> <br> <a href="/chapter-3/pc/guides/#iQgDAEKBTmk">Chapter 3</a></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- FAQ about Speedrun.com & General Stuff -->
+            <section class="faq-section">
+                <h2 class="faq-title" onclick="toggleContent('speedrun-faq')">FAQ about Speedrun.com!</h2>
+                <div id="speedrun-faq" class="faq-content">
+                    <div class="faq-item">
+                        <h3 class="question" onclick="toggleContent('q8')">How long does it take to verify a run?</h4>
+                        <div id="q8" class="q answer">
+                            <p>Usually between 1 or 2 weeks but remember Verifiers and Moderators don't get paid and have lives outside.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3 class="question" onclick="toggleContent('q9')">How can I become a Verifier / Mod?</h4>
+                        <div id="q9" class="q answer">
+                            <p>Apply to our <a href="https://forms.gle/pMhahmhRMZ2NYzqt9">Verifier applications</a> for more information read <a onclick="toggleContent('roles-list'); toggleContent('role-verifier')">DISCORD ROLES</a>.</p>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="faq-title" onclick="toggleContent('acronyms-faq')">ACRONYMS!</h2>
+                <div id="acronyms-faq" class="faq-content">
+                    <div id="roles-list" class="sub-faq-content">
+                        <p class="font-2">For any other acronyms ask in Discord #general or #ask-for-help</p>
+
+                        <label class="categories toggle-btn" onclick="toggleContent('acronyms-categories')">Categories</label>
+                        <div id="acronyms-categories" class="roles-list answer">
+                            <p>
+                                <strong>NMG</strong> (No Major Glitches) <br>
+                                <strong>NMS</strong></NMS> (No Major Skips) <br>
+                                <strong>OoB</strong> (Out of Bounds) <br>
+                                <strong>IB</strong> (Inbounds) <br>
+                                <strong>IL</strong> (Individual Level)
+                            </p>
+                        </div>
+
+                        <!-- Chapter 1 Button -->
+                        <label class="chapter1 toggle-btn" onclick="toggleContent('acronyms-chapter1')">Chapter 1</label>
+                        <div id="acronyms-chapter1" class="roles-list answer">
+                            <p>
+                                <strong>BHS</strong> (Blue Hand Skip) <br>
+                                <strong>RHS</strong> (Red Hand Skip) <br>
+                                <strong>NRHS</strong> (New Red Hand Skip) <br>
+                                <strong>HSH</strong> (Hyper-Speed Hallway)
+                            </p>
+                        </div>
+
+                        <!-- Chapter 2 Button -->
+                        <label class="chapter2 toggle-btn" onclick="toggleContent('acronyms-chapter2')">Chapter 2</label>
+                        <div id="acronyms-chapter2" class="roles-list answer">
+                            <p>
+                                <strong>HSS</strong> (Hyper-Speed Swing) <br>
+                                <strong>GHE</strong> (Green Hand Early) <br>
+                                <strong>(M)HGS</strong> (Mommy Hand Grab Skip) <br>
+                                <strong>MMS</strong> (Musical Memory Skip) <br>
+                                <strong>WAWS / WAHS</strong> (Whack a Wuggy Skip) <br>
+                                <strong>GGD</strong> (God Gamer Duo)
+                            </p>
+                        </div>
+
+                        <!-- Chapter 3 Button -->
+                        <label class="chapter3 toggle-btn" onclick="toggleContent('acronyms-chapter3')">Chapter 3</label>
+                        <div id="acronyms-chapter3" class="roles-list answer">
+                            <p>
+                                HSH (Home Sweet Home) <br>
+                                PH (Play House) <br>
+                                PHS (Purple Hand Skip) <br>
+                                THoJS / HoJS (*The* Hour of Joy Skip)
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer-main">
+          <div class="footer-left">
+            <div class="footer-pptsr">
+              <a href="/">
+                <img draggable="false" id="footer-logo" src="/images/logo.png" alt="Poppy Playtime Logo"></img>
+              </a>
+              <div id="footer-text">
+                <h1>Poppy Playtime</h1>
+                <h1>Speedrunning</h1>
+              </div>
+            </div>
+            <hr class="thin-separator"></hr>
+            <div class="footer-bottom">
+              <div id="powered-by">
+                <h1>POWERED BY <a href="https://github.com/ppt-sr/"><div class="icon-github"></div> GITHUB</a></h1>
+              </div>
+              <p id="copyright">© 2024 Poppy Playtime Speedrunning. All Rights Reserved.</p>
+            </div>
+          </div>
+          <div class="footer-right">
+            <div class="footer-socials footer-r">
+              <div><h3>FIND US HERE</h3></div>
+              <a target="_blank" href="https://discord.gg/EbxtqgcP4x">
+                <icon class="icon-discord"></icon> Discord
+              </a>
+              <a target="_blank" href="https://www.speedrun.com/series/poppy_playtime">
+                <span class="icon-src"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span><span class="path10"></span><span class="path11"></span><span class="path12"></span><span class="path13"></span><span class="path14"></span><span class="path15"></span><span class="path16"></span><span class="path17"></span><span class="path18"></span><span class="path19"></span><span class="path20"></span><span class="path21"></span><span class="path22"></span><span class="path23"></span><span class="path24"></span><span class="path25"></span><span class="path26"></span><span class="path27"></span><span class="path28"></span><span class="path29"></span><span class="path30"></span><span class="path31"></span><span class="path32"></span><span class="path33"></span><span class="path34"></span><span class="path35"></span><span class="path36"></span><span class="path37"></span><span class="path38"></span><span class="path39"></span><span class="path40"></span><span class="path41"></span><span class="path42"></span><span class="path43"></span><span class="path44"></span><span class="path45"></span><span class="path46"></span><span class="path47"></span><span class="path48"></span><span class="path49"></span><span class="path50"></span><span class="path51"></span><span class="path52"></span><span class="path53"></span><span class="path54"></span><span class="path55"></span><span class="path56"></span><span class="path57"></span><span class="path58"></span><span class="path59"></span><span class="path60"></span><span class="path61"></span><span class="path62"></span><span class="path63"></span><span class="path64"></span><span class="path65"></span><span class="path66"></span><span class="path67"></span><span class="path68"></span><span class="path69"></span><span class="path70"></span><span class="path71"></span><span class="path72"></span><span class="path73"></span><span class="path74"></span><span class="path75"></span><span class="path76"></span><span class="path77"></span><span class="path78"></span><span class="path79"></span><span class="path80"></span><span class="path81"></span><span class="path82"></span><span class="path83"></span><span class="path84"></span><span class="path85"></span><span class="path86"></span><span class="path87"></span><span class="path88"></span><span class="path89"></span><span class="path90"></span><span class="path91"></span><span class="path92"></span><span class="path93"></span><span class="path94"></span><span class="path95"></span><span class="path96"></span><span class="path97"></span><span class="path98"></span><span class="path99"></span><span class="path100"></span><span class="path101"></span><span class="path102"></span><span class="path103"></span><span class="path104"></span><span class="path105"></span><span class="path106"></span><span class="path107"></span><span class="path108"></span><span class="path109"></span><span class="path110"></span><span class="path111"></span><span class="path112"></span><span class="path113"></span><span class="path114"></span><span class="path115"></span><span class="path116"></span></span>
+                 Speedrun.com
+              </a>
+            </div>
+            <div class="footer-contact footer-r">
+              <h3>EXPLORE</h3>
+              <a href="/about/" class="footer-link">About us</a>
+              <a href="/faq/" class="footer-link">FAQ</a>
+              <a href="/credits/" class="footer-link">Credits</a>
+            </div>
+            <div class="footer-external-resources footer-r">
+              <h3>EXTERNAL RESOURCES</h3>
+              <a target="_blank" href="/images/" class="footer-link">Images</a>
+              <a target="_blank" href="https://docs.google.com/document/d/1ZBhgz7YiBVTYVl-f0gTUMckmy-ZWZhMF71wbrpkaTQU/edit" class="footer-link">Old Chapter 1 Doc</a>
+              <a target="_blank" href="https://docs.google.com/document/d/1tPX38CsEos7zeDxiFW0Jpxa79fhX9gv6S4BoiZkHmjg/" class="footer-link">Old Chapter 2 Doc</a>
+              <a target="_blank" href="https://docs.google.com/document/d/1F3w_erlfPS-khiiUjehuWXQAS9bKMXhDl3ZiCeEdCaI/edit#heading=h.8og199uxzo4c" class="footer-link">Old Chapter 3 Doc</a>
+            </div>
+          </div>
+        </div>
+      </footer> 
+    <script>
+        function toggleContent(id) {
+            const content = document.getElementById(id);
+            const isVisible = content.classList.contains('show');
+
+            if (isVisible) {
+                // Hide the content
+                content.classList.remove('show');
+                setTimeout(() => {
+                    content.style.height = '0'; // Collapse height to 0
+                }, 300); // Match the duration of the CSS transition
+            } else {
+                // Show the content
+                content.style.height = 'auto'; // Allow height to expand naturally
+                content.classList.add('show');
+            }
+        }
+    </script>
+    <script src="/src/show-header.js"></script>
+</body>
+</html>

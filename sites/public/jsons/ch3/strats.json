@@ -1,0 +1,438 @@
+[
+    {
+        "title": "Phone Call Skip",
+        "id": "KQQGQw2L6ME",
+        "description": "Consistent Set-Up.",
+        "author": "Sangohanvde",
+        "category": {
+            "Any%": {
+                "Inbounds": true,
+                "No Major Skips": true
+            },
+            "All Stages": {
+                "Inbounds": true,
+                "No Major Skips": true
+            },
+            "100%": {
+                "Out of Bounds": true,
+                "Inbounds": true,
+                "No Major Skips": true
+            }
+        },
+        "restricted": true
+    },
+    {
+        "title": "First Area Skip",
+        "id": "8hHfolxcKxk",
+        "description": "If you do this with a Prop Launch its UNRESTRICTED.",
+        "author": "ontrigger",
+        "category": {
+            "Any%": {
+                "Out of Bounds": true
+            },
+            "All Stages": {
+                "Out of Bounds": true
+            }
+        },
+        "restricted": true
+    },
+    {
+        "title": "First Puzzle Skip",
+        "id": "JBBCngxUA0Y",
+        "description": "If you miss this first try it will marked down as Out of Bounds. <br> Right now not in use.",
+        "author": "Hawkz",
+        "category": {
+            "Any%": {
+                "Out of Bounds": true,
+                "Inbounds": true
+            },
+            "All Stages": {
+                "Out of Bounds": true,
+                "Inbounds": true
+            },
+            "100%": {
+                "Out of Bounds": true,
+                "Inbounds": true
+            }
+        },
+        "restricted": true
+    },
+    {
+        "title": "Tram Skip | Prop Launch",
+        "id": "TMLl8k6toRI",
+        "description": "Make sure to hit the trigger in the red flashing area.",
+        "author": "ClownTech",
+        "category": {
+            "Any%": {
+                "Out of Bounds": true
+            }
+        }
+    },
+    {
+        "title": "Tram Skip",
+        "id": "m2C35NRPwa4",
+        "description": "Video is self explanatory.",
+        "author": "Nia",
+        "category": {
+            "Any%": {
+                "Out of Bounds": true
+            }
+        },
+        "restricted": true
+    },
+    {
+        "title": "Tram Skip 100% / All Stages",
+        "id": "sq3qA0Hs7-Y",
+        "description": "Follow the lineup!",
+        "author": "Nerd_Squared",
+        "category": {
+            "All Stages": {
+                "Out of Bounds": true
+            },
+            "100%": {
+                "Out of Bounds": true
+            }
+        }
+    },
+    {
+        "title": "Tram Skip All Stages / 100%",
+        "id": "I_yT2SQkur0",
+        "description": "The normal one softlocks you in the gas room.",
+        "author": "Hawkz",
+        "category": {
+            "All Stages": {
+                "Out of Bounds": true
+            },
+            "100%": {
+                "Out of Bounds": true
+            }
+        },
+        "restricted": true
+    },
+    {
+        "title": "HSH Skip All Stages",
+        "id": "-OLSIOhu3u4",
+        "description": "Video is self explanatory.",
+        "author": "ontrigger",
+        "category": {
+            "All Stages": {
+                "Out of Bounds": true
+            }
+        }
+    },
+    {
+        "title": "Second Floor Skip",
+        "id": "YwBX4QDMpso",
+        "description": "It's easier to touch the trigger on a 45º angle. <br> For 100% place the tape before performing the skip.",
+        "author": "Lilleman",
+        "category": {
+            "Any%": {
+                "Inbounds": true
+            },
+            "All Stages": {
+                "Inbounds": true
+            },
+            "100%": {
+                "Out of Bounds": true,
+                "Inbounds": true
+            }
+        },
+        "restricted": true
+    },
+    {
+        "title": "Early Dome",
+        "id": "Vsr8tfY0xhk",
+        "description": "You still need the gasmask for later.",
+        "author": "Lilleman",
+        "category": {
+            "Any%": {
+                "Inbounds": true
+            },
+            "All Stages": {
+                "Inbounds": true
+            },
+            "100%": {
+                "Inbounds": true
+            }
+        },
+        "restricted": true
+    },
+    {
+        "title": "Dome Elevator Skip",
+        "id": "ciDdzeHyM40",
+        "description": "Video is self explanatory.",
+        "author": "Lilleman",
+        "category": {
+            "Any%": {
+                "No Major Skips": true
+            },
+            "All Stages": {
+                "No Major Skips": true
+            },
+            "100%": {
+                "No Major Skips": true
+            }
+        },
+        "restricted": true
+    },
+    {
+        "title": "Vent Skip",
+        "id": "tn0duTft9CM",
+        "description": "For 100% grab the note before getting in position.",
+        "author": "Sangohanvde",
+        "category": {
+            "Any%": {
+                "Inbounds": true
+            },
+            "All Stages": {
+                "Inbounds": true
+            },
+            "100%": {
+                "Out of Bounds": true,
+                "Inbounds": true
+            }
+        },
+        "restricted": true
+    },
+    {
+        "title": "Full School Route",
+        "id": "9s13jLuaeYM",
+        "description": "Video is self-explanatory [IGNORE CAVES PART]",
+        "author": "LA",
+        "category": {
+            "Any%": {
+                "Inbounds": true,
+                "No Major Skips": true
+            },
+            "All Stages": {
+                "Inbounds": true,
+                "No Major Skips": true
+            },
+            "100%": {
+                "Out of Bounds": true,
+                "Inbounds": true,
+                "No Major Skips": true
+            }
+        },
+        "restricted": true
+    },
+    {
+        "title": "Caves Skip",
+        "id": "5LYVMCytYgQ",
+        "description": "Video is self-explanatory",
+        "author": "ontrigger",
+        "category": {
+            "Any%": {
+                "Inbounds": true
+            },
+            "All Stages": {
+                "Out of Bounds": true,
+                "Inbounds": true
+            },
+            "100%": {
+                "Out of Bounds": true,
+                "Inbounds": true
+            }
+        },
+        "restricted": true
+    },
+    {
+        "title": "Box Puzzle Skip [NEEDS REPLACEMENT]",
+        "id": "aN_EbKmzcHg",
+        "description": "Video explains everything well",
+        "author": "mushymeow",
+        "category": {
+            "Any%": {
+                "Inbounds": true
+            },
+            "All Stages": {
+                "Inbounds": true
+            },
+            "100%": {
+                "Inbounds": true
+            }
+        },
+        "restricted": true
+    },
+    {
+        "title": "Playhouse Skip",
+        "id": "20KgR3B38DM",
+        "description": "You need “View Distance” on “Ultra”",
+        "author": "Nam",
+        "category": {
+            "All Stages": {
+                "Out of Bounds": true
+            },
+            "100%": {
+                "Out of Bounds": true
+            }
+        }
+    },
+    {
+        "title": "Office Caves Half Puzzle Skip",
+        "id": "cnNjH6JGJZk",
+        "description": "Video is self-explanatory",
+        "author": "LA",
+        "category": {
+            "Any%": {
+                "Inbounds": true,
+                "No Major Skips": true
+            },
+            "All Stages": {
+                "Out of Bounds": true,
+                "Inbounds": true,
+                "No Major Skips": true
+            },
+            "100%": {
+                "Out of Bounds": true,
+                "Inbounds": true,
+                "No Major Skips": true
+            }
+        },
+        "restricted": true
+    },
+    {
+        "title": "Last Puzzle Skip",
+        "id": "lsuZO4UnmCk",
+        "description": "Video is self-explanatory",
+        "author": "LA",
+        "category": {
+            "Any%": {
+                "Inbounds": true,
+                "No Major Skips": true
+            },
+            "All Stages": {
+                "Out of Bounds": true,
+                "Inbounds": true,
+                "No Major Skips": true
+            },
+            "100%": {
+                "Out of Bounds": true,
+                "Inbounds": true,
+                "No Major Skips": true
+            }
+        },
+        "restricted": true
+    },
+    {
+        "title": "Catnap Jumpscare Skip",
+        "id": "sjvielVNElA",
+        "description": "Video explains everything",
+        "author": "Cindorian",
+        "category": {
+            "Any%": {
+                "Inbounds": true
+            },
+            "All Stages": {
+                "Out of Bounds": true,
+                "Inbounds": true
+            },
+            "100%": {
+                "Out of Bounds": true,
+                "Inbounds": true
+            }
+        },
+        "restricted": true
+    },
+    {
+        "title": "Poppy Door Key Skip",
+        "id": "U7IK1U4JEvo",
+        "description": "You can open the Poppy Door early but the plug doesn't appear until you complete Office, however the door stays open. <br> You need to touch the trigger at the door below the statue",
+        "author": "Nia",
+        "category": {
+            "Any%": {
+                "Inbounds": true,
+                "No Major Skips": true
+            },
+            "All Stages": {
+                "Inbounds": true,
+                "No Major Skips": true
+            },
+            "100%": {
+                "Inbounds": true,
+                "No Major Skips": true
+            }
+        },
+        "restricted": true
+    },
+    {
+        "title": "Barrelevator Skip",
+        "id": "PuCSfIOpOz8",
+        "description": "Can be tricky to pull off.",
+        "author": "Nia",
+        "category": {
+            "Any%": {
+                "Out of Bounds": true
+            },
+            "All Stages": {
+                "Out of Bounds": true
+            },
+            "100%": {
+                "Out of Bounds": true
+            }
+        },
+        "restricted": true
+    },
+    {
+        "title": "Elevator Clip",
+        "id": "-xa06l9Od5A",
+        "description": "The bounce at the end is not necessary; you can press the button and the elevator will rise.",
+        "author": "Laupig",
+        "category": {
+            "Any%": {
+                "Out of Bounds": true
+            }
+        }
+    },
+    {
+        "title": "Purple Hand Skip",
+        "id": "j9GRn98frEk",
+        "description": "Get the Green Charge when there are 5 seconds left then scroll upwards anytime during those 5 seconds, if done correctly you should receive purple hand after defeating CatNap",
+        "author": "Danger1451",
+        "category": {
+            "Any%": {
+                "Out of Bounds": true
+            }
+        },
+        "restricted": true
+    },
+    {
+        "title": "Elevator Skip",
+        "id": "IuDxsjIeVuY",
+        "description": "It's a bit precise, but not too hard",
+        "author": "RayRay",
+        "category": {
+            "Any%": {
+                "Out of Bounds": true
+            },
+            "All Stages": {
+                "Out of Bounds": true
+            },
+            "100%": {
+                "Out of Bounds": true
+            }
+        },
+        "restricted": true
+    },
+    {
+        "title": "The Hour of Joy Skip",
+        "id": "mewCAtO8Ag4",
+        "description": "The video explains everything you need to know",
+        "author": "RayRay",
+        "category": {
+            "Any%": {
+                "Out of Bounds": true,
+                "Inbounds": true
+            },
+            "All Stages": {
+                "Out of Bounds": true,
+                "Inbounds": true
+            },
+            "100%": {
+                "Out of Bounds": true,
+                "Inbounds": true
+            }
+        },
+        "restricted": true
+    }
+]

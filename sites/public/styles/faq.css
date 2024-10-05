@@ -1,0 +1,304 @@
+
+
+main p {
+    font-family: var(--font_main);
+    font-size: 20px;
+}
+
+/* Estilos básicos */
+.faq-section {
+    margin: 20px;
+}
+
+main h1, h2, h3 {
+    cursor: pointer;
+}
+
+
+.roles-list {
+    margin: 10px 0;
+}
+
+.faq-content {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 0.3s ease, max-height 0.3s ease;
+    margin: 10px 0;
+    margin-left: 10px;
+}
+
+.question {
+    padding: 0.75rem 1rem;
+    border: solid 2px var(--bg);
+    transition: border-color 0.3s ease;
+    margin: 0px;
+    border-radius: 1rem;
+}
+
+.question:hover {
+    border-color: var(--text25);
+}
+
+.faq-content.show {
+    opacity: 1;
+    max-height: 5000px; /* Adjust this to the max height of your content */
+}
+
+
+.faq-item {
+    margin-bottom: 15px;
+}
+
+.toggle-btn {
+    padding: 10px 15px;
+    border: solid 2px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 95%;
+    border-radius: 0.5rem;
+    font-family: var(--font_main);
+    justify-self: start;
+    align-self: flex-start;
+    transition: border 0.3s ease;
+    background-color: var(--bg);
+}
+
+.roles-list.answer {
+    opacity: 0; /* Start invisible */
+    transform: translateY(-10px); /* Start slightly above */
+    transition: opacity 0.3s ease, transform 0.3s ease, padding 0s 0.3s, margin 0s 0.3s; /* Smooth transitions */
+    height: 0; /* Set to 0 height initially */
+    overflow: hidden; /* Hide overflow */
+    padding: 0;
+    margin: 0;
+}
+
+.roles-list.answer.show {
+    opacity: 1; /* Fully visible */
+    transform: translateY(0); /* Reset position */
+    height: auto; /* Allow height to expand naturally */
+    margin-left: 20px;
+    padding: 10px;
+    background-color: var(--text10);
+    border-left: 4px solid var(--secondary);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+
+
+main .hidden {
+    display: none;
+}
+
+
+#roles-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* BUTTONS */
+
+.categories.toggle-btn {
+    border-color: var(--bg);
+    color: var(--text);
+    background-color: var(--secondary);
+}
+#acronyms-categories {
+    border-color: var(--secondary);
+}
+
+.chapter1.toggle-btn {
+    color: var(--bg);
+    background-color: var(--cch1);
+}
+#acronyms-chapter1 {
+    border-color: var(--cch1);
+}
+
+.chapter2.toggle-btn {
+    color: var(--bg);
+    background-color: var(--cch2);
+}
+#acronyms-chapter2 {
+    border-color: var(--cch2);
+}
+
+.chapter3.toggle-btn {
+    color: var(--bg);
+    background-color: var(--cch3);
+}
+#acronyms-chapter3 {
+    border-color: var(--cch3);
+}
+
+
+
+.high-skill.toggle-btn {
+    color: var(--bg);
+    background-color: hsl(48, 86%, 45%);
+}
+#role-high-skill {
+    border-color: hsl(48, 86%, 45%);
+}
+
+.glitch-hunter.toggle-btn {
+    color: var(--bg);
+    background-color: #2ecc71;
+}
+#role-glitch-hunter {
+    border-color: #2ecc71;
+}
+
+.verifier.toggle-btn {
+    border-color: var(--bg);
+    color: var(--text);
+    background-color: #843da4;
+}
+#role-verifier {
+    border-color: #843da4;
+}
+
+.service-badge.toggle-btn {
+    border-color: var(--bg);
+    color: var(--text);
+    background-color: #e74c3c;
+}
+#role-service-badge {
+    border-color: #e74c3c;
+}
+
+.moderator.toggle-btn {
+    color: var(--bg);
+    background-color: #3498db;
+}
+#role-moderator {
+    border-color: #3498db;
+}
+
+.honorable.toggle-btn {
+    border-color: var(--bg);
+    color: var(--text);
+    background-color: #e91e63;
+}
+#role-honorable {
+    border-color: #e91e63;
+}
+
+.playmate.toggle-btn {
+    color: var(--bg);
+    background-color: #fefe97;
+}
+#role-playmate {
+    border-color: #fefe97;
+}
+
+.dev.toggle-btn {
+    color: var(--bg);
+    background-color: #10b893;
+}
+#role-dev {
+    border-color: #10b893;
+}
+
+.beans.toggle-btn {
+    border-color: var(--bg);
+    color: var(--text);
+    background-color: #a84300;
+}
+#role-beans {
+    border-color: #a84300;
+}
+
+.cheater.toggle-btn {
+    border-color: var(--bg);
+    color: var(--text);
+    background-color: #2a2a2a;
+}
+#role-cheater {
+    border-color: #2a2a2a;
+}
+
+.weirdo.toggle-btn {
+    border-color: var(--bg);
+    color: var(--text);
+    background-color: #98443e;
+}
+#role-weirdo {
+    border-color: #98443e;
+}
+
+.meme.toggle-btn {
+    border-color: var(--text10);
+    color: var(--text);
+}
+#role-meme {
+    border-color: var(--text10);
+}
+
+
+.toggle-btn:hover {
+    border-color: var(--text50);
+}
+
+
+.answer {
+    margin-left: 20px;
+    padding: 10px;
+    background-color: var(--text10);
+    border-left: 4px solid var(--secondary);
+}
+
+main a {
+    color: #008cba;
+    text-decoration: none;
+}
+
+main a:hover {
+    text-decoration: underline;
+}
+
+#global-div {
+    width: 80%;
+}
+
+.faq-title {
+    background-color: var(--secondary20);
+    padding: 1rem;
+    width: 100%;
+    border: solid 2px var(--secondary);
+    border-radius: 1rem 1rem 0rem 0rem ;
+}
+
+.faq .header {
+    background-color: var(--secondary);
+}
+
+.q.answer {
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease, padding 0s 0.3s, margin 0s 0.3s;
+    height: 0;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+.q.answer.show {
+    opacity: 1;
+    transform: translateY(0);
+    height: auto;
+    margin-top: 10px;
+    margin-left: 20px;
+    padding: 10px;
+    background-color: var(--text10);
+    border-left: 4px solid var(--secondary);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.font-2 {
+    font-family: var(--font_cursive);
+    font-size: 1.75rem;
+    margin-bottom: 20px;
+}

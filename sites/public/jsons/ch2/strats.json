@@ -1,10 +1,55 @@
 [
     {
-        "title": "Hyperspeed Swing (HSH)",
+        "title": "Hyperspeed Swing (HSS)",
         "id": "Sh0JLIJpudE",
         "version": "<1.2, 1.3+",
-        "description": "Explanation on how to do HSH. <br> All Skips that need a Hyperspeed Swing need to be done at 30fps.",
+        "description": "Explanation on how to do HSS. <br> All Skips that need a Hyperspeed Swing need to be done at 30fps.",
         "author": "n0kitsune",
+        "category": {
+            "Any%": {
+                "Out of Bounds": true,
+                "Inbounds": true,
+                "No Major Glitches": true,
+                "No Major Skips": true
+            },
+            "All Minigames": {
+                "Out of Bounds": true,
+                "Inbounds": true,
+                "No Major Glitches": true,
+                "No Major Skips": true
+            },
+            "100%": {
+                "Out of Bounds": true,
+                "Inbounds": true,
+                "No Major Glitches": true,
+                "No Major Skips": true
+            }
+        }
+    },
+    {
+        "title": "Pillow Clip Tutorial",
+        "id": "XdiDEVpVfxQ",
+        "version": "<1.2, 1.3+",
+        "description": "Video is self explanatory!",
+        "author": "proac",
+        "category": {
+            "Any%": {
+                "Out of Bounds": true
+            },
+            "All Minigames": {
+                "Out of Bounds": true
+            },
+            "100%": {
+                "Out of Bounds": true
+            }
+        }
+    },
+    {
+        "title": "Pillow Boost Tutorial",
+        "id": "Rf0N2HS6GtI",
+        "version": "<1.2, 1.3+",
+        "description": "Video is self explanatory!",
+        "author": "proac",
         "category": {
             "Any%": {
                 "Out of Bounds": true,
@@ -109,7 +154,7 @@
         "id": "0S0KuGMnrg4",
         "version": "<1.2, 1.3+",
         "description": "As video Shows, stand around those tiles.",
-        "author": "n0kitusne",
+        "author": "n0kitsune",
         "category": {
             "Any%": {
                 "Inbounds": true
@@ -232,10 +277,10 @@
     },
     {
         "title": "Whack-a-Wuggy Skip Out of Bounds",
-        "id": "NEED VIDEO",
+        "id": "8A_TMcBmEk8",
         "version": "<1.2",
-        "description": "Please provide us with a video",
-        "author": "UNKNOWN",
+        "description": "WAH SKIP! Video is self explanatory.",
+        "author": "Nia",
         "category": {
             "All Minigames": {
                 "Out of Bounds": true
@@ -345,11 +390,11 @@
         }
     },
     {
-        "title": "Statues Skip w/ crouching (Need updated Video)",
-        "id": "ZN8YzGuwAjI",
+        "title": "Statues Skip w/ crouching",
+        "id": "uOxXseQ9iUo",
         "version": "<1.2, 1.3+",
         "description": "There is a few spots it works better on.",
-        "author": "Wheremysalsa",
+        "author": "Nia",
         "category": {
             "All Minigames": {
                 "Out of Bounds": true,
@@ -479,7 +524,7 @@
         }
     },
     {
-        "title": "Proac Skip",
+        "title": "proac Skip",
         "id": "mjKg1DPQ5mg",
         "version": "1.3+",
         "description": "Video is self explanatory.",

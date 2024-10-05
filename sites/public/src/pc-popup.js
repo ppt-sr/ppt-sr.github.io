@@ -11,9 +11,10 @@ document.addEventListener('DOMContentLoaded', function() {
         const rect = button.getBoundingClientRect(); // Obtener la posición y el tamaño del botón
 
         // Posicionar el popup centrado y encima del botón, ajustando el scroll
+        popup.classList.add('opened-bot-popup');
         popup.style.display = 'block';
         popup.style.left = rect.left + (rect.width / 2) - (popup.offsetWidth / 2) + 'px';
-        popup.style.top = rect.top + window.scrollY - popup.offsetHeight - 10 + 'px'; // 10px para el espacio de la flecha
+        popup.style.top = rect.top + window.scrollY - popup.offsetHeight + 10 + 'px'; // 10px para el espacio de la flecha
 
         // Prevenir que otros clics lo cierren inmediatamente
         event.stopPropagation();
@@ -27,6 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
     document.addEventListener('click', function(event) {
         if (!popup.contains(event.target)) {
             popup.style.display = 'none';
+            popup.classList.remove('opened-bot-popup');
         }
     });
 });

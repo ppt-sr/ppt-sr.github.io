@@ -8,6 +8,8 @@ document.addEventListener('DOMContentLoaded', function() {
         const button = event.currentTarget; // El botón clickeado
         const rect = button.getBoundingClientRect(); // Obtener la posición y el tamaño del botón
 
+        popup.classList.add('opened-top-popup');
+
         // Solo mostrar el popup si no está visible
         if (popup.style.display !== 'block') {
             // Mostrar el popup para calcular su tamaño si está oculto
@@ -29,6 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
     document.addEventListener('click', function(event) {
         if (!popup.contains(event.target)) {
             popup.style.display = 'none';
+            popup.classList.remove(opened-top-popup);
         }
     });
 

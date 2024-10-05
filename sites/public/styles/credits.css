@@ -1,0 +1,28 @@
+#credits {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Cuatro columnas en total */
+    gap: 20px; /* Espacio entre columnas */
+    max-width: 1200px; /* Ajustar el ancho máximo del contenedor */
+    margin: 0 auto;
+    margin-top: 30px;
+    padding: 20px;
+    background-color: var(--text5); /* Color de fondo suave */
+    border-radius: 10px; /* Esquinas redondeadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.author, .video-count {
+    justify-content: space-between; /* Espacio entre autor y conteo */
+    font-size: 24px; /* Tamaño del texto */
+}
+
+/* Estilos adicionales para autores y conteo de videos */
+.author {
+    text-align: right; /* Alinear nombres de autores a la derecha */
+    font-weight: bold; /* Negrita para los autores */
+}
+
+.video-count {
+    text-align: left; /* Alinear conteo de videos a la izquierda */
+    font-weight: normal; /* Contar videos en un estilo normal */
+}

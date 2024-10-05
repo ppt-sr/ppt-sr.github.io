@@ -2,6 +2,10 @@
 const jsonFilesMapping = {
     '/chapter-1/pc/strats/': '/jsons/ch1/strats.json',
     '/chapter-2/pc/strats/': '/jsons/ch2/strats.json',
+    '/chapter-3/pc/strats/': '/jsons/ch3/strats.json',
+    '/chapter-1/pc/guides/': '/jsons/ch1/guides.json',
+    '/chapter-2/pc/guides/': '/jsons/ch2/guides.json',
+    '/chapter-3/pc/guides/': '/jsons/ch3/guides.json',
     // Añadir más rutas y archivos JSON según sea necesario
 };
 
