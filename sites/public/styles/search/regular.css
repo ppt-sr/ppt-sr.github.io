@@ -90,3 +90,31 @@
     background-color: transparent;
 }
 
+.search-result-item {
+    display: flex; /* Usar flexbox para alinear elementos */
+    justify-content: space-between; /* Espacio entre el título y los íconos */
+    align-items: center; /* Alinear verticalmente */
+}
+
+.title-container {
+    display: flex; /* Usar flexbox para alinear título e íconos */
+    align-items: center; /* Alinear verticalmente */
+    justify-content: space-between; /* Espacio entre el título y los íconos */
+    width: 100%; /* Permitir que el contenedor ocupe todo el ancho */
+}
+
+.result-icon, .chapter-icon, .platform-icon {
+    margin-left: 8px; /* Espacio entre íconos y título */
+    width: 20px; /* Ajustar el tamaño del ícono según sea necesario */
+    height: auto; /* Mantener la relación de aspecto */
+}
+
+.chapter-icon {
+    width: 25px;
+    margin-left: 10px;
+}
+
+.icons-container {
+    display: flex;
+    flex-direction: row;
+}

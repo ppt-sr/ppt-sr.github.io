@@ -15,10 +15,10 @@
         <img draggable="false" id="header-logo" src="/images/logo.png"></img>
       </a>
       <div class="container" id="header-title">
-        <h1 data-translate="welcome_text" style="margin-right:20px">CHAPTER 3</h1>
-        <h1 data-translate="welcome_text" style="margin-left:20px">DOCUMENTATION!</h1>
+        <h1 data-translate="c_chapter_3" style="margin-right:20px">CHAPTER 3</h1>
+        <h1 data-translate="documentation" style="margin-left:20px">DOCUMENTATION!</h1>
       </div>
-      <a id="about-us" href="/about/"><div id="about-us-link">About Us</div></a>
+      <a id="about-us" href="/about/"><div id="about-us-link" data-translate="about_us">About Us</div></a>
     </header>
     <main id="main">
         <div class="platforms double-menu">
@@ -26,23 +26,24 @@
               <div class="platform-pc-div">
                 <button id="pc-button-img"><img draggable="false" id="pc-svg" src="/images/svgs/pc.svg"></button>
               </div>
-              <button id="pc-button-text"><h4>PC</h4></button>
+              <button id="pc-button-text"><h4 data-translate="pc">PC</h4></button>
             </div>
 
             <!-- Popup structure -->
             <div id="pc-popup" class="popup hidden popup-ch3">
               <div class="popup-content">
-                <button class="popup-button" onclick="window.location.href='/chapter-3/pc/strats/'" id="left-button">Strats</button>
-                <button class="popup-button" onclick="window.location.href='/chapter-3/pc/guides/'" id="right-button">Guides</button>
+                <button class="popup-button" onclick="window.location.href='/chapter-3/pc/strats/'" id="left-button" data-translate="strats">Strats</button>
+                <button class="popup-button" onclick="window.location.href='/chapter-3/pc/guides/'" id="right-button" data-translate="guides">Guides</button>
             </div>
             </div>
 
             <div class="platform double-div controller">
               <a href="/chapter-3/console/"><img draggable="false" id="controller-svg" src="/images/svgs/controller.svg"></a>
-              <a href="/chapter-3/console/"><h4>Console</h4></a>
+              <a href="/chapter-3/console/"><h4 data-translate="console">Console</h4></a>
             </div>
           </div>
       </main>
+      <script src="/src/language-manager.js"></script>
       <script src="/src/pc-popup.js"></script>
       <script src="/src/show-header.js"></script>
   </body>

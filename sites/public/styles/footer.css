@@ -44,7 +44,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    flex: 2;
+    flex: 4;
     width: 100%;
 }
 
@@ -140,7 +140,7 @@
     width: 100%;
     margin-left: 2rem;
     padding: 0 2rem;
-    flex: 5;
+    flex: 7;
 }
 
 .thin-separator {
@@ -149,7 +149,6 @@
 
 #copyright {
     font-size: 20px;
-    margin-top: 3rem
 }
 
 #powered-by {
@@ -177,3 +176,122 @@
     margin: -0.1rem 0.5rem 0 1rem;
 }
 
+.c-icon {
+    margin-right: 5px;
+    font-size: 20px;
+}
+
+.c-icons {
+    display: flex;
+    width: 100%;
+    height: 20px;
+}
+
+
+.language-picker {
+    position: relative;
+}
+
+.current-lang-btn {
+    background: none;
+    color: var(--text);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    font-weight: 1000;
+    margin-top: 0px;
+    width: 100%;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    flex-direction: row;
+    font-size: 14px;
+}
+
+#lang-button {
+    bottom: 120%;
+    left: 0;
+    border: 2.5px solid var(--primary);
+    background: none;
+    border-radius: 0.5rem;
+    width: 200px;
+    max-height: 200px;
+    overflow-y: auto;
+    z-index: 1;
+}
+.ch1 #lang-button {
+    border: 2.5px solid var(--cch1);
+}
+.ch2 #lang-button {
+    border: 2.5px solid var(--cch2);
+}
+.ch3 #lang-button {
+    border: 2.5px solid var(--cch3);
+}
+.scdr #lang-button {
+    border: 2.5px solid var(--secondary);
+}
+
+#lang-popup {
+    position: absolute;
+    bottom: 120%;
+    left: 0;
+    background-color: var(--bg);
+    border: 2.5px solid var(--primary);
+    border-radius: 0.5rem;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.5);
+    width: 200px;
+    max-height: 220px;
+    overflow-y: auto;
+    z-index: 1;
+}
+.ch1 #lang-popup {
+    border: 2.5px solid var(--cch1);
+}
+.ch2 #lang-popup {
+    border: 2.5px solid var(--cch2);
+}
+.ch3 #lang-popup {
+    border: 2.5px solid var(--cch3);
+}
+.scdr #lang-popup {
+    border: 2.5px solid var(--secondary);
+}
+
+
+.hidden {
+    display: none;
+}
+
+.languagepicker ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.languagepicker li {
+    padding: 10px 17.5px;
+    cursor: pointer;
+}
+
+.languagepicker li {
+    display: block; /* Asegura que el li ocupe el 100% del ancho disponible */
+    width: calc(100% - 35px);    /* Asegura que el ancho sea del 100% */
+}
+
+.languagepicker li:hover {
+    background-color: var(--text10); /* Cambia el fondo a var(--text10) al hacer hover */
+    color: var(--bg); /* Cambia el color del texto al color de fondo (opcional) */
+}
+
+.language-picker img {
+    margin-right: 10px;
+    width: 24px;
+    height: 18px;
+    border-radius: 0.1rem;
+}
+
+#language-label {
+    margin-top: 0px
+}

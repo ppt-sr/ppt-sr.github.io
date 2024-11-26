@@ -1,48 +1,80 @@
+// Variables para la gestión de traducciones
+let translations = {}; // Objeto para almacenar traducciones
+let currentLang = localStorage.getItem('selectedLanguage') || 'en'; // Obtener el idioma almacenado o por defecto a 'en'
+
+// Función para cargar traducciones
+function loadTranslations(langCode) {
+    return fetch(`/lang/${langCode}.json`)
+        .then(response => response.json())
+        .then(data => {
+            translations = data;
+        })
+        .catch(error => console.error(`Error loading translations for ${langCode}:`, error));
+}
+
+// Función para aplicar traducciones a los elementos
+function applyTranslations() {
+    document.querySelectorAll('[data-translate]').forEach(element => {
+        const key = element.getAttribute('data-translate');
+        if (translations[key]) {
+            element.textContent = translations[key];
+        }
+    });
+}
+
 // Fetch the JSON and display the videos
-fetch('/jsons/ch2/guides.json')
-    .then(response => response.json())
-    .then(data => {
-        const videoContainer = document.getElementById('guides-container-ch2');
+loadTranslations(currentLang).then(() => {
+    fetch('/jsons/ch2/guides.json')
+        .then(response => response.json())
+        .then(data => {
+            const videoContainer = document.getElementById('guides-container-ch2');
 
-        // Load all videos
-        data.forEach(video => {
-            const videoDiv = document.createElement('div');
-            videoDiv.className = 'strat-div';
+            // Load all videos
+            data.forEach(video => {
+                const videoDiv = document.createElement('div');
+                videoDiv.className = 'strat-div';
 
-            videoDiv.innerHTML = `
-                <div id="${video.id}" class="video-title-div">
-                    <h3>${video.title}</h3>
-                    <div class="video-div">
-                        <iframe width="640" height="360" 
-                            src="https://www.youtube.com/embed/${video.id}" 
-                            frameborder="0" 
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                            allowfullscreen>
-                        </iframe>
-                    </div>
-                </div>
-                <div class="video-description-credits-div">
-                    <div class="video-description-div">
-                        <div>
-                            <label>Version:</label> <label class="text-30">${video.version}</label>
-                        </div>
-                        <div>
-                            <label>Description:</label> <label class="text-30">${video.description}</label>
+                const description = translations[video.description_key] || video.description;
+
+                videoDiv.innerHTML = `
+                    <div id="${video.id}" class="video-title-div">
+                        <h3>${video.title}</h3>
+                        <div class="video-div">
+                            <iframe width="640" height="360" 
+                                src="https://www.youtube.com/embed/${video.id}" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen>
+                            </iframe>
                         </div>
                     </div>
-                    <div>
-                        <label>Video by:</label> <label class="text-30">${video.author}</label>
+                    <div class="video-description-credits-div">
+                        <div class="video-description-div">
+                            <div>
+                                <label data-translate="version_label">Version:</label> 
+                                <label class="text-30">${video.version}</label>
+                            </div>
+                            <div>
+                                <label data-translate="description_label">Description:</label> 
+                                <label class="text-30">${description}</label>
+                            </div>
+                        </div>
+                        <div>
+                            <label data-translate="video_by_label">Video by:</label> 
+                            <label class="text-30">${video.author}</label>
+                        </div>
                     </div>
-                </div>
-            `;
+                `;
 
-            videoContainer.appendChild(videoDiv);
-        });
+                videoContainer.appendChild(videoDiv);
+            });
 
-        addCopyButtonListeners();
-        scrollToHash(); // Scroll to the video specified in the hash after loading all videos
-    })
-    .catch(error => console.error('Error loading the JSON:', error));
+            addCopyButtonListeners();
+            scrollToHash(); // Scroll to the video specified in the hash after loading all videos
+            applyTranslations(); // Aplicar traducciones a los elementos cargados
+        })
+        .catch(error => console.error('Error loading the JSON:', error));
+});
 
 // Function to scroll to the element based on the hash in the URL
 const scrollToHash = () => {

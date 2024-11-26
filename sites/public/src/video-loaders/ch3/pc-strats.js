@@ -4,6 +4,8 @@ let filteredData = [];
 let selectedVideoId = null; // Variable para almacenar el ID del video seleccionado
 
 const storagePrefix = 'pc-ch3-';
+let translations = {}; // Objeto para almacenar las traducciones
+let currentLang = localStorage.getItem('selectedLanguage') || 'en'; // Obtener el idioma almacenado o predeterminado
 
 // Obtener el ID del video del hash en la URL
 const hash = window.location.hash.substring(1); // Remover el '#' del inicio
@@ -11,6 +13,27 @@ if (hash) {
     selectedVideoId = hash; // Establecer el ID del video seleccionado basado en el hash
 }
 
+// Función para cargar las traducciones
+function loadTranslations(langCode) {
+    return fetch(`/lang/${langCode}.json`)
+        .then(response => response.json())
+        .then(data => {
+            translations = data; // Almacenar las traducciones
+        })
+        .catch(error => console.error(`Error loading translations for ${langCode}:`, error));
+}
+
+// Función para aplicar las traducciones a los elementos con el atributo data-translate
+function applyTranslations() {
+    document.querySelectorAll('[data-translate]').forEach(element => {
+        const key = element.getAttribute('data-translate');
+        if (translations[key]) {
+            element.textContent = translations[key];
+        }
+    });
+}
+
+// Cargar el archivo JSON de estrategias y manejar los datos
 fetch('/jsons/ch3/strats.json')
     .then(response => response.json())
     .then(data => {
@@ -22,17 +45,17 @@ fetch('/jsons/ch3/strats.json')
             const selectedRoutes = [];
             const selectedrestricted = [];
 
-            // Gather selected categories
+            // Recopilar las categorías seleccionadas
             if (document.getElementById('any-cb').checked) selectedCategories.push('Any%');
             if (document.getElementById('all-stages-cb').checked) selectedCategories.push('All Stages');
             if (document.getElementById('hundred-cb').checked) selectedCategories.push('100%');
 
-            // Gather selected routes
+            // Recopilar las rutas seleccionadas
             if (document.getElementById('oob-cb').checked) selectedRoutes.push('Out of Bounds');
             if (document.getElementById('ib-cb').checked) selectedRoutes.push('Inbounds');
             if (document.getElementById('nms-cb').checked) selectedRoutes.push('No Major Skips');
 
-            // Gather selected restricteds
+            // Recopilar los restricteds seleccionados
             const restrictedCheckboxes = document.querySelectorAll('#filters-container input[type="checkbox"][data-restricted]');
             restrictedCheckboxes.forEach(cb => {
                 if (cb.checked) selectedrestricted.push(cb.dataset.restricted);
@@ -77,7 +100,7 @@ fetch('/jsons/ch3/strats.json')
             if (searchTerm) {
                 filteredData = filteredData.filter(video => 
                     video.title.toLowerCase().includes(searchTerm) ||
-                    video.description.toLowerCase().includes(searchTerm)
+                    translations[video.description_key]?.toLowerCase().includes(searchTerm)
                 );
             }
 
@@ -94,6 +117,8 @@ fetch('/jsons/ch3/strats.json')
             videosToLoad.forEach(video => {
                 const videoDiv = document.createElement('div');
                 videoDiv.className = 'strat-div';
+
+                const description = translations[video.description_key] || video.description;
 
                 videoDiv.innerHTML = `
                 <div id="${video.id}" class="video-title-div">
@@ -113,15 +138,16 @@ fetch('/jsons/ch3/strats.json')
                             <label ${video.restricted ? '' : 'class="primary"'}">${video.restricted ? 'Restricted' : 'Unrestricted'}</label>
                         </div>
                         <div>
-                            <label>Description:</label> <label class="text-30">${video.description}</label>
+                            <label data-translate="description_label">${translations['description_label']}</label> 
+                            <label class="text-30">${description}</label>
                         </div>
                     </div>
                     <div>
-                        <label>Video by:</label> <label class="text-30">${video.author}</label>
+                        <label data-translate="video_by_label">${translations['video_by_label']}</label> 
+                        <label class="text-30">${video.author}</label>
                     </div>
                 </div>
             `;
-            
 
                 videoContainer.appendChild(videoDiv);
             });
@@ -134,7 +160,7 @@ fetch('/jsons/ch3/strats.json')
 
         // Detect the scroll to load more videos
         window.addEventListener('scroll', () => {
-            if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+            if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight - 300) {
                 loadNextBatch();
             }
         });
@@ -170,3 +196,6 @@ function showSpecificVideo(videoId) {
     videoContainer.innerHTML = ''; // Limpiar los videos existentes
     updateFilters(); // Volver a aplicar los filtros para mostrar el video seleccionado
 }
+
+// Cargar las traducciones y luego la información de videos
+loadTranslations(currentLang).then(applyTranslations);

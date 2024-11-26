@@ -5,7 +5,8 @@ let jsonFiles = [
   '/jsons/ch3/guides.json',
   '/jsons/ch1/strats.json',
   '/jsons/ch2/strats.json',
-  '/jsons/ch3/strats.json'
+  '/jsons/ch3/strats.json',
+  '/jsons/ch2/mobile.json'
 ]; // Add paths to the JSON files here
 
 // Function to fetch and load JSON data from files
@@ -14,54 +15,60 @@ let allData = [];
 
 // Fetch data from each file
 for (const file of fileList) {
-try {
-const response = await fetch(file);
-const data = await response.json();
-allData.push(...data); // Assuming each file contains an array of JSON objects
-} catch (error) {
-console.error(`Error loading ${file}:`, error);
-}
+  try {
+    const response = await fetch(file);
+    const data = await response.json();
+    allData.push(...data); // Assuming each file contains an array of JSON objects
+  } catch (error) {
+    console.error(`Error loading ${file}:`, error);
+  }
 }
 
 return allData;
 }
 
 // Function to generate the credits
+// Function to generate the credits
 function generateCredits(jsonData) {
-  const creditsContainer = document.getElementById('credits');
+    const creditsContainer = document.getElementById('credits');
   
-  // Objeto para contar videos por autor
-  let authorsCount = {};
+    // Objeto para contar videos por autor
+    let authorsCount = {};
 
-  // Contar el número de videos por autor
-  jsonData.forEach(video => {
-      let author = video.author;
-      if (authorsCount[author]) {
-          authorsCount[author]++;
-      } else {
-          authorsCount[author] = 1;
-      }
-  });
+    // Contar el número de videos por autor
+    jsonData.forEach(video => {
+        let author = video.author;
+        if (authorsCount[author]) {
+            authorsCount[author]++;
+        } else {
+            authorsCount[author] = 1;
+        }
+    });
 
-  // Convertir authorsCount en un array y ordenarlo
-  let sortedAuthors = Object.entries(authorsCount).sort((a, b) => b[1] - a[1]);
+    // Convertir authorsCount en un array y ordenarlo
+    let sortedAuthors = Object.entries(authorsCount).sort((a, b) => b[1] - a[1]);
 
-  // Añadir los autores y conteos en sus respectivas columnas
-  sortedAuthors.forEach(([author, count]) => {
-      // Crear un contenedor para autor y conteo de videos
-      const authorDiv = document.createElement('div');
-      authorDiv.classList.add('author');
-      authorDiv.textContent = author;
+    // Añadir los autores y conteos en sus respectivas columnas
+    sortedAuthors.forEach(([author, count]) => {
+        // Crear un contenedor para autor y conteo de videos
+        const authorDiv = document.createElement('div');
+        authorDiv.classList.add('author');
+        authorDiv.textContent = author;
 
-      const countDiv = document.createElement('div');
-      countDiv.classList.add('video-count');
-      countDiv.textContent = `${count} videos`;
+        const countDiv = document.createElement('div');
+        countDiv.classList.add('video-count');
+        countDiv.innerHTML = `${count} <span data-translate="credits_videos">videos</span>`; // Usar <span> para mayor semántica
 
-      // Añadir a créditos el autor y su conteo en la misma fila
-      creditsContainer.appendChild(authorDiv);
-      creditsContainer.appendChild(countDiv);
-  });
+        // Añadir a créditos el autor y su conteo en la misma fila
+        creditsContainer.appendChild(authorDiv);
+        creditsContainer.appendChild(countDiv);
+    });
+
+    // Aplicar la traducción después de generar los créditos
+    const storedLang = localStorage.getItem('selectedLanguage') || 'en'; // Cargar idioma almacenado
+    loadLanguage(storedLang);
 }
+
 
 // Cargar JSONs y generar créditos
 loadJSONs(jsonFiles).then(data => {

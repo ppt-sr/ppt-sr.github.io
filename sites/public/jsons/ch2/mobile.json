@@ -1,0 +1,287 @@
+[
+    {
+        "title": "Hyperspeed Swing (HSH)",
+        "id": "0Fpm1MxUE9U",
+        "description_key": "mobile_hyperspeed_swing_description",
+        "author": "n0kitsune",
+        "category": {
+            "Any%": {
+                "Out of Bounds": true,
+                "Inbounds": true
+            },
+            "All Minigames": {
+                "Out of Bounds": true,
+                "Inbounds": true
+            },
+            "100%": {
+                "Out of Bounds": true,
+                "Inbounds": true
+            }
+        }
+    },
+    {
+        "title": "Poppy Dialog Skip",
+        "id": "eMWeHUcoz8Q",
+        "description_key": "mobile_poppy_dialog_skip_description",
+        "author": "n0kitsune",
+        "category": {
+            "Any%": {
+                "Out of Bounds": true,
+                "Inbounds": true
+            },
+            "All Minigames": {
+                "Out of Bounds": true,
+                "Inbounds": true
+            },
+            "100%": {
+                "Out of Bounds": true,
+                "Inbounds": true
+            }
+        }
+    },
+    {
+        "title": "Rukki Skip",
+        "id": "VfxFOcSpLbo",
+        "description_key": "mobile_rukki_skip_description",
+        "author": "n0kitsune",
+        "category": {
+            "Any%": {
+                "Out of Bounds": true,
+                "Inbounds": true,
+                "No Major Skips": true
+            },
+            "All Minigames": {
+                "Out of Bounds": true,
+                "Inbounds": true,
+                "No Major Skips": true
+            },
+            "100%": {
+                "Out of Bounds": true,
+                "Inbounds": true,
+                "No Major Skips": true
+            }
+        }
+    },
+    {
+        "title": "Lever Sniping",
+        "id": "otdBSSB5Utc",
+        "description_key": "mobile_lever_sniping_description",
+        "author": "n0kitsune",
+        "category": {
+            "Any%": {
+                "Out of Bounds": true,
+                "Inbounds": true,
+                "No Major Skips": true
+            },
+            "All Minigames": {
+                "Out of Bounds": true,
+                "Inbounds": true,
+                "No Major Skips": true
+            },
+            "100%": {
+                "Out of Bounds": true,
+                "Inbounds": true,
+                "No Major Skips": true
+            }
+        }
+    },
+    {
+        "title": "Fence Clip",
+        "id": "8m9jMYuSm84",
+        "description_key": "mobile_fence_clip_description",
+        "author": "n0kitsune",
+        "category": {
+            "Any%": {
+                "Out of Bounds": true
+            },
+            "All Minigames": {
+                "Out of Bounds": true
+            }
+        }
+    },
+    {
+        "title": "Faster Molding Room",
+        "id": "8K3_e8mw9hU",
+        "description_key": "mobile_faster_molding_room_description",
+        "author": "n0kitsune",
+        "category": {
+            "Any%": {
+                "Inbounds": true
+            },
+            "All Minigames": {
+                "Inbounds": true
+            },
+            "100%": {
+                "Out of Bounds": true,
+                "Inbounds": true
+            }
+        }
+    },
+    {
+        "title": "Small Green Hand Skip",
+        "id": "GkFuQwBS2Bs",
+        "description_key": "mobile_small_green_hand_skip_description",
+        "author": "n0kitsune",
+        "category": {
+            "Any%": {
+                "Inbounds": true,
+                "No Major Skips": true
+            },
+            "All Minigames": {
+                "Inbounds": true,
+                "No Major Skips": true
+            },
+            "100%": {
+                "Out of Bounds": true,
+                "Inbounds": true,
+                "No Major Skips": true
+            }
+        }
+    },
+    {
+        "title": "Standing on Buttons in Musical Memory",
+        "id": "BMlqcHd2B5s",
+        "description_key": "mobile_standing_on_buttons_in_musical_memory_description",
+        "author": "n0kitsune",
+        "category": {
+            "Any%": {
+                "Out of Bounds": true,
+                "Inbounds": true
+            },
+            "All Minigames": {
+                "Out of Bounds": true,
+                "Inbounds": true
+            },
+            "100%": {
+                "Out of Bounds": true,
+                "Inbounds": true
+            }
+        }
+    },
+    {
+        "title": "Musical Memory Load Manipulation",
+        "id": "UwwOoYoJ1Fw",
+        "description_key": "mobile_musical_memory_load_manipulation_description",
+        "author": "n0kitsune",
+        "category": {
+            "Any%": {
+                "Out of Bounds": true,
+                "Inbounds": true,
+                "No Major Skips": true
+            },
+            "All Minigames": {
+                "Out of Bounds": true,
+                "Inbounds": true,
+                "No Major Skips": true
+            },
+            "100%": {
+                "Out of Bounds": true,
+                "Inbounds": true,
+                "No Major Skips": true
+            }
+        }
+    },
+    {
+        "title": "Ham Skip",
+        "id": "Pef6Cl8V8eo",
+        "description_key": "mobile_ham_skip_description",
+        "author": "n0kitsune",
+        "category": {
+            "Any%": {
+                "Out of Bounds": true
+            },
+            "All Minigames": {
+                "Out of Bounds": true
+            },
+            "100%": {
+                "Out of Bounds": true
+            }
+        }
+    },
+    {
+        "title": "Storage Skip",
+        "id": "6HyKCbE7a58",
+        "description_key": "mobile_storage_skip_description",
+        "author": "n0kitsune",
+        "category": {
+            "Any%": {
+                "Out of Bounds": true,
+                "Inbounds": true
+            },
+            "All Minigames": {
+                "Out of Bounds": true,
+                "Inbounds": true
+            },
+            "100%": {
+                "Out of Bounds": true,
+                "Inbounds": true
+            }
+        }
+    },
+    {
+        "title": "Double hitting Huggies",
+        "id": "ACNmum-emfo",
+        "description_key": "mobile_double_hitting_huggies_description",
+        "author": "n0kitsune",
+        "category": {
+            "All Minigames": {
+                "Out of Bounds": true,
+                "Inbounds": true,
+                "No Major Glitches": true
+            },
+            "100%": {
+                "Out of Bounds": true,
+                "Inbounds": true,
+                "No Major Glitches": true
+            }
+        }
+    },
+    {
+        "title": "Jumping Over Tubes",
+        "id": "ONd3RBJans0",
+        "description_key": "mobile_jumping_over_tubes_description",
+        "author": "n0kitsune",
+        "category": {
+            "All Minigames": {
+                "Out of Bounds": true,
+                "Inbounds": true
+            },
+            "100%": {
+                "Out of Bounds": true,
+                "Inbounds": true
+            }
+        }
+    },
+    {
+        "title": "Ruby Skip",
+        "id": "cZQhfN469lQ",
+        "description_key": "mobile_ruby_skip_description",
+        "author": "n0kitsune",
+        "category": {
+            "All Minigames": {
+                "Out of Bounds": true,
+                "Inbounds": true
+            },
+            "100%": {
+                "Out of Bounds": true,
+                "Inbounds": true
+            }
+        }
+    },
+    {
+        "title": "Mommy Chase Skip",
+        "id": "xRH2ZlLaJus",
+        "description_key": "mobile_mommy_chase_skip_description",
+        "author": "n0kitsune",
+        "category": {
+            "All Minigames": {
+                "Out of Bounds": true,
+                "Inbounds": true
+            },
+            "100%": {
+                "Out of Bounds": true,
+                "Inbounds": true
+            }
+        }
+    }
+]

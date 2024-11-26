@@ -29,7 +29,7 @@
     padding: 10px;
     z-index: 1000;
     border-radius: 10px;
-    width: 300px;
+    width: 400px;
     height: 100px;
 }
 
@@ -71,8 +71,8 @@
     border-radius: 1rem;
     cursor: pointer;
     color: var(--text);
-    width: 125px; /* Ancho de los botones */
-    height: 100px; /* Altura de los botones */
+    width: 165px;
+    height: 100px;
     font-size: 24px;
     font-weight: 800;
     transition: background-color 0.25s ease, border 0.5s ease;
@@ -146,6 +146,12 @@
     border-width: 20px;
     border-style: solid;
     border-color: var(--bg) transparent transparent transparent;
+}
+
+.ch2.s-mobile #info-popup {
+    left: calc((90%) - 30.9%);
+    top: calc((-1rem + 50%) - 10px);
+    height: auto;
 }
 
 .ch1 .info-popup::after {

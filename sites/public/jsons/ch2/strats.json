@@ -3,7 +3,7 @@
         "title": "Hyperspeed Swing (HSS)",
         "id": "Sh0JLIJpudE",
         "version": "<1.2, 1.3+",
-        "description": "Explanation on how to do HSS. <br> All Skips that need a Hyperspeed Swing need to be done at 30fps.",
+        "description_key": "hyper_speed_swing_description",
         "author": "n0kitsune",
         "category": {
             "Any%": {
@@ -30,7 +30,7 @@
         "title": "Pillow Clip Tutorial",
         "id": "XdiDEVpVfxQ",
         "version": "<1.2, 1.3+",
-        "description": "Video is self explanatory!",
+        "description_key": "pillow_clip_tutorial_description",
         "author": "proac",
         "category": {
             "Any%": {
@@ -48,7 +48,7 @@
         "title": "Pillow Boost Tutorial",
         "id": "Rf0N2HS6GtI",
         "version": "<1.2, 1.3+",
-        "description": "Video is self explanatory!",
+        "description_key": "pillow_boost_tutorial_description",
         "author": "proac",
         "category": {
             "Any%": {
@@ -75,7 +75,7 @@
         "title": "Poppy Woppy Skip",
         "id": "n7I348UI2U0",
         "version": "1.3+",
-        "description": "WILL NEED TO UPDATE TO A TUTORIAL VIDEO THIS IS A DRAFT.",
+        "description_key": "poppy_woppy_skip_description",
         "author": "Nia",
         "category": {
             "Any%": {
@@ -87,7 +87,7 @@
         "title": "Green Hand Early (GHE)",
         "id": "SEfdsbruRI4",
         "version": "<1.2",
-        "description": "Getting the greenhand early in order to get into the train early. You need to click before the load ends, load time depends on your PC and FPS.",
+        "description_key": "green_hand_early_description",
         "author": "Nia",
         "category": {
             "Any%": {
@@ -108,7 +108,7 @@
         "title": "NAM Skip",
         "id": "a6CpFrU5WQo",
         "version": "<1.2",
-        "description": "You need to click rapidly in order to add up momentum. ",
+        "description_key": "nam_skip_description",
         "author": "Nam (JMK)",
         "category": {
             "Any%": {
@@ -123,7 +123,7 @@
         "title": "100% NAM Skip",
         "id": "7jYyGEOUBAc",
         "version": "<1.2",
-        "description": "You need to click rapidly in order to add up momentum. (You need more control and be good at Normal NAM) ",
+        "description_key": "hundred_nam_skip_description",
         "author": "LilQuince",
         "category": {
             "100%": {
@@ -132,10 +132,10 @@
         }
     },
     {
-        "title": "NAM Skip",
+        "title": "NAM Skip 1.3+",
         "id": "o37M1CTMeOw",
         "version": "1.3+",
-        "description": "Getting the Green Hand is not Necessary.",
+        "description_key": "nam_skip_current_patch_description",
         "author": "Nia",
         "category": {
             "Any%": {
@@ -150,10 +150,34 @@
         }
     },
     {
+        "title": "Rukki Skip",
+        "id": "mDXk5kS9OGY",
+        "version": "<1.2, 1.3+",
+        "description_key": "ch2_rukki_skip_description",
+        "author": "n0kitsune",
+        "category": {
+            "Any%": {
+                "Inbounds": true,
+                "No Major Glitches": true,
+                "No Major Skips": true
+            },
+            "All Minigames": {
+                "Inbounds": true,
+                "No Major Glitches": true,
+                "No Major Skips": true
+            },
+            "100%": {
+                "Inbounds": true,
+                "No Major Glitches": true,
+                "No Major Skips": true
+            }
+        }
+    },
+    {
         "title": "Mommy Hand Grab Skip",
         "id": "0S0KuGMnrg4",
         "version": "<1.2, 1.3+",
-        "description": "As video Shows, stand around those tiles.",
+        "description_key": "mommy_hand_grab_skip_description",
         "author": "n0kitsune",
         "category": {
             "Any%": {
@@ -171,7 +195,7 @@
         "title": "Small Green Hand Skip",
         "id": "BK2MMxyq5Mg",
         "version": "<1.2, 1.3+",
-        "description": "Grab the hand earlier!",
+        "description_key": "small_green_hand_skip_description",
         "author": "MutantEye",
         "category": {
             "Any%": {
@@ -189,7 +213,7 @@
         "title": "Green Hand Room Skip",
         "id": "OIv0kd9y-bo",
         "version": "<1.2, 1.3+",
-        "description": "You can use any prop but Kissy Sign since you can’t crouch on it. (Unless you put something on-top of it)",
+        "description_key": "green_hand_room_skip_description",
         "author": "Nia",
         "category": {
             "Any%": {
@@ -211,7 +235,7 @@
         "title": "Standing on Buttons in Musical Memory",
         "id": "qBB-ICLxX4w",
         "version": "<1.2, 1.3+",
-        "description": "Video is self explanatory!",
+        "description_key": "standing_on_buttons_in_musical_memory_description",
         "author": "Hawkz",
         "category": {
             "Any%": {
@@ -231,7 +255,7 @@
         "title": "Musical Memory Skip (MMS) | Hard Version",
         "id": "hNH0PRbAbs0",
         "version": "<1.2, 1.3+",
-        "description": "Requires RNG. ",
+        "description_key": "musical_memory_skip_description",
         "author": "Mello",
         "category": {
             "All Minigames": {
@@ -246,7 +270,7 @@
         "title": "Musical Memory Skip (MMS) | Easy Version (Slower)",
         "id": "OBT-0fPhT2U",
         "version": "<1.2, 1.3+",
-        "description": "Doesn't Require RNG.",
+        "description_key": "musical_memory_skip_cutout_description",
         "author": "n0kitsune",
         "category": {
             "All Minigames": {
@@ -261,7 +285,7 @@
         "title": "Musical Memory Load Manipulation",
         "id": "BZ4Bdkj1k2U",
         "version": "<1.2, 1.3+",
-        "description": "Loading After kid says \"YAY!\" removes 1 cycle from next stage.",
+        "description_key": "musical_memory_load_manipulation_description",
         "author": "n0kitsune",
         "category": {
             "Any%": {
@@ -279,7 +303,7 @@
         "title": "Whack-a-Wuggy Skip Out of Bounds",
         "id": "8A_TMcBmEk8",
         "version": "<1.2",
-        "description": "WAH SKIP! Video is self explanatory.",
+        "description_key": "whack-a-wuggy_skip_oob_description",
         "author": "Nia",
         "category": {
             "All Minigames": {
@@ -294,7 +318,7 @@
         "title": "Whack-a-Wuggy Skip New Patch",
         "id": "_94xLVzYOXs",
         "version": "<1.2, 1.3+",
-        "description": "Follow instructions!",
+        "description_key": "whack-a-wuggy_skip_new_patch_description",
         "author": "Nerd Squared",
         "category": {
             "All Minigames": {
@@ -311,7 +335,7 @@
         "title": "Barry Skip",
         "id": "gGNH_aNCqXI",
         "version": "<1.2",
-        "description": "You need to touch the load right after the planks by the rails.",
+        "description_key": "barry_skip_description",
         "author": "Sangohanvde",
         "category": {
             "All Minigames": {
@@ -323,7 +347,7 @@
         "title": "Barry Skip | Hard Version",
         "id": "WG877Aaafrc",
         "version": "1.3+",
-        "description": "You need to touch the load right after the planks by the rails. <br> Requires a lot of clicks.",
+        "description_key": "barry_skip_current_patch_hard_ver_description",
         "author": "Nia",
         "category": {
             "All Minigames": {
@@ -335,7 +359,7 @@
         "title": "Barry Skip | Easy Version",
         "id": "YFk9bjBmJ8E",
         "version": "1.3+",
-        "description": "You need to touch the load right after the planks by the rails. <br> Doesn't Require that many clicks.",
+        "description_key": "barry_skip_current_patch_easy_ver_description",
         "author": "n0kitsune",
         "category": {
             "All Minigames": {
@@ -347,7 +371,7 @@
         "title": "Barry Skip Extended",
         "id": "AsNVxIypWkc",
         "version": "1.3+",
-        "description": "Get to the game station directly. You need to get Hyperspeed Swing state.",
+        "description_key": "barry_skip_extended_description",
         "author": "Nia",
         "category": {
             "Any%": {
@@ -362,7 +386,7 @@
         "title": "100% Barry Skip",
         "id": "yaClb5aj5Fo",
         "version": "<1.2, 1.3+",
-        "description": "The Jump Glitches by pausing the game so it's easier to time, in order to stop jumping press Jump Again!",
+        "description_key": "hundred_barry_skip_description",
         "author": "Nerd Squared",
         "category": {
             "100%": {
@@ -374,7 +398,7 @@
         "title": "Statues Skip w/ Objects",
         "id": "eEp6xB-ebOE",
         "version": "<1.2, 1.3+",
-        "description": "You cannot pull the box with the hands you need to use your body.",
+        "description_key": "statues_skip_w_objects_description",
         "author": "Nia",
         "category": {
             "All Minigames": {
@@ -393,7 +417,7 @@
         "title": "Statues Skip w/ crouching",
         "id": "uOxXseQ9iUo",
         "version": "<1.2, 1.3+",
-        "description": "There is a few spots it works better on.",
+        "description_key": "statues_skip_w_crouching_description",
         "author": "Nia",
         "category": {
             "All Minigames": {
@@ -410,7 +434,7 @@
         "title": "Hyperspeed Swing Over Tubes",
         "id": "k-eF3a7cwfI",
         "version": "<1.2",
-        "description": "Video is self explanatory!",
+        "description_key": "hyperspeed_swing_over_tubes_description",
         "author": "n0kitsune",
         "category": {
             "All Minigames": {
@@ -429,7 +453,7 @@
         "title": "Caves Skip",
         "id": "u_JQEKfLT2o",
         "version": "1.3+",
-        "description": "One of the hardest skips, requires a hella ton of CPS (around 13-15)",
+        "description_key": "caves_skip_description",
         "author": "Nia",
         "category": {
             "Any%": {
@@ -444,7 +468,7 @@
         "title": "Ruby Skip",
         "id": "-xpfAY8EOLE",
         "version": "<1.2, 1.3+",
-        "description": "Video is self explanatory!",
+        "description_key": "ruby_skip_description",
         "author": "n0kitsune",
         "category": {
             "All Minigames": {
@@ -461,7 +485,7 @@
         "title": "Water Treatment Skip",
         "id": "2lUwAA8QJa8",
         "version": "<1.2, 1.3+",
-        "description": "The Yellow Canister is easier to manipulate.",
+        "description_key": "water_treatment_skip_description",
         "author": "Laupig",
         "category": {
             "All Minigames": {
@@ -476,7 +500,7 @@
         "title": "Water Treatment Skip Swing Variant",
         "id": "0OnrGhW8Jvw",
         "version": "1.3+",
-        "description": "Easier than Caves Skip.",
+        "description_key": "water_treatment_skip_swing_variant_description",
         "author": "Nia",
         "category": {
             "Any%": {
@@ -494,7 +518,7 @@
         "title": "GGD Skip",
         "id": "Qg8z2TaWu-I",
         "version": "<1.2",
-        "description": "You cannot get much further.",
+        "description_key": "ggd_skip_description",
         "author": "Sangohanvde",
         "category": {
             "All Minigames": {
@@ -509,7 +533,7 @@
         "title": "GGD Skip",
         "id": "gE2DgVK5oxI",
         "version": "1.3+",
-        "description": "You can get really far on 1.3+!",
+        "description_key": "ggd_skip_current_patch_description",
         "author": "Nia",
         "category": {
             "Any%": {
@@ -527,7 +551,7 @@
         "title": "proac Skip",
         "id": "mjKg1DPQ5mg",
         "version": "1.3+",
-        "description": "Video is self explanatory.",
+        "description_key": "proac_skip_description",
         "author": "Nia",
         "category": {
             "Any%": {
@@ -542,7 +566,7 @@
         "title": "Mommy Chase Skip",
         "id": "kso--tLYwf8",
         "version": "<1.2, 1.3+",
-        "description": "Really easy skip, for 1.3+ you'll need to stack boxes but in <1.2 u can just jump in the leaver!",
+        "description_key": "mommy_chase_skip_description",
         "author": "Sangohanvde",
         "category": {
             "All Minigames": {
@@ -551,10 +575,10 @@
         }
     },
     {
-        "title": "Mommy Chase Skip",
+        "title": "Mommy Chase Skip w/ Barrels",
         "id": "bG2Hd3GGgOI",
         "version": "<1.2, 1.3+",
-        "description": "Barrel Stacking method, a lot harder but Inbounds.",
+        "description_key": "mommy_chase_skip_w_barrels_description",
         "author": "Nia",
         "category": {
             "All Minigames": {
@@ -567,7 +591,7 @@
         "title": "Robin/Office Skip",
         "id": "IDJreYBRPEQ",
         "version": "<1.2, 1.3+",
-        "description": "Video is self explanatory!",
+        "description_key": "robin_office_skip_description",
         "author": "Ruby Rain",
         "category": {
             "All Minigames": {
@@ -586,7 +610,7 @@
         "title": "100% Office Skip",
         "id": "JwJ-NZRR6x0",
         "version": "<1.2, 1.3+",
-        "description": "Video is self explanatory! <br> If you didn't do 100% NAM Skip you will need to do this skip!",
+        "description_key": "hundred_office_skip_description",
         "author": "n0kitsune",
         "category": {
             "100%": {

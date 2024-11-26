@@ -1,48 +1,79 @@
+let translations = {}; // Object to store translations
+let currentLang = localStorage.getItem('selectedLanguage') || 'en'; // Get stored language or default to 'en'
+
+// Fetch and store the translations for the selected language
+function loadTranslations(langCode) {
+    return fetch(`/lang/${langCode}.json`)
+        .then(response => response.json())
+        .then(data => {
+            translations = data;
+        })
+        .catch(error => console.error(`Error loading translations for ${langCode}:`, error));
+}
+
 // Fetch the JSON and display the videos
-fetch('/jsons/ch3/guides.json')
-    .then(response => response.json())
-    .then(data => {
-        const videoContainer = document.getElementById('guides-container-ch3');
+function fetchVideos() {
+    fetch('/jsons/ch3/guides.json')
+        .then(response => response.json())
+        .then(data => {
+            const videoContainer = document.getElementById('guides-container-ch3');
 
-        // Load all videos
-        data.forEach(video => {
-            const videoDiv = document.createElement('div');
-            videoDiv.className = 'strat-div';
+            // Load all videos
+            data.forEach(video => {
+                const videoDiv = document.createElement('div');
+                videoDiv.className = 'strat-div';
 
-            videoDiv.innerHTML = `
-                <div id="${video.id}" class="video-title-div">
-                    <h3>${video.title}</h3>
-                    <div class="video-div">
-                        <iframe width="640" height="360" 
-                            src="https://www.youtube.com/embed/${video.id}" 
-                            frameborder="0" 
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                            allowfullscreen>
-                        </iframe>
-                    </div>
-                </div>
-                <div class="video-description-credits-div">
-                    <div class="video-description-div">
-                        <div>
-                            <label>Version:</label> <label class="text-30">${video.version}</label>
-                        </div>
-                        <div>
-                            <label>Description:</label> <label class="text-30">${video.description}</label>
+                videoDiv.innerHTML = `
+                    <div id="${video.id}" class="video-title-div">
+                        <h3>${video.title}</h3>
+                        <div class="video-div">
+                            <iframe width="640" height="360" 
+                                src="https://www.youtube.com/embed/${video.id}" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen>
+                            </iframe>
                         </div>
                     </div>
-                    <div>
-                        <label>Video by:</label> <label class="text-30">${video.author}</label>
+                    <div class="video-description-credits-div">
+                        <div class="video-description-div">
+                            <div>
+                                <label data-translate="version_label">Version:</label> 
+                                <label class="text-30">${video.version}</label>
+                            </div>
+                            <div>
+                                <label data-translate="description_label">Description:</label> 
+                                <label class="text-30">${video.description}</label>
+                            </div>
+                        </div>
+                        <div>
+                            <label data-translate="video_by_label">Video by:</label> 
+                            <label class="text-30">${video.author}</label>
+                        </div>
                     </div>
-                </div>
-            `;
+                `;
 
-            videoContainer.appendChild(videoDiv);
-        });
+                videoContainer.appendChild(videoDiv);
+            });
 
-        addCopyButtonListeners();
-        scrollToHash(); // Scroll to the video specified in the hash after loading all videos
-    })
-    .catch(error => console.error('Error loading the JSON:', error));
+            addCopyButtonListeners();
+            scrollToHash(); // Scroll to the video specified in the hash after loading all videos
+
+            // Apply translations after videos are loaded
+            applyTranslations();
+        })
+        .catch(error => console.error('Error loading the JSON:', error));
+}
+
+// Function to apply translations to elements with data-translate attribute
+function applyTranslations() {
+    document.querySelectorAll('[data-translate]').forEach(element => {
+        const key = element.getAttribute('data-translate');
+        if (translations[key]) {
+            element.textContent = translations[key];
+        }
+    });
+}
 
 // Function to scroll to the element based on the hash in the URL
 const scrollToHash = () => {
@@ -68,6 +99,9 @@ const scrollToHash = () => {
         scrollToElement();
     }
 };
+
+// Load translations and then fetch the video data
+loadTranslations(currentLang).then(fetchVideos);
 
 // Wait for the page to fully load before starting the hash check
 window.addEventListener('load', () => {
