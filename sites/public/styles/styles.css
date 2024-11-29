@@ -377,6 +377,35 @@ p {
     position: relative;
 }
 
+.platform-div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+}
+
+.platform-div h4{
+    font-size: 24px;
+    color: var(--text);
+    height: 100%;
+    width: 100%;
+    font-weight: 800;
+}
+
+.platform-div img {
+    width: 100%;
+}
+
+.platform-div a {
+    transition: transform 0.35s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+}
+
+.platform-div a:hover {
+    transform: scale(1.1); /* Agranda la imagen en hover */
+}
+
 .triple-div img {
     width: 100%;
     transition: transform 0.35s cubic-bezier(0.250, 0.460, 0.450, 0.940);
@@ -442,11 +471,6 @@ p {
     margin-top: 25px;
 }
 
-.platform-pc-div button {
-    width: 90%;
-    height: 90%;
-}
-
 .platform.pc button {
     background-color: var(--bg);
     border: none;
@@ -461,6 +485,70 @@ p {
     flex-direction: column;
     align-items: center; /* centers horizontally */
     justify-content: center; /* centers vertically */
+}
+
+.platforms.triple-menu {
+    width: 50%;
+}
+
+.platforms.triple-menu .phone {
+    width: 30%;
+
+}
+
+.ch1 .plat-svg {
+    color: var(--text);
+    position: relative;
+    background-color: var(--cch1-50);
+    border-radius: 40%;
+    border: solid 0.5rem var(--cch1);
+    width: 100%;
+    height: max-content;
+    padding: 20%;
+    display: inline-block;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.ch2 .plat-svg {
+    color: var(--text);
+    position: relative;
+    background-color: var(--cch2-50);
+    border-radius: 40%;
+    border: solid 0.5rem var(--cch2);
+    width: 100%;
+    height: max-content;
+    padding: 20%;
+    display: inline-block;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.ch3 .plat-svg {
+    color: var(--text);
+    position: relative;
+    background-color: var(--cch3-50);
+    border-radius: 40%;
+    border: solid 0.5rem var(--cch3);
+    width: 100%;
+    height: max-content;
+    padding: 20%;
+    display: inline-block;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.platforms.triple-menu .pc {
+    width: 30%;
+}
+.platforms.triple-menu .controller {
+    width: 30%;
+}
+
+#main.platforms-main {
+    height: 100%;
+    justify-content: center;
+    margin: 0;
 }
 
 
@@ -835,6 +923,12 @@ input[type="checkbox"]:checked + .checkboxlabel::after {
 .ch3 #about-us {
     border-color: var(--cch3);
 }
+.scdr #about-us {
+    border-color: var(--secondary);
+}
+.records #about-us {
+    border-color: hsl(51, 50%, 50%);
+}
 
 
 #about-us:hover {
@@ -844,4 +938,55 @@ input[type="checkbox"]:checked + .checkboxlabel::after {
 
 .primary {
     color: var(--primary)
+}
+
+.section {
+    width: 60%;
+    margin-top : 20px;
+}
+
+.guide #main {
+    gap : 40px;
+}
+
+.li-list {
+    margin-left: 2.5rem;
+}
+
+.beginner-guide-section {
+    background-color: hsla(203, 72%, 55%, 30%);
+    border-radius: 2rem;
+    border: solid 0.5rem hsl(203, 72%, 55%);
+    width: calc(42.5% - 3rem);
+    height: 450px;
+    padding: 0 2rem 0 4rem;
+    margin: 0px;
+}
+
+.beginner-guide-section .hero-text {
+    width: 50%;
+}
+
+.world-records-section {
+    background-color: hsla(51, 63%, 56%, 30%);
+    border-radius: 2rem;
+    border: solid 0.5rem hsl(51, 63%, 56%);
+    width: calc(45% - 2rem);
+    height: 450px;
+    padding: 0 1rem 0 4rem;
+    margin: 0px;
+}
+
+.world-records-section .hero-text {
+    width: 45%;
+}
+
+.bubba-png {
+    justify-content: center;
+    width: 50%;
+}
+
+.wr-png {
+    justify-content: center;
+    width: 55%;
 }

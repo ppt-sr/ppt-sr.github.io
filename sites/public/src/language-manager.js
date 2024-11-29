@@ -2,8 +2,7 @@
 function loadAvailableLanguages() {
     const languages = [
         { code: 'en', name: 'English', flag: '/flags/4x3/gb.svg' },
-        { code: 'es', name: 'Español', flag: '/flags/4x3/es.svg' },
-        { code: 'pl', name: 'Polski', flag: '/flags/4x3/pl.svg' }
+        { code: 'es', name: 'Español', flag: '/flags/4x3/es.svg' }
     ];
 
     const langList = document.getElementById('lang-list');

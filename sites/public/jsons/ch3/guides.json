@@ -3,21 +3,21 @@
         "title": "Autosplitter & Load Remover - Tutorial",
         "id": "mAGW9vZM564",
         "version": "Any",
-        "description": "This is a tutorial that explains how to make the Autosplitter & Load Remover work.",
+        "description_key": "autosplitter_load_remover_tutorial_description",
         "author": "TheDementedSalad"
     },
     {
         "title": "Downpatching Chapter 3 - Tutorial",
         "id": "6ahQYdI00Co",
         "version": "Any",
-        "description": "This is a tutorial to downpatch any Poppy Playtime Chapter. <br> <button style='display: none;'></button> Steam Console code: <label class='code'>steam://open/console</label><button class='copy-btn'>COPY CODE</button> <br> Depot: <label class='code'>download_depot 2555190 2555198 6195016546179599385</label><button class='copy-btn'>COPY CODE</button>",
+        "description_key": "downpatching_chapter_3_tutorial_description",
         "author": "n0kitsune"
     },
     {
         "title": "Replace Checkpoints - Tutorial",
         "id": "iQgDAEKBTmk",
         "version": "Any",
-        "description": "This is a tutorial that explains how to replace the checkpoints for Chapter 1. <br> <a target='_blank' href='https://www.speedrun.com/static/resource/t0782.zip?v=8aaec2d'>Download the Chapter 3 Checkpoints</a>",
+        "description_key": "replace_checkpoints_tutorial_description",
         "author": "Holo"
     }
 ]

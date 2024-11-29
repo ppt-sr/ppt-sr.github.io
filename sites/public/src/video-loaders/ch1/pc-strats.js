@@ -1,17 +1,18 @@
 let currentBatch = 0;
 const batchSize = 5;
 let filteredData = [];
-let selectedVideoId = null;
-const storagePrefix = 'pc-ch1-';
-let translations = {}; // Object to store translations
-let currentLang = localStorage.getItem('selectedLanguage') || 'en'; // Get stored language or default to 'en'
+let selectedVideoId = null; // Variable para almacenar el ID del video seleccionado
+const storagePrefix = 'pc-ch2-';
+let translations = {}; // Objeto para almacenar las traducciones
+let currentLang = localStorage.getItem('selectedLanguage') || 'en'; // Obtener el idioma almacenado o por defecto 'en'
 
-const hash = window.location.hash.substring(1);
+// Obtener el ID del video del hash en la URL
+const hash = window.location.hash.substring(1); // Remover el '#' del inicio
 if (hash) {
-    selectedVideoId = hash;
+    selectedVideoId = hash; // Establecer el ID del video seleccionado basado en el hash
 }
 
-// Fetch and store the translations for the selected language
+// Fetch y almacenar las traducciones para el idioma seleccionado
 function loadTranslations(langCode) {
     return fetch(`/lang/${langCode}.json`)
         .then(response => response.json())
@@ -23,7 +24,7 @@ function loadTranslations(langCode) {
 
 // Fetch video data and initialize
 function fetchVideos() {
-    return fetch('/jsons/ch1/strats.json')
+    fetch('/jsons/ch1/strats.json')
         .then(response => response.json())
         .then(data => {
             const videoContainer = document.getElementById('strats-container-ch1');
@@ -37,22 +38,31 @@ function fetchVideos() {
                 if (document.getElementById('any-cb').checked) selectedCategories.push('Any%');
                 if (document.getElementById('no-major-glitches-cb').checked) selectedCategories.push('No Major Glitches');
                 if (document.getElementById('all-tapes-cb').checked) selectedRoutes.push('All Tapes');
-                if (document.getElementById('no-tapes-cb').checked) selectedRoutes.push('No Tapes');
+                if (document.getElementById('any-tapes-cb').checked) selectedRoutes.push('Any Tapes');
 
+                // Recoger versiones seleccionadas
                 const versionCheckboxes = document.querySelectorAll('#filters-container input[type="checkbox"][data-version]');
                 versionCheckboxes.forEach(cb => {
                     if (cb.checked) selectedVersions.push(cb.dataset.version);
                 });
 
-                if (selectedCategories.length === 0 && selectedVideoId) {
-                    filteredData = data.filter(video => video.id === selectedVideoId);
-                    currentBatch = 0;
-                    videoContainer.innerHTML = '';
-                    loadNextBatch();
-                    return;
+                // Si no hay filtros seleccionados
+                if (selectedCategories.length === 0) {
+                    // Si hay un video específico seleccionado, mostrar solo ese video
+                    if (selectedVideoId) {
+                        filteredData = data.filter(video => video.id === selectedVideoId);
+                    } else {
+                        filteredData = []; // No videos should be displayed
+                    }
+                    currentBatch = 0; // Reiniciar el contador de batches
+                    videoContainer.innerHTML = ''; // Limpiar videos existentes
+                    loadNextBatch(); // Cargar el siguiente batch (que será solo el video específico)
+                    return; // Salir de la función
                 }
 
+                // Filtrar los videos
                 filteredData = data.filter(video => {
+                    // Si hay un video seleccionado, mostrarlo sin importar los filtros
                     if (selectedVideoId && video.id === selectedVideoId) return true;
 
                     const categoryMatch = selectedCategories.length === 0 || selectedCategories.some(cat => {
@@ -61,6 +71,7 @@ function fetchVideos() {
                             const versionMatch = selectedVersions.length === 0 || selectedVersions.some(version =>
                                 video.version.split(', ').includes(version.trim())
                             );
+
                             return routeMatch && versionMatch;
                         }
                         return false;
@@ -69,6 +80,7 @@ function fetchVideos() {
                     return categoryMatch;
                 });
 
+                // Aplicar filtro de búsqueda
                 const searchTerm = searchInput.value.toLowerCase();
                 if (searchTerm) {
                     filteredData = filteredData.filter(video => 
@@ -77,9 +89,9 @@ function fetchVideos() {
                     );
                 }
 
-                currentBatch = 0;
-                videoContainer.innerHTML = '';
-                loadNextBatch();
+                currentBatch = 0; // Reiniciar el contador de batches
+                videoContainer.innerHTML = ''; // Limpiar videos existentes
+                loadNextBatch(); // Cargar el siguiente batch
             };
 
             const loadNextBatch = () => {
@@ -91,7 +103,7 @@ function fetchVideos() {
                     const videoDiv = document.createElement('div');
                     videoDiv.className = 'strat-div';
 
-                    const description = translations[video.description_key] || video.description;
+                    const description = translations[video.description_key] || video.description; // Obtener traducción o descripción original
 
                     videoDiv.innerHTML = `
                         <div id="${video.id}" class="video-title-div">
@@ -126,35 +138,51 @@ function fetchVideos() {
                     videoContainer.appendChild(videoDiv);
                 });
 
-                currentBatch++;
-                applyTranslations(); // Apply translations after loading the next batch of videos
+                applyTranslations(); // Aplicar traducciones después de cargar los videos
+
+                currentBatch++; // Incrementar el batch
             };
 
+            // Cargar el primer batch
             loadNextBatch();
 
+            // Detectar el scroll para cargar más videos
             window.addEventListener('scroll', () => {
                 if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight - 300) {
-                    loadNextBatch();
+                    loadNextBatch(); // Cargar el siguiente batch al hacer scroll
                 }
             });
 
+            // Cargar el estado de los checkbox desde localStorage
             const checkboxes = document.querySelectorAll('#filters-container input[type="checkbox"]');
             checkboxes.forEach(cb => {
                 const isChecked = localStorage.getItem(storagePrefix + cb.id) === 'true';
                 cb.checked = isChecked;
             });
 
+            // Agregar event listeners a los checkboxes
             checkboxes.forEach(cb => {
                 cb.addEventListener('change', () => {
-                    localStorage.setItem(storagePrefix + cb.id, cb.checked);
-                    updateFilters();
+                    localStorage.setItem(storagePrefix + cb.id, cb.checked); // Guardar estado del checkbox en localStorage
+                    updateFilters(); // Actualizar filtros al cambiar el estado del checkbox
                 });
             });
 
-            searchInput.addEventListener('input', updateFilters);
+            // Event listener para el campo de búsqueda
+            searchInput.addEventListener('input', updateFilters); // Actualizar filtros cuando el input cambia
+
+            // Aplicar filtros automáticamente después de cargar el estado de los checkbox
             updateFilters();
-        })
-        .catch(error => console.error('Error loading the JSON:', error));
+    })
+}
+
+// Función para mostrar un video específico, ignorando los filtros
+function showSpecificVideo(videoId) {
+    selectedVideoId = videoId; // Establecer el ID del video seleccionado
+    currentBatch = 0; // Reiniciar el batch
+    const videoContainer = document.getElementById('strats-container-ch2');
+    videoContainer.innerHTML = ''; // Limpiar videos existentes
+    updateFilters(); // Volver a aplicar los filtros para mostrar el video seleccionado
 }
 
 // Load translations and then fetch the video data

@@ -2,7 +2,7 @@
     {
         "title": "Hyperspeed Swing (HSS)",
         "id": "Sh0JLIJpudE",
-        "version": "<1.2, 1.3+",
+        "version": "1.0, 1.1",
         "description_key": "hyper_speed_swing_description",
         "author": "n0kitsune",
         "category": {
@@ -29,7 +29,7 @@
     {
         "title": "Pillow Clip Tutorial",
         "id": "XdiDEVpVfxQ",
-        "version": "<1.2, 1.3+",
+        "version": "1.0, 1.1",
         "description_key": "pillow_clip_tutorial_description",
         "author": "proac",
         "category": {
@@ -47,7 +47,7 @@
     {
         "title": "Pillow Boost Tutorial",
         "id": "Rf0N2HS6GtI",
-        "version": "<1.2, 1.3+",
+        "version": "1.0, 1.1",
         "description_key": "pillow_boost_tutorial_description",
         "author": "proac",
         "category": {
@@ -74,7 +74,7 @@
     {
         "title": "Poppy Woppy Skip",
         "id": "n7I348UI2U0",
-        "version": "1.3+",
+        "version": "1.1",
         "description_key": "poppy_woppy_skip_description",
         "author": "Nia",
         "category": {
@@ -86,7 +86,7 @@
     {
         "title": "Green Hand Early (GHE)",
         "id": "SEfdsbruRI4",
-        "version": "<1.2",
+        "version": "1.0",
         "description_key": "green_hand_early_description",
         "author": "Nia",
         "category": {
@@ -107,7 +107,7 @@
     {
         "title": "NAM Skip",
         "id": "a6CpFrU5WQo",
-        "version": "<1.2",
+        "version": "1.0",
         "description_key": "nam_skip_description",
         "author": "Nam (JMK)",
         "category": {
@@ -122,7 +122,7 @@
     {
         "title": "100% NAM Skip",
         "id": "7jYyGEOUBAc",
-        "version": "<1.2",
+        "version": "1.0",
         "description_key": "hundred_nam_skip_description",
         "author": "LilQuince",
         "category": {
@@ -132,9 +132,9 @@
         }
     },
     {
-        "title": "NAM Skip 1.3+",
+        "title": "NAM Skip 1.1",
         "id": "o37M1CTMeOw",
-        "version": "1.3+",
+        "version": "1.1",
         "description_key": "nam_skip_current_patch_description",
         "author": "Nia",
         "category": {
@@ -152,7 +152,7 @@
     {
         "title": "Rukki Skip",
         "id": "mDXk5kS9OGY",
-        "version": "<1.2, 1.3+",
+        "version": "1.0, 1.1",
         "description_key": "ch2_rukki_skip_description",
         "author": "n0kitsune",
         "category": {
@@ -176,7 +176,7 @@
     {
         "title": "Mommy Hand Grab Skip",
         "id": "0S0KuGMnrg4",
-        "version": "<1.2, 1.3+",
+        "version": "1.0, 1.1",
         "description_key": "mommy_hand_grab_skip_description",
         "author": "n0kitsune",
         "category": {
@@ -194,7 +194,7 @@
     {
         "title": "Small Green Hand Skip",
         "id": "BK2MMxyq5Mg",
-        "version": "<1.2, 1.3+",
+        "version": "1.0, 1.1",
         "description_key": "small_green_hand_skip_description",
         "author": "MutantEye",
         "category": {
@@ -212,7 +212,7 @@
     {
         "title": "Green Hand Room Skip",
         "id": "OIv0kd9y-bo",
-        "version": "<1.2, 1.3+",
+        "version": "1.0, 1.1",
         "description_key": "green_hand_room_skip_description",
         "author": "Nia",
         "category": {
@@ -234,7 +234,7 @@
     {
         "title": "Standing on Buttons in Musical Memory",
         "id": "qBB-ICLxX4w",
-        "version": "<1.2, 1.3+",
+        "version": "1.0, 1.1",
         "description_key": "standing_on_buttons_in_musical_memory_description",
         "author": "Hawkz",
         "category": {
@@ -254,7 +254,7 @@
     {
         "title": "Musical Memory Skip (MMS) | Hard Version",
         "id": "hNH0PRbAbs0",
-        "version": "<1.2, 1.3+",
+        "version": "1.0, 1.1",
         "description_key": "musical_memory_skip_description",
         "author": "Mello",
         "category": {
@@ -269,7 +269,7 @@
     {
         "title": "Musical Memory Skip (MMS) | Easy Version (Slower)",
         "id": "OBT-0fPhT2U",
-        "version": "<1.2, 1.3+",
+        "version": "1.0, 1.1",
         "description_key": "musical_memory_skip_cutout_description",
         "author": "n0kitsune",
         "category": {
@@ -284,7 +284,7 @@
     {
         "title": "Musical Memory Load Manipulation",
         "id": "BZ4Bdkj1k2U",
-        "version": "<1.2, 1.3+",
+        "version": "1.0, 1.1",
         "description_key": "musical_memory_load_manipulation_description",
         "author": "n0kitsune",
         "category": {
@@ -302,7 +302,7 @@
     {
         "title": "Whack-a-Wuggy Skip Out of Bounds",
         "id": "8A_TMcBmEk8",
-        "version": "<1.2",
+        "version": "1.0",
         "description_key": "whack-a-wuggy_skip_oob_description",
         "author": "Nia",
         "category": {
@@ -317,7 +317,7 @@
     {
         "title": "Whack-a-Wuggy Skip New Patch",
         "id": "_94xLVzYOXs",
-        "version": "<1.2, 1.3+",
+        "version": "1.0, 1.1",
         "description_key": "whack-a-wuggy_skip_new_patch_description",
         "author": "Nerd Squared",
         "category": {
@@ -334,7 +334,7 @@
     {
         "title": "Barry Skip",
         "id": "gGNH_aNCqXI",
-        "version": "<1.2",
+        "version": "1.0",
         "description_key": "barry_skip_description",
         "author": "Sangohanvde",
         "category": {
@@ -346,7 +346,7 @@
     {
         "title": "Barry Skip | Hard Version",
         "id": "WG877Aaafrc",
-        "version": "1.3+",
+        "version": "1.1",
         "description_key": "barry_skip_current_patch_hard_ver_description",
         "author": "Nia",
         "category": {
@@ -358,7 +358,7 @@
     {
         "title": "Barry Skip | Easy Version",
         "id": "YFk9bjBmJ8E",
-        "version": "1.3+",
+        "version": "1.1",
         "description_key": "barry_skip_current_patch_easy_ver_description",
         "author": "n0kitsune",
         "category": {
@@ -370,7 +370,7 @@
     {
         "title": "Barry Skip Extended",
         "id": "AsNVxIypWkc",
-        "version": "1.3+",
+        "version": "1.1",
         "description_key": "barry_skip_extended_description",
         "author": "Nia",
         "category": {
@@ -385,7 +385,7 @@
     {
         "title": "100% Barry Skip",
         "id": "yaClb5aj5Fo",
-        "version": "<1.2, 1.3+",
+        "version": "1.0, 1.1",
         "description_key": "hundred_barry_skip_description",
         "author": "Nerd Squared",
         "category": {
@@ -397,7 +397,7 @@
     {
         "title": "Statues Skip w/ Objects",
         "id": "eEp6xB-ebOE",
-        "version": "<1.2, 1.3+",
+        "version": "1.0, 1.1",
         "description_key": "statues_skip_w_objects_description",
         "author": "Nia",
         "category": {
@@ -416,7 +416,7 @@
     {
         "title": "Statues Skip w/ crouching",
         "id": "uOxXseQ9iUo",
-        "version": "<1.2, 1.3+",
+        "version": "1.0, 1.1",
         "description_key": "statues_skip_w_crouching_description",
         "author": "Nia",
         "category": {
@@ -433,7 +433,7 @@
     {
         "title": "Hyperspeed Swing Over Tubes",
         "id": "k-eF3a7cwfI",
-        "version": "<1.2",
+        "version": "1.0",
         "description_key": "hyperspeed_swing_over_tubes_description",
         "author": "n0kitsune",
         "category": {
@@ -452,7 +452,7 @@
     {
         "title": "Caves Skip",
         "id": "u_JQEKfLT2o",
-        "version": "1.3+",
+        "version": "1.1",
         "description_key": "caves_skip_description",
         "author": "Nia",
         "category": {
@@ -467,7 +467,7 @@
     {
         "title": "Ruby Skip",
         "id": "-xpfAY8EOLE",
-        "version": "<1.2, 1.3+",
+        "version": "1.0, 1.1",
         "description_key": "ruby_skip_description",
         "author": "n0kitsune",
         "category": {
@@ -484,7 +484,7 @@
     {
         "title": "Water Treatment Skip",
         "id": "2lUwAA8QJa8",
-        "version": "<1.2, 1.3+",
+        "version": "1.0, 1.1",
         "description_key": "water_treatment_skip_description",
         "author": "Laupig",
         "category": {
@@ -499,7 +499,7 @@
     {
         "title": "Water Treatment Skip Swing Variant",
         "id": "0OnrGhW8Jvw",
-        "version": "1.3+",
+        "version": "1.1",
         "description_key": "water_treatment_skip_swing_variant_description",
         "author": "Nia",
         "category": {
@@ -517,7 +517,7 @@
     {
         "title": "GGD Skip",
         "id": "Qg8z2TaWu-I",
-        "version": "<1.2",
+        "version": "1.0",
         "description_key": "ggd_skip_description",
         "author": "Sangohanvde",
         "category": {
@@ -532,7 +532,7 @@
     {
         "title": "GGD Skip",
         "id": "gE2DgVK5oxI",
-        "version": "1.3+",
+        "version": "1.1",
         "description_key": "ggd_skip_current_patch_description",
         "author": "Nia",
         "category": {
@@ -550,7 +550,7 @@
     {
         "title": "proac Skip",
         "id": "mjKg1DPQ5mg",
-        "version": "1.3+",
+        "version": "1.1",
         "description_key": "proac_skip_description",
         "author": "Nia",
         "category": {
@@ -565,7 +565,7 @@
     {
         "title": "Mommy Chase Skip",
         "id": "kso--tLYwf8",
-        "version": "<1.2, 1.3+",
+        "version": "1.0, 1.1",
         "description_key": "mommy_chase_skip_description",
         "author": "Sangohanvde",
         "category": {
@@ -577,7 +577,7 @@
     {
         "title": "Mommy Chase Skip w/ Barrels",
         "id": "bG2Hd3GGgOI",
-        "version": "<1.2, 1.3+",
+        "version": "1.0, 1.1",
         "description_key": "mommy_chase_skip_w_barrels_description",
         "author": "Nia",
         "category": {
@@ -590,7 +590,7 @@
     {
         "title": "Robin/Office Skip",
         "id": "IDJreYBRPEQ",
-        "version": "<1.2, 1.3+",
+        "version": "1.0, 1.1",
         "description_key": "robin_office_skip_description",
         "author": "Ruby Rain",
         "category": {
@@ -609,7 +609,7 @@
     {
         "title": "100% Office Skip",
         "id": "JwJ-NZRR6x0",
-        "version": "<1.2, 1.3+",
+        "version": "1.0, 1.1",
         "description_key": "hundred_office_skip_description",
         "author": "n0kitsune",
         "category": {

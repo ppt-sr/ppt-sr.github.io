@@ -40,8 +40,12 @@
     background-color: var(--cch3);
 }
 
-.about .header {
+.scdr .header {
     background-color: var(--secondary);
+}
+
+.records .header {
+    background-color: hsl(51, 50%, 50%);
 }
 
 #header-title {

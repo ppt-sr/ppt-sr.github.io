@@ -1,35 +1,93 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" href="/public/styles/styles.css">
-    <link rel="stylesheet" href="/public/styles/scrollbar.css">
-    <link rel="stylesheet" href="/public/icomoon/icons.css">
-    <link rel="icon" type="image/png" href="/images/favicon.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="/public/styles/styles.css">
+  <link rel="stylesheet" href="/public/styles/scrollbar.css">
+  <link rel="icon" type="image/png" href="/images/favicon.png" />
+  <link rel="stylesheet" href="/public/icomoon/icons.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PPT SR Documentation</title>
-  </head>
-  <body class="ch1">
-    <div id="fake-header"></div>
-    <header id="header" class="header container slide-in">
-      <a href="/">
-        <img draggable="false" id="header-logo" src="/images/logo.png"></img>
-      </a>
-      <div class="container" id="header-title">
-        <h1 data-translate="chapter_1_console" style="margin-right:20px">CHAPTER 1 - CONSOLE</h1>
-        <h1 data-translate="documentation" style="margin-left:20px">DOCUMENTATION!</h1>
+</head>
+<body class="guide scdr">
+  <header id="header" class="header container slide-in">
+    <a href="/">
+      <img draggable="false" id="header-logo" src="/images/logo.png"></img>
+    </a>
+    <div id="search-bar">
+      <input id="search-bar-input" type="text" data-translate="search_input" placeholder="Search..."></input><div id="search-icon" class="icon-search"></div>
+      <div id="search-results" class="search-results"></div>
+    </div>
+    <div class="container" id="header-title">
+      <h1 data-translate="guide_title">POPPY PLAYTIME SPEEDRUNNING GUIDE!</h1>
+    </div>
+    <a id="about-us" href="/about/"><div id="about-us-link" data-translate="about_us">About Us</div></a>
+  </header>
+    <div id="main">
+      <div class="section">
+        <h1>Setup</h1>
+        <h3>Setup Guide for Poppy Playtime [PC]</h3>
+        <p>Setting up Poppy Playtime for speedruns is straightforward, but there are a few key tools and settings to familiarize yourself with:</p>
+        <ul>
+            <li>Poppy Playtime speedruns are done on different Steam versions of the game; to downpatch Poppy Playtime check out this guides:
+              <div class="li-list">
+                <div>
+                  <a href="/chapter-1/pc/guides/#6ahQYdI00Co"><div data-translate="downpatch_chapter1">Downpatch Chapter 1</div></a>
+                  <a href="/chapter-2/pc/guides/#6ahQYdI00Co"><div data-translate="downpatch_chapter2">Downpatch Chapter 2</div></a>
+                  <a href="/chapter-3/pc/guides/#6ahQYdI00Co"><div data-translate="downpatch_chapter3">Downpatch Chapter 3</div></a>
+                </div>
+              </div>
+            </li>
+            <li>Using an <strong>FPS Counter</strong> is optional but recommended if you wanna reach a high placement in the leaderboard (see below).</li>
+            <li><strong>LiveSplit</strong> is highly recommended for timing your runs. (runs without LiveSplit won't be retimed.)</li>
+        </ul>
       </div>
-      <a id="about-us" href="/about/"><div id="about-us-link" data-translate="about_us">About Us</div></a>
-    </header>
-    <main id="main">
-        <div id="wip-container-ch1" class="wip-container">
-            <img draggable="false" class="wip-png" src="/images/wip.png"></img>
-            <div id="wip-text-container">
-            <h4 data-translate="draft_text">THIS IS A DRAFT.</h4>
-            <h4 data-translate="draft_text_2">PAGE CURRECTLY IN DEVELOPMENT!</h4>
-            </div>
-        </div>
-      </main>
+
+      <div class="section">
+          <h1>FPS Counter</h2>
+          <p>FPS can significantly influence how the games behave. For certain skips, having a higher or lower FPS may make them easier to execute. To ensure fair and accurate verification of high-level runs, we require the use of an FPS counter.</p>
+          <h3>Follow this next steps to get an FPS counter on the games:</h3>
+          <ol>
+              <li>Click on "Steam" and open Settings</a>.</li>
+              <li>Click "In-Game" and make sure Enable the Steam Overlay while in-game is turned on.</li>
+              <li>Use the In-game FPS counter drop-down to decide where on the screen it should appear and the In-game FPS counter high contrast option to make it more visible.</li>
+          </ol>
+          <strong>For the downpatched versions of the games:</strong>
+          <ol>
+            <li>Same as before</a>.</li>
+            <li>Click on "Games" and "Add a Non-Steam Game to my Library...".</li>
+            <li>Click "Browse..." and look up for the .exe you normally use to launch the downpatch versions of the game.</li>
+            <li>Use Steam as the Game Launcher.</li>
+        </ol>
+          <p><strong>Note:</strong> The FPS counter is not required if you're not a top runner. Check the game <a href="https://speedrun.com/poppy_playtime">category rules</a> for details.</p>
+      </div>
+
+      <div class="section">
+        <h1>LiveSplit Configuration</h2>
+        <p>LiveSplit removes pauses and loads, tracks progress, enables comparisons, and automates timing for speedruns.</p>
+        <h3>We recommend using <a target="_blank" href="https://youtu.be/xq2MCodtH34" data-translate="faq_tech_a_1_2">Smallant's LiveSplit Tutorial</a>:</h3>
+        <ol>
+          <t>SmallAnt offers a clear, detailed guide on using LiveSplit for Splits, Subsplits, Configuration, Hotkeys, and OBS setup. However, it lacks coverage of Autosplitters, which are crucial for Poppy Playtime.</t>
+        </ol>
+        <t><strong>That's why we made our own guides on how to use and Set-Up Autosplitters for Poppy Playtime!</strong></t>
+        <ol>
+          <a href="/chapter-1/pc/guides/#uRdQF2G-p7g"><div data-translate="downpatch_chapter1">Chapter 1 Autosplitter and Load Remover</div></a>
+          <a href="/chapter-2/pc/guides/#2ydS3zatWeY"><div data-translate="downpatch_chapter2">Chapter 2 Autosplitter and Load Remover</div></a>
+          <a href="/chapter-3/pc/guides/#mAGW9vZM564"><div data-translate="downpatch_chapter3">Chapter 3 Autosplitter and Load Remover</div></a>
+        </ol>
+      </div>
+
+      <div class="section">
+          <h1>Starting a Speedrun</h1>
+          <p>Once everything is set up, you can start a speedrun by following these steps:</p>
+          <ol>
+              <li>Launch the appropriate chapter and ensure your FPS counter (if used) is running.</li>
+              <li>Reset your LiveSplit timer.</li>
+              <li>Load the game and begin your run from the appropriate starting point.</li>
+          </ol>
+          <p>For additional help, check out the <a href="https://discord.gg/rdwTbGRRwy">community Discord</a>.</p>
+      </div>  
+    </div>
       <footer class="footer">
         <div class="footer-main">
           <div class="footer-left">
@@ -67,7 +125,7 @@
               <div><h3 id="language-label" data-translate="language">LANGUAGE</h3></div>
               <div class="language-picker">
                 <div id="lang-popup" class="languagepicker hidden">
-<ul id="lang-list"></ul>
+                  <ul id="lang-list"></ul>
                 </div>
                 <div id="lang-button">
                     <button id="current-lang" class="current-lang-btn"><img id="current-lang-icon" src="/flags/4x3/gb.svg"/> English</button>
@@ -98,6 +156,7 @@
       </footer>
       <script src="/src/language-manager.js"></script>
       <script src="/src/show-header.js"></script>
-      <script src="/src/scroll-to-hash.js"></script>
-  </body>
+      <script src="/src/search-expand.js"></script>
+      <script src="/src/search.js"></script>
+</body>
 </html>

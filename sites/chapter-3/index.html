@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="/public/styles/scrollbar.css">
     <link rel="icon" type="image/png" href="/images/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PPT SRD</title>
+    <title>PPT SR Documentation</title>
   </head>
   <body class="ch3">
     <div id="fake-header"></div>
@@ -20,13 +20,15 @@
       </div>
       <a id="about-us" href="/about/"><div id="about-us-link" data-translate="about_us">About Us</div></a>
     </header>
-    <main id="main">
-        <div class="platforms double-menu">
-            <div class="platform double-div pc">
-              <div class="platform-pc-div">
-                <button id="pc-button-img"><img draggable="false" id="pc-svg" src="/images/svgs/pc.svg"></button>
-              </div>
-              <button id="pc-button-text"><h4 data-translate="pc">PC</h4></button>
+    <main id="main" class="platforms-main">
+        <div class="platforms triple-menu">
+            <div class="platform platform-div phone">
+              <a class="plat-svg" href="/chapter-3/mobile/"><img draggable="false" id="phone-svg" src="/images/svgs/mobile-icon.svg"></a>
+              <div><h4 data-translate="mobile">Mobile</h4></div>
+            </div>
+            <div class="platform platform-div pc">
+              <a class="plat-svg" id="pc-button-img"><img draggable="false" id="pc-svg" src="/images/svgs/pc-icon.svg"></a>
+              <div id="pc-button-text"><h4 data-translate="pc">PC</h4></div>
             </div>
 
             <!-- Popup structure -->
@@ -37,9 +39,9 @@
             </div>
             </div>
 
-            <div class="platform double-div controller">
-              <a href="/chapter-3/console/"><img draggable="false" id="controller-svg" src="/images/svgs/controller.svg"></a>
-              <a href="/chapter-3/console/"><h4 data-translate="console">Console</h4></a>
+            <div class="platform platform-div controller">
+              <a class="plat-svg" href="/chapter-3/console/"><img draggable="false" id="controller-svg" src="/images/svgs/console-icon.svg"></a>
+              <div><h4 data-translate="console">Console</h4></div>
             </div>
           </div>
       </main>

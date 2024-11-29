@@ -13,6 +13,8 @@ export default defineConfig({
                 about: resolve(__dirname, "sites/about/index.html"),
                 faq: resolve(__dirname, "sites/faq/index.html"),
                 credits: resolve(__dirname, "sites/credits/index.html"),
+                world_records: resolve(__dirname, "sites/world-records/index.html"),
+                begginer_guide: resolve(__dirname, "sites/beginner-guide/index.html"),
 
                 chapter1: resolve(__dirname, "sites/chapter-1/index.html"),
                     chapter1mobile: resolve(__dirname, "sites/chapter-1/mobile/index.html"),

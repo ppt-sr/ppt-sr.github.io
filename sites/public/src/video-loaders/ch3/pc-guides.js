@@ -1,7 +1,8 @@
-let translations = {}; // Object to store translations
-let currentLang = localStorage.getItem('selectedLanguage') || 'en'; // Get stored language or default to 'en'
+// Variables para la gestión de traducciones
+let translations = {}; // Objeto para almacenar traducciones
+let currentLang = localStorage.getItem('selectedLanguage') || 'en'; // Obtener el idioma almacenado o por defecto a 'en'
 
-// Fetch and store the translations for the selected language
+// Función para cargar traducciones
 function loadTranslations(langCode) {
     return fetch(`/lang/${langCode}.json`)
         .then(response => response.json())
@@ -11,8 +12,18 @@ function loadTranslations(langCode) {
         .catch(error => console.error(`Error loading translations for ${langCode}:`, error));
 }
 
+// Función para aplicar traducciones a los elementos
+function applyTranslations() {
+    document.querySelectorAll('[data-translate]').forEach(element => {
+        const key = element.getAttribute('data-translate');
+        if (translations[key]) {
+            element.textContent = translations[key];
+        }
+    });
+}
+
 // Fetch the JSON and display the videos
-function fetchVideos() {
+loadTranslations(currentLang).then(() => {
     fetch('/jsons/ch3/guides.json')
         .then(response => response.json())
         .then(data => {
@@ -22,6 +33,8 @@ function fetchVideos() {
             data.forEach(video => {
                 const videoDiv = document.createElement('div');
                 videoDiv.className = 'strat-div';
+
+                const description = translations[video.description_key] || video.description;
 
                 videoDiv.innerHTML = `
                     <div id="${video.id}" class="video-title-div">
@@ -43,7 +56,7 @@ function fetchVideos() {
                             </div>
                             <div>
                                 <label data-translate="description_label">Description:</label> 
-                                <label class="text-30">${video.description}</label>
+                                <label class="text-30">${description}</label>
                             </div>
                         </div>
                         <div>
@@ -58,22 +71,10 @@ function fetchVideos() {
 
             addCopyButtonListeners();
             scrollToHash(); // Scroll to the video specified in the hash after loading all videos
-
-            // Apply translations after videos are loaded
-            applyTranslations();
+            applyTranslations(); // Aplicar traducciones a los elementos cargados
         })
         .catch(error => console.error('Error loading the JSON:', error));
-}
-
-// Function to apply translations to elements with data-translate attribute
-function applyTranslations() {
-    document.querySelectorAll('[data-translate]').forEach(element => {
-        const key = element.getAttribute('data-translate');
-        if (translations[key]) {
-            element.textContent = translations[key];
-        }
-    });
-}
+});
 
 // Function to scroll to the element based on the hash in the URL
 const scrollToHash = () => {
@@ -99,9 +100,6 @@ const scrollToHash = () => {
         scrollToElement();
     }
 };
-
-// Load translations and then fetch the video data
-loadTranslations(currentLang).then(fetchVideos);
 
 // Wait for the page to fully load before starting the hash check
 window.addEventListener('load', () => {

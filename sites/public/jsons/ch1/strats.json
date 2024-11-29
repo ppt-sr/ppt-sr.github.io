@@ -2,205 +2,209 @@
     {
         "title": "Blue Hand Skip (BHS)",
         "id": "jqwK8JXwF8s",
-        "version": "Old Patch, Current Patch",
+        "version": "<1.1, 1.2",
         "description_key": "blue_hand_skip_description",
         "author": "MythicCheese",
         "category": {
             "Any%": {
                 "All Tapes": true,
-                "No Tapes": true
+                "Any Tapes": true
             }
         }
     },
     {
         "title": "Unopened Door",
         "id": "QgDjy8MAOZ8",
-        "version": "Old Patch",
+        "version": "<1.1",
         "description_key": "unopened_door_description",
         "author": "MythicCheese",
         "category": {
             "Any%": {
                 "All Tapes": true,
-                "No Tapes": true
+                "Any Tapes": true
             },
             "No Major Glitches": {
                 "All Tapes": true,
-                "No Tapes": true
+                "Any Tapes": true
             }
         }
     },
     {
         "title": "Hyperspeed Hallway (HSH)",
         "id": "L5nJRKupQwY",
-        "version": "Old Patch, Current Patch",
+        "version": "<1.1, 1.2",
         "description_key": "hyperspeed_hallway_description",
         "author": "Nia",
         "category": {
             "Any%": {
                 "All Tapes": true,
-                "No Tapes": true
+                "Any Tapes": true
             },
             "No Major Glitches": {
                 "All Tapes": true,
-                "No Tapes": true
+                "Any Tapes": true
             }
         }
     },
     {
-        "title": "Mythic Cubes | Old Patch",
+        "title": "Mythic Cubes | <1.1",
         "id": "l-0or95GWdE",
-        "version": "Old Patch",
+        "version": "<1.1",
         "description_key": "mythic_cubes_old_patch_description",
         "author": "MythicCheese",
         "category": {
             "No Major Glitches": {
                 "All Tapes": true,
-                "No Tapes": true
+                "Any Tapes": true
             }
         }
     },
     {
-        "title": "Mythic Cubes | Current Patch",
+        "title": "Mythic Cubes | 1.2",
         "id": "l-0or95GWdE",
-        "version": "Current Patch",
+        "version": "1.2",
         "description_key": "mythic_cubes_current_patch_description",
         "author": "MythicCheese",
         "category": {
             "Any%": {
                 "All Tapes": true,
-                "No Tapes": true
+                "Any Tapes": true
             },
             "No Major Glitches": {
                 "All Tapes": true,
-                "No Tapes": true
+                "Any Tapes": true
             }
         }
     },
     {
-        "title": "Red Hand Skip (RHS) | Old Patch",
+        "title": "Red Hand Skip (RHS) | <1.1",
         "id": "KAbUV4uBTzY",
-        "version": "Old Patch",
+        "version": "<1.1",
         "description_key": "red_hand_skip_old_patch_description",
         "author": "MythicCheese",
         "category": {
             "Any%": {
                 "All Tapes": true,
-                "No Tapes": true
+                "Any Tapes": true
             }
         }
     },
     {
-        "title": "Red Hand Skip (RHS) | Current Patch",
+        "title": "Red Hand Skip (RHS) | 1.2",
         "id": "EKQ3hXL0jSk",
-        "version": "Old Patch",
+        "version": "<1.1",
         "description_key": "red_hand_skip_current_patch_description",
         "author": "Ajai",
         "category": {
             "Any%": {
                 "All Tapes": true,
-                "No Tapes": true
+                "Any Tapes": true
             }
         }
     },
     {
         "title": "Rukki Skip",
         "id": "sSrDxPO0-s8",
-        "version": "Old Patch, Current Patch",
+        "version": "<1.1, 1.2",
         "description_key": "rukki_skip_ch1_description",
         "author": "n0kitsune",
         "category": {
             "No Major Glitches": {
                 "All Tapes": true,
-                "No Tapes": true
+                "Any Tapes": true
             }
         }
     },
     {
         "title": "No Slide Reload",
         "id": "Md7_Y-Kesb8",
-        "version": "Old Patch",
+        "version": "<1.1",
         "description_key": "no_slide_reload_description",
         "author": "MythicCheese",
         "category": {
             "No Major Glitches": {
                 "All Tapes": true,
-                "No Tapes": true
+                "Any Tapes": true
             }
         }
     },
     {
         "title": "Stair Clip",
         "id": "rSWFhaQTHl8",
-        "version": "Old Patch",
+        "version": "<1.1",
         "description_key": "stair_clip_description",
         "author": "MythicCheese",
         "category": {
             "Any%": {
                 "All Tapes": true,
-                "No Tapes": true
+                "Any Tapes": true
+            },
+            "No Major Glitches": {
+                "All Tapes": true,
+                "Any Tapes": true
             }
         }
     },
     {
-        "title": "Catclip | Old Patch",
+        "title": "Catclip | <1.1",
         "id": "v0039B49RTA",
-        "version": "Old Patch",
+        "version": "<1.1",
         "description_key": "catclip_old_patch_description",
         "author": "MythicCheese",
         "category": {
             "Any%": {
                 "All Tapes": true,
-                "No Tapes": true
+                "Any Tapes": true
             },
             "No Major Glitches": {
                 "All Tapes": true,
-                "No Tapes": true
+                "Any Tapes": true
             }
         }
     },
     {
-        "title": "Catclip | Current Patch",
+        "title": "Catclip | 1.2",
         "id": "w3gDZGgijUg",
-        "version": "Current Patch",
+        "version": "1.2",
         "description_key": "catclip_current_patch_description",
         "author": "Nia",
         "category": {
             "Any%": {
                 "All Tapes": true,
-                "No Tapes": true
+                "Any Tapes": true
             },
             "No Major Glitches": {
                 "All Tapes": true,
-                "No Tapes": true
+                "Any Tapes": true
             }
         }
     },
     {
         "title": "Entarino Slide",
         "id": "Z0jEhJsyJQ8",
-        "version": "Old Patch, Current Patch",
+        "version": "<1.1, 1.2",
         "description_key": "entarino_slide_description",
         "author": "MythicCheese",
         "category": {
             "Any%": {
                 "All Tapes": true,
-                "No Tapes": true
+                "Any Tapes": true
             },
             "No Major Glitches": {
                 "All Tapes": true,
-                "No Tapes": true
+                "Any Tapes": true
             }
         }
     },
     {
         "title": "Catwalk Clip",
         "id": "jrIoy7zHE3Q",
-        "version": "Old Patch",
+        "version": "<1.1",
         "description_key": "catwalk_clip_description",
         "author": "MythicCheese",
         "category": {
             "Any%": {
-                "No Tapes": true
+                "Any Tapes": true
             }
         }
     }

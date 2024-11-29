@@ -237,6 +237,22 @@
         }
     },
     {
+        "title": "Statues Skip",
+        "id": "bnL8r6GbWnU",
+        "description_key": "mobile_statues_skip_description",
+        "author": "n0kitsune",
+        "category": {
+            "All Minigames": {
+                "Out of Bounds": true,
+                "Inbounds": true
+            },
+            "100%": {
+                "Out of Bounds": true,
+                "Inbounds": true
+            }
+        }
+    },
+    {
         "title": "Jumping Over Tubes",
         "id": "ONd3RBJans0",
         "description_key": "mobile_jumping_over_tubes_description",
@@ -254,7 +270,7 @@
     },
     {
         "title": "Ruby Skip",
-        "id": "cZQhfN469lQ",
+        "id": "o2N_2QP3cXs",
         "description_key": "mobile_ruby_skip_description",
         "author": "n0kitsune",
         "category": {

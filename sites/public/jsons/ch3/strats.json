@@ -2,7 +2,7 @@
     {
         "title": "Phone Call Skip",
         "id": "KQQGQw2L6ME",
-        "description": "Consistent Set-Up.",
+        "description_key": "phone_call_skip_description",
         "author": "Sangohanvde",
         "category": {
             "Any%": {
@@ -24,7 +24,7 @@
     {
         "title": "First Area Skip",
         "id": "8hHfolxcKxk",
-        "description": "If you do this with a Prop Launch its UNRESTRICTED.",
+        "description_key": "first_area_skip_description",
         "author": "ontrigger",
         "category": {
             "Any%": {
@@ -39,7 +39,7 @@
     {
         "title": "First Puzzle Skip",
         "id": "JBBCngxUA0Y",
-        "description": "If you miss this first try it will marked down as Out of Bounds. <br> Right now not in use.",
+        "description_key": "first_puzzle_skip_description",
         "author": "Hawkz",
         "category": {
             "Any%": {
@@ -60,7 +60,7 @@
     {
         "title": "Tram Skip | Prop Launch",
         "id": "TMLl8k6toRI",
-        "description": "Make sure to hit the trigger in the red flashing area.",
+        "description_key": "tram_skip_prop_launch_description",
         "author": "ClownTech",
         "category": {
             "Any%": {
@@ -71,7 +71,7 @@
     {
         "title": "Tram Skip",
         "id": "m2C35NRPwa4",
-        "description": "Video is self explanatory.",
+        "description_key": "tram_skip_description",
         "author": "Nia",
         "category": {
             "Any%": {
@@ -83,7 +83,7 @@
     {
         "title": "Tram Skip 100% / All Stages",
         "id": "sq3qA0Hs7-Y",
-        "description": "Follow the lineup!",
+        "description_key": "tram_skip_100_all_stages_description",
         "author": "Nerd_Squared",
         "category": {
             "All Stages": {
@@ -97,7 +97,7 @@
     {
         "title": "Tram Skip All Stages / 100%",
         "id": "I_yT2SQkur0",
-        "description": "The normal one softlocks you in the gas room.",
+        "description_key": "tram_skip_all_stages_100_description",
         "author": "Hawkz",
         "category": {
             "All Stages": {
@@ -112,7 +112,7 @@
     {
         "title": "HSH Skip All Stages",
         "id": "-OLSIOhu3u4",
-        "description": "Video is self explanatory.",
+        "description_key": "hsh_skip_all_stages_description",
         "author": "ontrigger",
         "category": {
             "All Stages": {
@@ -123,7 +123,7 @@
     {
         "title": "Second Floor Skip",
         "id": "YwBX4QDMpso",
-        "description": "It's easier to touch the trigger on a 45º angle. <br> For 100% place the tape before performing the skip.",
+        "description_key": "second_floor_skip_description",
         "author": "Lilleman",
         "category": {
             "Any%": {
@@ -142,7 +142,7 @@
     {
         "title": "Early Dome",
         "id": "Vsr8tfY0xhk",
-        "description": "You still need the gasmask for later.",
+        "description_key": "early_dome_description",
         "author": "Lilleman",
         "category": {
             "Any%": {
@@ -160,7 +160,7 @@
     {
         "title": "Dome Elevator Skip",
         "id": "ciDdzeHyM40",
-        "description": "Video is self explanatory.",
+        "description_key": "dome_elevator_skip_description",
         "author": "Lilleman",
         "category": {
             "Any%": {
@@ -178,7 +178,7 @@
     {
         "title": "Vent Skip",
         "id": "tn0duTft9CM",
-        "description": "For 100% grab the note before getting in position.",
+        "description_key": "vent_skip_description",
         "author": "Sangohanvde",
         "category": {
             "Any%": {
@@ -197,7 +197,7 @@
     {
         "title": "Full School Route",
         "id": "9s13jLuaeYM",
-        "description": "Video is self-explanatory [IGNORE CAVES PART]",
+        "description_key": "full_school_route_description",
         "author": "LA",
         "category": {
             "Any%": {
@@ -219,7 +219,7 @@
     {
         "title": "Caves Skip",
         "id": "5LYVMCytYgQ",
-        "description": "Video is self-explanatory",
+        "description_key": "caves_skip_description",
         "author": "ontrigger",
         "category": {
             "Any%": {
@@ -239,7 +239,7 @@
     {
         "title": "Box Puzzle Skip [NEEDS REPLACEMENT]",
         "id": "aN_EbKmzcHg",
-        "description": "Video explains everything well",
+        "description_key": "box_puzzle_skip_description",
         "author": "mushymeow",
         "category": {
             "Any%": {
@@ -257,7 +257,7 @@
     {
         "title": "Playhouse Skip",
         "id": "20KgR3B38DM",
-        "description": "You need “View Distance” on “Ultra”",
+        "description_key": "playhouse_skip_description",
         "author": "Nam (JMK)",
         "category": {
             "All Stages": {
@@ -271,7 +271,7 @@
     {
         "title": "Office Caves Half Puzzle Skip",
         "id": "cnNjH6JGJZk",
-        "description": "Video is self-explanatory",
+        "description_key": "office_caves_half_puzzle_skip_description",
         "author": "LA",
         "category": {
             "Any%": {
@@ -294,7 +294,7 @@
     {
         "title": "Last Puzzle Skip",
         "id": "lsuZO4UnmCk",
-        "description": "Video is self-explanatory",
+        "description_key": "last_puzzle_skip_description",
         "author": "LA",
         "category": {
             "Any%": {
@@ -317,7 +317,7 @@
     {
         "title": "Catnap Jumpscare Skip",
         "id": "sjvielVNElA",
-        "description": "Video explains everything",
+        "description": "catnap_jumpscare_skip_description",
         "author": "Cindorian",
         "category": {
             "Any%": {
@@ -337,7 +337,7 @@
     {
         "title": "Poppy Door Key Skip",
         "id": "U7IK1U4JEvo",
-        "description": "You can open the Poppy Door early but the plug doesn't appear until you complete Office, however the door stays open. <br> You need to touch the trigger at the door below the statue",
+        "description_key": "poppy_door_key_skip_description",
         "author": "Nia",
         "category": {
             "Any%": {
@@ -358,7 +358,7 @@
     {
         "title": "Barrelevator Skip",
         "id": "PuCSfIOpOz8",
-        "description": "Can be tricky to pull off.",
+        "description_key": "barrelevator_skip_description",
         "author": "Nia",
         "category": {
             "Any%": {
@@ -376,7 +376,7 @@
     {
         "title": "Elevator Clip",
         "id": "-xa06l9Od5A",
-        "description": "The bounce at the end is not necessary; you can press the button and the elevator will rise.",
+        "description_key": "elevator_clip_description",
         "author": "Laupig",
         "category": {
             "Any%": {
@@ -387,7 +387,7 @@
     {
         "title": "Purple Hand Skip",
         "id": "j9GRn98frEk",
-        "description": "Get the Green Charge when there are 5 seconds left then scroll upwards anytime during those 5 seconds, if done correctly you should receive purple hand after defeating CatNap",
+        "description_key": "purple_hand_skip_description",
         "author": "Danger1451",
         "category": {
             "Any%": {
@@ -399,7 +399,7 @@
     {
         "title": "Elevator Skip",
         "id": "IuDxsjIeVuY",
-        "description": "It's a bit precise, but not too hard",
+        "description_key": "elevator_skip_description",
         "author": "RayRay",
         "category": {
             "Any%": {
@@ -417,7 +417,7 @@
     {
         "title": "The Hour of Joy Skip",
         "id": "mewCAtO8Ag4",
-        "description": "The video explains everything you need to know",
+        "description_key": "hour_of_joy_skip_description",
         "author": "RayRay",
         "category": {
             "Any%": {

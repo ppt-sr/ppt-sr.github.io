@@ -37,7 +37,7 @@ function addCopyButtonListeners() {
 
             // Change button text to "Copied" and add "copied" class
             const originalText = button.textContent;
-            button.textContent = "COPIED!";
+            button.textContent = "✅";
             button.classList.add("copied");
 
             // Revert the button text and remove "copied" class after 2 seconds

@@ -2,61 +2,87 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="/public/styles/about.css">
     <link rel="stylesheet" href="/public/styles/styles.css">
+    <link rel="stylesheet" href="/public/styles/records.css">
+    <link rel="stylesheet" href="/public/styles/logo.css">
     <link rel="stylesheet" href="/public/styles/scrollbar.css">
     <link rel="stylesheet" href="/public/icomoon/icons.css">
     <link rel="icon" type="image/png" href="/images/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PPT SR Documentation</title>
   </head>
-  <body class="about scdr">
+  <body class="records">
     <div id="fake-header"></div>
     <header id="header" class="header container slide-in">
       <a href="/">
         <img draggable="false" id="header-logo" src="/images/logo.png"></img>
       </a>
-      <div class="container" id="header-title">
-        <h1 data-translate="about_us_title">ABOUT US!</h1>
+      <div id="search-bar">
+        <input id="search-bar-input" type="text" data-translate="search_input" placeholder="Search..."></input><div id="search-icon" class="icon-search"></div>
+        <div id="search-results" class="search-results"></div>
       </div>
+      <div class="container" id="header-title">
+        <h1 data-translate="records_title">WORLD RECORDS!</h1>
+      </div>
+      <a id="about-us" href="/about/"><div id="about-us-link" data-translate="about_us">About Us</div></a>
     </header>
     <main>
-      <div class="hero about">
-        <div class="text">
-          <h1 data-translate="about_us">About Us</h1>
-          <p><t data-translate="welcome_text">Welcome to the official Poppy Playtime Speedrunning resource hub! We are the </t><strong data-translate="pptsr_mod_team">Poppy Playtime Speedrunning Mod Team</strong><t data-translate="welcome_text_2">, dedicated to curating and maintaining an extensive collection of glitches, strategies, skips, and guides discovered and shared by the community. </t><br><br><br> <strong data-translate="welcome_text_hook">Ready to dive in?</strong></p>
+      <div id="wip-container-wr" class="wip-container">
+        <img draggable="false" class="wip-png" src="/images/wip.png"></img>
+        <div id="wip-text-container">
+        <h4 data-translate="draft_text">THIS IS A DRAFT.</h4>
+        <h4 data-translate="draft_text_2">PAGE CURRECTLY IN DEVELOPMENT!</h4>
         </div>
-        <div id="img">
-          <img draggable="false" src="/images/minihugblue.webp"></img>
+    </div>
+      <div class="tab-container">
+        <div class="tab-buttons">
+          <button class="tab-button active" data-target="world-records"><icon class="icon-earth"></icon> World Records</button>
+          <button class="tab-button" data-target="iconic-runs"><icon class="icon-star-empty"></icon> Iconic Runs</button>
         </div>
-      </div>
-      <div class="hero our-mission">
-        <div class="text">
-          <h1 data-translate="our_mission">Our Mission</h1>
-          <p><t data-translate="our_mission_text">Our mission is to provide a centralized and accessible platform where </t><strong data-translate="our_mission_text_2">speedrunners & glitch-hunters</strong> <t data-translate="our_mission_text_3">can easily find and contribute valuable resources. We aim to foster collaboration and push the boundaries of Poppy Playtime Speedrunning. </t> <br><br><br><strong data-translate="our_mission_hook">Your next world record could start here!</a></strong></p>
+        <div class="tab-contents">
+          <div id="world-records" class="tab-content active">
+            <!-- Contenido de World Records -->
+            <p>World Records Go Here!.</p>
+          </div>
+            <div id="iconic-runs" class="tab-content iconic-container">
+              <div class="iconic-div">
+                <div id="rLiVVdySp14" class="video-title-div">
+                  <h4>I GOT the FIRST SUB 3 MINUTES in POPPY PLAYTIME 2 SPEEDRUN HISTORY / Any% oob / proacventure</h4>
+                  <div class="video-div">
+                      <iframe width="640" height="360" 
+                          src="https://www.youtube.com/embed/rLiVVdySp14" 
+                          frameborder="0" 
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                          allowfullscreen>
+                      </iframe>
+                  </div>
+                </div>
+                <div class="video-description-credits-div">
+                  <div class="video-description-div">
+                    <div>
+                      <h2>Breaking the 'Impossible' Barrier: The First Sub-3 Run Ever</h2>
+                    </div>
+                    <div>
+                        <label>Chapter 2 <label class="text-30">|</label> Any% <label class="text-30">|</label> Out of Bounds <label class="text-30">|</label> v1.0</label>
+                    </div>
+                    <div>
+                      <label>13/01/2024</label>
+                    </div>
+                    <div>
+                        <label data-translate="description_label">Description:</label> 
+                        <label class="text-30">This extraordinary and seemingly unbeatable run was achieved by Proacventure, making him the first and only player to complete Poppy Playtime Chapter 2 in under 3 minutes without using cheats. <br>After an astounding 40,000+ attempts, Proac accomplished what was once considered impossible and out of reach. <br>This remarkable achievement also earned him a $250 reward from AstralSpiff's bounty.</label>
+                    </div>
+                  </div>
+                  <div>
+                      <label data-translate="video_by_label">Video by:</label> 
+                      <label class="text-30">proac</label>
+                  </div>
+                </div>
+              </div>
+            </div>
         </div>
-        <div id="img">
-          <img draggable="false" src="/images/minihugpurple.webp"></img>
-        </div>
-      </div>
-      <div class="hero behind-scenes">
-        <div class="text">
-          <h1 data-translate="behind_the_scenes">Behind the Scenes</h1>
-          <p><t data-translate="behind_the_scenes_text">We are more than just a collection of strategies and glitches — behind every guide, there’s a passionate team of </t><strong data-translate="behind_the_scenes_text_2">moderators, speedrunners, and community members working together.</strong><t data-translate="behind_the_scenes_text_3"> From testing the latest skips to documenting key moments, we ensure every piece of content is thoroughly reviewed and verified.</t> <br><br><br><strong data-translate="behind_the_scenes_hook">We put in the work so you can focus on the run!</strong></p>
-        </div>
-        <div id="img">
-          <img draggable="false" src="/images/minihugpink.webp"></img>
-        </div>
-      </div>
-      <div class="hero get-involved">
-        <div class="text">
-          <h1 data-translate="get_involved">Get Involved</h1>
-          <p><t data-translate="get_involved_text">Have you found a new skip or strat? We encourage all community members to share their findings! Feel free to reach out to us on our </t><a target="_blank" href="https://discord.gg/EbxtqgcP4x">Discord</a><t data-translate="get_involved_text_2"> to contribute to the ever-evolving Poppy Playtime Speedrunning. </t><br><br><br><strong data-translate="get_involved_hook">Be part of this with us!</strong></p>
-        </div>
-        <div id="img">
-          <img draggable="false" src="/images/minihugred.webp"></img>
-        </div>
-      </div>
+      </div>      
+      <button class="icon-arrow-up2" id="backToTop"></button>
     </main>
     <footer class="footer">
       <div class="footer-main">
@@ -95,7 +121,7 @@
             <div><h3 id="language-label" data-translate="language">LANGUAGE</h3></div>
             <div class="language-picker">
               <div id="lang-popup" class="languagepicker hidden">
-<ul id="lang-list"></ul>
+                <ul id="lang-list"></ul>
               </div>
               <div id="lang-button">
                   <button id="current-lang" class="current-lang-btn"><img id="current-lang-icon" src="/flags/4x3/gb.svg"/> English</button>
@@ -124,7 +150,12 @@
         </div>
       </div>
     </footer>
+    <script src="/src/back-button.js"></script>
     <script src="/src/language-manager.js"></script>
     <script src="/src/show-header.js"></script>
+    <script src="/src/search-expand.js"></script>
+    <script src="/src/scroll-to-hash.js"></script>
+    <script src="/src/search.js"></script>
+    <script src="/src/records.js"></script>
   </body>
 </html>

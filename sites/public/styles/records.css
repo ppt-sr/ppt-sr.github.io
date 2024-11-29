@@ -1,0 +1,206 @@
+:root {
+    --pprimary: hsl(51, 50%, 50%);
+    --pprimary5: hsla(51, 50%, 50%, 5%);
+    --pprimary10: hsla(51, 50%, 50%, 10%);
+    --pprimary15: hsla(51, 50%, 50%, 15%);
+    --pprimary20: hsla(51, 50%, 50%, 20%);
+    --pprimary25: hsla(51, 50%, 50%, 25%);
+    --pprimary30: hsla(51, 50%, 50%, 30%);
+    --pprimary35: hsla(51, 50%, 50%, 35%);
+    --pprimary40: hsla(51, 50%, 50%, 40%);
+    --pprimary45: hsla(51, 50%, 50%, 45%);
+    --pprimary50: hsla(51, 50%, 50%, 50%);
+    --pprimary55: hsla(51, 50%, 50%, 55%);
+    --pprimary60: hsla(51, 50%, 50%, 60%);
+    --pprimary65: hsla(51, 50%, 50%, 65%);
+    --pprimary70: hsla(51, 50%, 50%, 70%);
+    --pprimary75: hsla(51, 50%, 50%, 75%);
+    --pprimary80: hsla(51, 50%, 50%, 80%);
+    --pprimary85: hsla(51, 50%, 50%, 85%);
+    --pprimary90: hsla(51, 50%, 50%, 90%);
+    --pprimary95: hsla(51, 50%, 50%, 95%);
+}
+
+.main80 {
+    width: 80%;
+    align-items: center;
+}
+
+.iconic-runs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.run-card {
+  flex: 1 1 calc(50% - 20px);
+  background-color: var(--bg);
+  border: 0.5rem solid var(--pprimary);
+  border-radius: 2rem;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.run-card h4 {
+  font-size: 1.2em;
+  margin: 0px 0px 10px 0px;
+}
+
+.run-card p {
+  margin: 5px 0;
+}
+
+.watch-button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 15px;
+  background-color: var(--secondary);
+  color: var(--text);
+  text-decoration: none;
+  border-radius: 0.5rem;
+  font-size: 0.9em;
+  transition: transform 0.2s ease;
+}
+
+.watch-button:hover {
+  background-color: var(--secondary);
+}
+
+.watch-button:hover {
+    transform: scale(1.02);
+  }
+  
+.iconic-container {
+    flex-direction: column;
+    display: flex;
+    width: 80%;
+    gap: 3rem;
+}
+
+.iconic-div {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+    gap: 2em;
+    width: 100%;
+    position: relative;
+    height: 540px;
+    background-color: var(--pprimary20);
+    border-radius: 2rem;
+    border: solid 1rem var(--pprimary);
+    padding: 1.5rem;
+    box-sizing: border-box;
+}
+
+.video-description-credits-div {
+    margin-top: 0rem;
+    width: 100%;
+    height: calc(100% - 1rem);
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    position: relative;
+    justify-content: space-between; /* Distributes space between items */
+    line-height: 2rem;
+}
+
+.records main {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.records .iconic-container iframe {
+    border-radius: 2rem;
+    border: solid 3px var(--pprimary);
+}
+
+.records .footer-main {
+  background-color: var(--pprimary35);
+  border: solid 0.5rem var(--pprimary50);
+  border-bottom: none;
+}
+.records #lang-popup {
+  border: 2.5px solid var(--pprimary);
+}
+.records #lang-button {
+  border: 2.5px solid var(--pprimary);
+}
+
+/* Contenedor general */
+.tab-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+/* Botones de pestañas */
+.tab-buttons {
+  display: flex;
+  justify-content: space-evenly;
+  background: var(--pprimary50);
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  height: 4rem;
+  width: 20%;
+}
+
+.tab-button {
+  flex: 1;
+  text-align: center;
+  padding: 10px 15px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  font-size: 16px;
+  color: var(--pprimary);
+  transition: all 0.3s ease;
+  border-radius: 6px;
+}
+
+.tab-button.active {
+  background: var(--pprimary);
+  color: var(--text);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Contenido de las pestañas */
+.tab-contents {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tab-content {
+  display: none;
+  animation: fadeIn 0.3s ease;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+/* Animación */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.records .wip-container {
+  background-color: var(--pprimary30);
+  box-shadow: 10px 10px var(--pprimary80);
+}
