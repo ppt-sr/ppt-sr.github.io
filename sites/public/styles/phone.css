@@ -41,24 +41,6 @@
         pointer-events: none;
     }
 
-    .hamburger-bottom {
-        display: flex;
-        flex-direction: column;
-        font-size: 0.9rem;
-        color: var(--text50);
-        padding: 1rem;
-        margin-top: auto; /* Asegura que se coloque al final */
-    }
-
-    .hamburger-bottom #powered-by {
-        margin-bottom: 1rem;
-    }
-    
-    #mobile-menu.mobile-menu .hamburger-bottom div h1 {
-        font-size: 1.2rem;
-        color: var(--text50);
-    }
-
     /* Hamburguer Menu */
     #mobile-menu.mobile-menu .hamburger-link {
         padding: 1rem;
