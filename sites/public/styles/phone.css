@@ -1,0 +1,451 @@
+/* General: Ajuste para móviles */
+@media (max-width: 1023px) {
+    #menu-toggle.menu-toggle {
+        font-size: 1.5rem;
+        background: none;
+        border: none;
+        color: var(--text);
+        cursor: pointer;
+        display: block;
+    }
+
+    /* Mobile Menu */
+    #mobile-menu.mobile-menu {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        left: -100%; /* Comienza fuera de la pantalla */
+        width: 75%;
+        height: 100vh;
+        z-index: 1000;
+        background-color: var(--bg);
+        overflow: hidden;
+        transition: left 0.3s ease-in-out; /* Animación al mover el menú */
+        padding-bottom: 3rem; /* Añade un poco de espacio en la parte inferior */
+    }
+
+    #mobile-menu.mobile-menu.open {
+        left: 0; /* Cuando está abierto, se mueve a la vista */
+    }
+
+    #mobile-menu.mobile-menu::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: var(--text5);
+        z-index: 1;
+        pointer-events: none;
+    }
+
+    .hamburger-bottom {
+        display: flex;
+        flex-direction: column;
+        font-size: 0.9rem;
+        color: var(--text50);
+        padding: 1rem;
+        margin-top: auto; /* Asegura que se coloque al final */
+    }
+
+    .hamburger-bottom #powered-by {
+        margin-bottom: 1rem;
+    }
+    
+    #mobile-menu.mobile-menu .hamburger-bottom div h1 {
+        font-size: 1.2rem;
+        color: var(--text50);
+    }
+
+    /* Hamburguer Menu */
+    #mobile-menu.mobile-menu .hamburger-link {
+        padding: 1rem;
+        color: var(--text);
+        text-decoration: none;
+    }
+
+    #mobile-menu.mobile-menu .mobile-header {
+        display: flex;
+        height: 5%;
+        padding: 1rem;
+        align-items: center;
+    }
+    
+    #mobile-menu.mobile-menu .mobile-header #hamburger-text h1 {
+        display: block;
+        margin: 0;
+        font-size: 1.2rem;
+        margin-left: 4rem;
+    }
+
+
+    #mobile-menu.mobile-menu .hamburger-menu {
+        padding: 1rem;
+    }
+
+    .mobile-menu .hamburger-align {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; /* Alinea los elementos a lo largo del eje vertical */
+        height: 100%; /* Asegura que el contenedor ocupe toda la altura del menú */
+    }
+
+    #mobile-menu.mobile-menu .hamburger-menu a {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        font-size: 1rem;
+        color: var(--text);
+        font-weight: 500;
+        transition: color 0.3s ease;
+    }
+
+    .header-logo-link {
+        display: none;
+    }
+
+    #mobile-menu.mobile-menu .hamburger-align {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; /* Alinea los elementos a lo largo del eje vertical */
+        flex-grow: 1; /* Asegura que el espacio entre los enlaces y el pie de página se llene */
+    }
+    
+
+    /* Overlay */
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        backdrop-filter: blur(10px);
+        z-index: 999;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease, visibility 0.3s ease; /* Animación suave para el overlay */
+    }
+
+    .overlay.visible {
+        opacity: 1;
+        visibility: visible; /* El overlay es visible cuando se activa */
+    }
+    
+    body {
+        font-size: 0.9rem;
+        padding: 0 1rem;
+    }
+
+    /* Footer */
+    .footer {
+        display: none;
+    }
+
+    .footer-main {
+        flex-direction: column;
+        width: 100%;
+        height: auto; /* Ajuste dinámico */
+        padding: 1rem;
+    }
+
+    .footer-left, .footer-right {
+        width: 100%; /* Usar ancho completo */
+        margin: 0; /* Quita márgenes laterales */
+        padding: 1rem 0;
+    }
+
+    .footer-r a {
+        font-size: 0.85rem; /* Ajustar tamaño de enlaces */
+    }
+
+    /* Records */
+    .run-card {
+        flex: 1 1 100%; /* Cada tarjeta ocupa el ancho completo */
+        margin-bottom: 1rem; /* Espaciado entre tarjetas */
+    }
+
+    .iconic-div {
+        flex-direction: column; /* Columnas para alineación vertical */
+        height: auto; /* Altura flexible */
+    }
+
+    .iconic-container {
+        width: 100%;
+        gap: 1rem; /* Menor separación */
+    }
+
+    div.triple-menu, .double-menu {
+        flex-direction: column; /* Columnas en móviles */
+        width: 85%; /* Ocupa todo el ancho */
+        gap: 1rem; /* Ajusta separación */
+    }
+
+    div.chapter {
+        display: flex;
+        flex-direction: row;
+    }
+
+    a.chapter-img {
+        width: 55%;
+    }
+
+    .triple-div, .double-div {
+        width: 100%; /* Ancho completo */
+        margin-bottom: 1rem; /* Espaciado entre elementos */
+    }
+
+    /* Botones */
+    .tab-buttons {
+        flex-direction: column; /* Botones en línea vertical */
+        gap: 1rem; /* Espacio entre ellos */
+        width: 100%; /* Ancho completo */
+    }
+
+    .tab-button {
+        font-size: 0.9rem; /* Tamaño ajustado */
+        padding: 0.5rem;
+    }
+
+    /* General Sections */
+    .beginner-guide-section, .world-records-section {
+        width: 100%; /* Ajusta el ancho */
+        margin-bottom: 1rem; /* Espaciado entre secciones */
+        padding: 1rem; /* Reducir padding */
+    }
+
+    /* Back to Top Button */
+    #backToTop {
+        width: 50px;
+        height: 50px;
+        font-size: 24px; /* Ajusta tamaño */
+        bottom: 20px; /* Más cerca del borde */
+        right: 20px;
+    }
+
+    /* Ajustes generales de imágenes */
+    img {
+        width: 100%; /* Escala las imágenes al ancho */
+        height: auto; /* Mantiene proporciones */
+    }
+
+    /* Textos */
+    h1, h2, h3 {
+        font-size: 1.2rem; /* Reduce tamaños */
+    }
+
+    p {
+        font-size: 0.9rem;
+        line-height: 1.5;
+    }
+    div.hero {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 80%;
+        margin: 2rem;
+        gap: 1rem;
+    }
+    div.hero div.hero-text p {
+        display: none;
+    }
+
+    div#logo-png-background::before {
+        border-radius: 2rem;
+    }
+
+    .header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start; /* Ensure items align correctly */
+        height: 5%;
+        width: 100%;
+        color: var(--text);
+        box-shadow: 2px 0 5px rgba(0, 0, 0, 0.8);
+        position: fixed; /* Make the header fixed at the top */
+        top: 0; /* Start at the top */
+        left: 0;
+        right: 0;
+        transition: top 0.3s; /* Smooth transition for showing/hiding */
+        z-index: 1000; /* Ensure it appears above other content */
+        padding-left: 1rem;
+    }
+    
+    .header h1{
+        display: none;
+    }
+
+    #header-logo {
+        margin-top: 1rem;
+        height: 5%;
+        width: inherit;
+    }
+
+    a#about-us{
+        display: none;
+    }
+
+    #search-bar {
+        margin-left: auto;
+        margin-right: 2rem;
+        background-color: transparent;
+        border: solid 0.2rem var(--text20);
+        border-radius: 0.5rem;
+        display: flex;
+        justify-content: flex-end;
+        padding: 0;
+        height: 100%;
+        width: 2.5rem;
+        box-sizing: border-box;
+    }
+
+    #search-icon {
+        padding: 0.5rem;
+        font-size: 1rem;
+    }
+
+    #search-bar.expanded {
+        width: 80%;
+    }
+
+    #search-bar.expanded #search-bar-input{
+        display: flex;
+        margin-left: 0.2rem;
+    }
+
+    #search-bar-input {
+        display: none;
+        padding: 0px;
+        width: 100%;
+        height: 100%;
+        border: none;
+        outline: none;
+        color: var(--text);
+        font-family: var(--font_main);
+        font-size: 1rem;
+        background-color: transparent;
+    }
+
+    #bg-wr-box-menu .hero {
+        width: 100%;
+        height: fit-content;
+        min-height: 300px;
+    }
+    #bg-wr-box-menu .hero .hero-text {
+        font-size: inherit;
+    }
+
+
+    #bg-wr-box-menu {
+        width: 60%;
+        align-items: center;
+    }
+
+    #search-results {
+        top: 3rem;
+        margin-left: -15px;
+        background-color: var(--bg);
+        border-radius: 1rem;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        padding: 0 0 0 15px;
+        width: 100%;
+        position: absolute;
+        box-sizing: border-box;
+    }
+    p.phone-click_below {
+        align-self: center;
+        justify-content: center;
+        display: flex;
+        width: 80%;
+        font-size: medium;
+    }
+    main#main {
+        margin-top: 1.25rem;
+        gap: 2rem
+    }
+    div.platforms.triple-menu {
+        width: 90%;
+        align-items: center;
+    }
+
+    div.platforms.triple-menu .phone,
+    div.platforms.triple-menu .pc,
+    div.platforms.triple-menu .controller {
+        width: 85%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between; /* Centra los elementos dentro */
+        gap: 10%;
+    }
+
+    div.platforms.triple-menu .plat-svg{
+        width: 50%;
+        padding: 10%;
+    }
+
+    /* Popup styling */
+    .popup {
+        display: none;
+        position: absolute;
+        background-color: var(--bg);
+        padding: 10px;
+        z-index: 1000;
+        border-radius: 10px;
+        width: 170px;
+        height: 250px;
+    }
+
+    .popup::after {
+        content: "";
+        position: absolute;
+        bottom: -45px;
+        left: 50%;
+        transform: translateX(-50%);
+        border-width: 20px;
+        border-style: solid;
+        border-color: var(--bg) transparent transparent transparent;
+    }
+
+    /* Button Container */
+    .popup-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        gap: 2.5rem;
+    }
+
+    /* Line */
+    .popup-content::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        top: calc(25%);
+        height: 50%;
+        width: 5px;
+        border-radius: 2rem;
+        transform: rotate(90deg);
+    }
+
+    /* Button Styles */
+    .popup-button {
+        background-color: var(--bg);
+        border: none;
+        border-radius: 1rem;
+        cursor: pointer;
+        color: var(--text);
+        width: 165px;
+        height: 100px;
+        font-size: 24px;
+        font-weight: 800;
+        transition: background-color 0.25s ease, border 0.5s ease;
+        border: solid 2px;
+        border-color: var(--bg)
+    }
+}

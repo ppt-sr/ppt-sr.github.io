@@ -173,8 +173,3 @@ function displayResults(results) {
 
     searchResultsContainer.style.display = 'block'; // Mostrar el contenedor de resultados
 }
-
-
-
-
-

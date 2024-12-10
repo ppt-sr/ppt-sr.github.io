@@ -209,7 +209,7 @@
     font-size: 14px;
 }
 
-#lang-button {
+.lang-button {
     bottom: 120%;
     left: 0;
     border: 2.5px solid var(--primary);
@@ -233,7 +233,7 @@
     border: 2.5px solid var(--secondary);
 }
 
-#lang-popup {
+.lang-popup {
     position: absolute;
     bottom: 120%;
     left: 0;
@@ -246,16 +246,16 @@
     overflow-y: auto;
     z-index: 1;
 }
-.ch1 #lang-popup {
+.ch1 .lang-popup {
     border: 2.5px solid var(--cch1);
 }
-.ch2 #lang-popup {
+.ch2 .lang-popup {
     border: 2.5px solid var(--cch2);
 }
-.ch3 #lang-popup {
+.ch3 .lang-popup {
     border: 2.5px solid var(--cch3);
 }
-.scdr #lang-popup {
+.scdr .lang-popup {
     border: 2.5px solid var(--secondary);
 }
 
@@ -293,6 +293,6 @@
     border-radius: 0.1rem;
 }
 
-#language-label {
+.language-label {
     margin-top: 0px
 }

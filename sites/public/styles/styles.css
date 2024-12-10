@@ -3,6 +3,7 @@
 @import url("popup.css");
 @import url("search/filter.css");
 @import url("footer.css");
+@import url("phone.css");
 
 :root {
     --text: #f4f4ef;
@@ -250,6 +251,13 @@ a:active {
     color: #ff5722; /* Orange for active (clicked) links */
 }
 
+.mobile-menu {
+    display: none;
+}
+.menu-toggle {
+    display: none;
+}
+
 img {
     -moz-user-select: none;
     -webkit-user-select: none;
@@ -375,6 +383,10 @@ p {
     justify-content: flex-start;
     align-items: center;
     position: relative;
+}
+
+.phone-click_below {
+    display: none;
 }
 
 .platform-div {

@@ -6,13 +6,16 @@ function loadAvailableLanguages() {
     ];
 
     const langList = document.getElementById('lang-list');
+    const langListMobile = document.getElementById('lang-list-mobile'); // For mobile
     langList.innerHTML = ''; // Clear existing list
+    langListMobile.innerHTML = ''; // Clear mobile list
 
     languages.forEach(language => {
         fetch(`/lang/${language.code}.json`)
             .then(response => {
                 if (response.ok) {
                     addLanguageToList(language); // Add language if the JSON file exists
+                    addLanguageToMobileList(language); // Add to mobile list as well
                 } else {
                     console.log(`Language file for ${language.name} not found.`);
                 }
@@ -23,11 +26,12 @@ function loadAvailableLanguages() {
             .finally(() => {
                 // Update the current language button after all fetch attempts
                 updateCurrentLanguageButton();
+                updateCurrentLanguageButtonMobile(); // Mobile button update
             });
     });
 }
 
-// Function to add a language to the list
+// Function to add a language to the desktop list
 function addLanguageToList(language) {
     const langList = document.getElementById('lang-list');
     const li = document.createElement('li');
@@ -39,7 +43,19 @@ function addLanguageToList(language) {
     langList.appendChild(li);
 }
 
-// Function to update the current language button based on stored language
+// Function to add a language to the mobile list
+function addLanguageToMobileList(language) {
+    const langListMobile = document.getElementById('lang-list-mobile');
+    const liMobile = document.createElement('li');
+    const aMobile = document.createElement('a');
+    aMobile.href = `?${language.code}`;
+    aMobile.dataset.icon = language.flag;
+    aMobile.innerHTML = `<img src="${language.flag}" alt="${language.code.toUpperCase()} flag"/> ${language.name}`;
+    liMobile.appendChild(aMobile);
+    langListMobile.appendChild(liMobile);
+}
+
+// Function to update the current language button based on stored language (Desktop)
 function updateCurrentLanguageButton() {
     const storedLang = localStorage.getItem('selectedLanguage') || 'en'; // Default to 'en' if no language is stored
     const currentLangBtn = document.getElementById('current-lang');
@@ -51,6 +67,21 @@ function updateCurrentLanguageButton() {
         const currentLangIcon = document.getElementById('current-lang-icon');
         currentLangIcon.src = newIconSrc; // Update icon
         currentLangBtn.lastChild.nodeValue = ` ${newLangText}`; // Update button text
+    }
+}
+
+// Function to update the current language button based on stored language (Mobile)
+function updateCurrentLanguageButtonMobile() {
+    const storedLang = localStorage.getItem('selectedLanguage') || 'en'; // Default to 'en' if no language is stored
+    const currentLangBtnMobile = document.getElementById('current-lang-mobile'); // Renamed for mobile
+    const selectedLangElementMobile = document.querySelector(`a[href="?${storedLang}"]`);
+    
+    if (selectedLangElementMobile) {
+        const newLangTextMobile = selectedLangElementMobile.innerText;
+        const newIconSrcMobile = selectedLangElementMobile.querySelector('img').src;
+        const currentLangIconMobile = document.getElementById('current-lang-icon-mobile');
+        currentLangIconMobile.src = newIconSrcMobile; // Update icon
+        currentLangBtnMobile.lastChild.nodeValue = ` ${newLangTextMobile}`; // Update button text
     }
 }
 
@@ -89,19 +120,31 @@ function loadLanguage(langCode) {
 
 // Initialize the current language button and language selection
 const currentLangBtn = document.getElementById('current-lang');
+const currentLangBtnMobile = document.getElementById('current-lang-mobile'); // For mobile
 
-if (currentLangBtn) {
+if (currentLangBtn || currentLangBtnMobile) {
     // Load available languages on page load
     loadAvailableLanguages();
 
-    // Event listener for the language picker button
-    currentLangBtn.addEventListener('click', function (event) {
-        event.stopPropagation(); // Prevents the event from closing the popup immediately
-        const popup = document.getElementById('lang-popup');
-        popup.classList.toggle('hidden');
-    });
+    // Event listener for the desktop language picker button
+    if (currentLangBtn) {
+        currentLangBtn.addEventListener('click', function (event) {
+            event.stopPropagation(); // Prevents the event from closing the popup immediately
+            const popup = document.getElementById('lang-popup');
+            popup.classList.toggle('hidden');
+        });
+    }
 
-    // Event listener for language selection
+    // Event listener for the mobile language picker button
+    if (currentLangBtnMobile) {
+        currentLangBtnMobile.addEventListener('click', function (event) {
+            event.stopPropagation(); // Prevents the event from closing the popup immediately
+            const popupMobile = document.getElementById('lang-popup-mobile');
+            popupMobile.classList.toggle('hidden');
+        });
+    }
+
+    // Event listener for language selection (Desktop)
     const langList = document.getElementById('lang-list');
     langList.addEventListener('click', function (event) {
         const selectedLang = event.target.closest('a'); // Selects the clicked link
@@ -128,13 +171,45 @@ if (currentLangBtn) {
         // Hide the popup
         document.getElementById('lang-popup').classList.add('hidden');
     });
+
+    // Event listener for language selection (Mobile)
+    const langListMobile = document.getElementById('lang-list-mobile');
+    langListMobile.addEventListener('click', function (event) {
+        const selectedLangMobile = event.target.closest('a'); // Selects the clicked link
+        if (!selectedLangMobile) return; // Exit if no link is clicked
+
+        const newLangTextMobile = selectedLangMobile.innerText;
+        const newIconSrcMobile = selectedLangMobile.querySelector('img').src;
+        const langCodeMobile = selectedLangMobile.getAttribute('href').substring(1); // Extract lang code from href
+
+        // Update the text and icon of the mobile language button
+        const currentLangIconMobile = document.getElementById('current-lang-icon-mobile');
+        currentLangIconMobile.src = newIconSrcMobile;
+        currentLangBtnMobile.lastChild.nodeValue = ` ${newLangTextMobile}`; // Update button text
+
+        // Move the selected language to the top of the list
+        langListMobile.prepend(selectedLangMobile.parentElement);
+
+        // Store the selected language in localStorage
+        localStorage.setItem('selectedLanguage', langCodeMobile);
+
+        // Load the corresponding language JSON and update the page
+        loadLanguage(langCodeMobile);
+
+        // Hide the mobile popup
+        document.getElementById('lang-popup-mobile').classList.add('hidden');
+    });
 }
 
-// Close the popup when clicking outside of it
+// Close the popups when clicking outside of them
 document.addEventListener('click', function (event) {
     const popup = document.getElementById('lang-popup');
+    const popupMobile = document.getElementById('lang-popup-mobile');
     if (popup && !popup.contains(event.target) && event.target !== currentLangBtn) {
         popup.classList.add('hidden');
+    }
+    if (popupMobile && !popupMobile.contains(event.target) && event.target !== currentLangBtnMobile) {
+        popupMobile.classList.add('hidden');
     }
 });
 
@@ -143,4 +218,5 @@ document.addEventListener('DOMContentLoaded', function () {
     const storedLang = localStorage.getItem('selectedLanguage') || 'en'; // Default to 'en' if no language is stored
     loadLanguage(storedLang); // Load language data
     updateCurrentLanguageButton(); // Update button on load
+    updateCurrentLanguageButtonMobile(); // Update mobile button on load
 });

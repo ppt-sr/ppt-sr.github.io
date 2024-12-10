@@ -220,11 +220,13 @@
     "ruby_skip_description": "Video is self explanatory!",
     "water_treatment_skip_description": "The Yellow Canister is easier to manipulate.",
     "water_treatment_skip_swing_variant_description": "Easier than Caves Skip.",
+    "water_treatment_skip_100_description": "The Yellow Canister is easier to manipulate.",
     "ggd_skip_description": "You cannot get much further.",
     "ggd_skip_current_patch_description": "You can get really far on 1.3+!",
     "proac_skip_description": "Video is self explanatory.",
     "mommy_chase_skip_description": "Really easy skip, for 1.3+ you'll need to stack boxes but in <1.2 u can just jump in the leaver!",
     "mommy_chase_skip_w_barrels_description": "Barrel Stacking method, a lot harder but Inbounds.",
+    "mommy_death_skip_description": "Saves 20 seconds if done really well.",
     "robin_office_skip_description": "Video is self explanatory!",
     "hundred_office_skip_description": "Video is self explanatory! <br> If you didn't do 100% NAM Skip you will need to do this skip!",
 

@@ -497,6 +497,21 @@
         }
     },
     {
+        "title": "Water Treatment Skip 100%",
+        "id": "-4RkZYFO95g",
+        "version": "1.0, 1.1",
+        "description_key": "water_treatment_skip_100_description",
+        "author": "Sangohanvde",
+        "category": {
+            "All Minigames": {
+                "Out of Bounds": true
+            },
+            "100%": {
+                "Out of Bounds": true
+            }
+        }
+    },
+    {
         "title": "Water Treatment Skip Swing Variant",
         "id": "0OnrGhW8Jvw",
         "version": "1.1",
@@ -584,6 +599,18 @@
             "All Minigames": {
                 "Inbounds": true,
                 "No Major Glitches": true
+            }
+        }
+    },
+    {
+        "title": "Mommy Death Skip",
+        "id": "1kF6yKN5HrY",
+        "version": "1.0",
+        "description_key": "mommy_death_skip_description",
+        "author": "Sangohanvde",
+        "category": {
+            "100%": {
+                "Out of Bounds": true
             }
         }
     },
