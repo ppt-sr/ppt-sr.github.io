@@ -94,7 +94,7 @@
     box-sizing: border-box;
 }
 
-.video-description-credits-div {
+div.video-description-credits-div {
     margin-top: 0rem;
     width: 100%;
     min-height: 28rem;
