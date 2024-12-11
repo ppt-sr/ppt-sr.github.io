@@ -81,11 +81,11 @@
               <div id="any-div"><input id="any-cb" type="checkbox"></input><label class="checkboxlabel" for="any-cb">Any%</label></div>
               <div id="no-major-glitches-div"><input id="no-major-glitches-cb" type="checkbox"></input><label class="checkboxlabel" for="no-major-glitches-cb">No Major Glitches</label></div>
             </div>
-            <div id="routes-container">
+            <div id="routes-container" class="container">
               <div id="all-tapes-div"><input id="all-tapes-cb" type="checkbox"></input><label class="checkboxlabel" for="all-tapes-cb">All Tapes</label></div>
               <div id="any-tapes"><input id="any-tapes-cb" type="checkbox"></input><label class="checkboxlabel" for="any-tapes-cb">Any Tapes</label></div>
             </div>
-            <div id="versions-container">
+            <div id="versions-container" class="container">
               <div><input id="old-patch-cb" type="checkbox" data-version="&lt;1.1"><label class="checkboxlabel" for="old-patch-cb">&lt;1.1</label></div>
               <div><input id="current-patch-cb" type="checkbox" data-version="1.2"><label class="checkboxlabel" for="current-patch-cb">1.2</label></div>
               <div><input id="1.3-cb" type="checkbox" data-version="1.3"><label class="checkboxlabel" for="1.3-cb">1.3</label></div>
@@ -135,15 +135,15 @@
                  Speedrun.com
               </a>
               <hr class="thin-separator"></hr>
-              <div><h3 id="language-label" data-translate="language">LANGUAGE</h3></div>
-              <div class="language-picker">
-                <div id="lang-popup" class="languagepicker hidden">
-<ul id="lang-list"></ul>
-                </div>
-                <div id="lang-button">
-                    <button id="current-lang" class="current-lang-btn"><img id="current-lang-icon" src="/flags/4x3/gb.svg"/> English</button>
-                </div>
+            <div><h3 id="language-label" class="language-label" data-translate="language">LANGUAGE</h3></div>
+            <div class="language-picker">
+              <div id="lang-popup" class="languagepicker lang-popup hidden">
+                <ul id="lang-list" class="lang-list"></ul>
               </div>
+              <div id="lang-button" class="lang-button">
+                  <button id="current-lang" class="current-lang-btn"><img id="current-lang-icon" src="/flags/4x3/gb.svg"/> English</button>
+              </div>
+            </div>
             </div>
             <div class="footer-contact footer-r">
               <h3 data-translate="explore">EXPLORE</h3>

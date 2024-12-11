@@ -82,13 +82,13 @@
               <div id="all-minigames-div"><input id="all-minigames-cb" type="checkbox"></input><label class="checkboxlabel" for="all-minigames-cb">All Minigames</label></div>
               <div id="hundred-div"><input id="hundred-cb" type="checkbox"></input><label class="checkboxlabel" for="hundred-cb">100%</label></div>
             </div>
-            <div id="routes-container">
+            <div id="routes-container" class="container">
               <div id="oob-div"><input id="oob-cb" type="checkbox"></input><label class="checkboxlabel" for="oob-cb">Out of Bounds</label></div>
               <div id="ib"><input id="ib-cb" type="checkbox"></input><label class="checkboxlabel" for="ib-cb">Inbounds</label></div>
               <div id="nmg-div"><input id="nmg-cb" type="checkbox"></input><label class="checkboxlabel" for="nmg-cb">No Major Glitches</label></div>
               <div id="nms-div"><input id="nms-cb" type="checkbox"></input><label class="checkboxlabel" for="nms-cb">No Major Skips</label></div>
             </div>
-            <div id="versions-container">
+            <div id="versions-container" class="container">
               <div><input id="v1_0-cb" type="checkbox" data-version="1.0"><label class="checkboxlabel" for="v1_0-cb"><t data-translate="version">Version</t> 1.0</label></div>
               <div><input id="v1_1-cb" type="checkbox" data-version="1.1"><label class="checkboxlabel" for="v1_1-cb"><t data-translate="version">Version</t> 1.1</label></div>
               <div><input id="v1_2-cb" type="checkbox" data-version="1.2"><label class="checkboxlabel" for="v1_2-cb"><t data-translate="version">Version</t> 1.2</label></div>
@@ -138,15 +138,15 @@
                  Speedrun.com
               </a>
               <hr class="thin-separator"></hr>
-              <div><h3 id="language-label" data-translate="language">LANGUAGE</h3></div>
-              <div class="language-picker">
-                <div id="lang-popup" class="languagepicker hidden">
-<ul id="lang-list"></ul>
-                </div>
-                <div id="lang-button">
-                    <button id="current-lang" class="current-lang-btn"><img id="current-lang-icon" src="/flags/4x3/gb.svg"/> English</button>
-                </div>
+            <div><h3 id="language-label" class="language-label" data-translate="language">LANGUAGE</h3></div>
+            <div class="language-picker">
+              <div id="lang-popup" class="languagepicker lang-popup hidden">
+                <ul id="lang-list" class="lang-list"></ul>
               </div>
+              <div id="lang-button" class="lang-button">
+                  <button id="current-lang" class="current-lang-btn"><img id="current-lang-icon" src="/flags/4x3/gb.svg"/> English</button>
+              </div>
+            </div>
             </div>
             <div class="footer-contact footer-r">
               <h3 data-translate="explore">EXPLORE</h3>

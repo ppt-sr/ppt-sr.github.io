@@ -74,7 +74,7 @@
 .iconic-container {
     flex-direction: column;
     display: flex;
-    width: 80%;
+    max-width: 105rem;
     gap: 3rem;
 }
 
@@ -86,7 +86,7 @@
     gap: 2em;
     width: 100%;
     position: relative;
-    height: 540px;
+    min-height: 540px;
     background-color: var(--pprimary20);
     border-radius: 2rem;
     border: solid 1rem var(--pprimary);
@@ -97,7 +97,7 @@
 .video-description-credits-div {
     margin-top: 0rem;
     width: 100%;
-    height: calc(100% - 1rem);
+    min-height: 28rem;
     display: flex;
     flex-direction: column;
     align-items: left;
@@ -203,4 +203,54 @@
 .records .wip-container {
   background-color: var(--pprimary30);
   box-shadow: 10px 10px var(--pprimary80);
+}
+
+.bottom_record {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.bottom_record div {
+  padding: 0.5rem 0;
+}
+
+.see_on_src {
+  align-self: center;
+  text-decoration: none;
+  color: var(--text);
+  border: 0.2rem solid;
+  box-sizing: border-box;
+  padding: 0.3rem;
+  transition: color 0.1s, transform 0.15s, box-shadow 0.2s;
+  box-shadow: 0 0 0 0 var(--pprimary15);
+  border-radius: 0.5rem;
+  font-weight: 450;
+}
+
+.see_on_src:hover {
+  color: var(--pprimary);
+  transform: scale(105%);
+  box-shadow: 0 0 0.5rem 0.5rem var(--pprimary10)
+}
+
+.tags_and_strats {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+}
+
+.tags_and_strats a {
+  color: var(--text50);
+  font-weight: 450;
+  transition: color 0.15s;
+}
+
+.tags_and_strats a:hover {
+  color: var(--pprimary);
+}
+
+.records #backToTop:hover {
+  background-color: var(--pprimary50); /* Darker background on hover */
+  box-shadow: 0px 0px 10px 10px var(--pprimary5);
 }

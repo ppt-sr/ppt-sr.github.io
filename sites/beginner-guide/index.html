@@ -11,9 +11,54 @@
 </head>
 <body class="guide scdr">
   <header id="header" class="header container slide-in">
-    <a href="/">
+    <a class="header-logo-link" href="/">
       <img draggable="false" id="header-logo" src="/images/logo.png"></img>
     </a>
+    <button id="menu-toggle" class="menu-toggle">
+      ☰
+    </button>
+    <div id="overlay" class="overlay"></div>
+    <div class="hamburger-align">
+    <nav id="mobile-menu" class="mobile-menu">
+      <div class="mobile-header">
+        <a href="/">
+          <img draggable="false" id="header-logo" src="/images/logo.png"></img>
+        </a>
+        <div id="hamburger-text">
+          <h1>Poppy Playtime Speedrunning</h1>
+        </div>
+      </div>
+      <a href="/about/" class="hamburger-link" data-translate="about_us">About us</a>
+      <a href="/faq/" class="hamburger-link" data-translate="faq">FAQ</a>
+      <a href="/credits/" class="hamburger-link" data-translate="credits">Credits</a>
+      <a target="_blank" class="hamburger-link" href="https://discord.gg/EbxtqgcP4x">
+        <icon class="icon-discord"></icon> <t>Discord</t>
+      </a>
+      <a target="_blank" class="hamburger-link" href="https://www.speedrun.com/series/poppy_playtime">
+        <span class="icon-src"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span><span class="path10"></span><span class="path11"></span><span class="path12"></span><span class="path13"></span><span class="path14"></span><span class="path15"></span><span class="path16"></span><span class="path17"></span><span class="path18"></span><span class="path19"></span><span class="path20"></span><span class="path21"></span><span class="path22"></span><span class="path23"></span><span class="path24"></span><span class="path25"></span><span class="path26"></span><span class="path27"></span><span class="path28"></span><span class="path29"></span><span class="path30"></span><span class="path31"></span><span class="path32"></span><span class="path33"></span><span class="path34"></span><span class="path35"></span><span class="path36"></span><span class="path37"></span><span class="path38"></span><span class="path39"></span><span class="path40"></span><span class="path41"></span><span class="path42"></span><span class="path43"></span><span class="path44"></span><span class="path45"></span><span class="path46"></span><span class="path47"></span><span class="path48"></span><span class="path49"></span><span class="path50"></span><span class="path51"></span><span class="path52"></span><span class="path53"></span><span class="path54"></span><span class="path55"></span><span class="path56"></span><span class="path57"></span><span class="path58"></span><span class="path59"></span><span class="path60"></span><span class="path61"></span><span class="path62"></span><span class="path63"></span><span class="path64"></span><span class="path65"></span><span class="path66"></span><span class="path67"></span><span class="path68"></span><span class="path69"></span><span class="path70"></span><span class="path71"></span><span class="path72"></span><span class="path73"></span><span class="path74"></span><span class="path75"></span><span class="path76"></span><span class="path77"></span><span class="path78"></span><span class="path79"></span><span class="path80"></span><span class="path81"></span><span class="path82"></span><span class="path83"></span><span class="path84"></span><span class="path85"></span><span class="path86"></span><span class="path87"></span><span class="path88"></span><span class="path89"></span><span class="path90"></span><span class="path91"></span><span class="path92"></span><span class="path93"></span><span class="path94"></span><span class="path95"></span><span class="path96"></span><span class="path97"></span><span class="path98"></span><span class="path99"></span><span class="path100"></span><span class="path101"></span><span class="path102"></span><span class="path103"></span><span class="path104"></span><span class="path105"></span><span class="path106"></span><span class="path107"></span><span class="path108"></span><span class="path109"></span><span class="path110"></span><span class="path111"></span><span class="path112"></span><span class="path113"></span><span class="path114"></span><span class="path115"></span><span class="path116"></span></span>
+         Speedrun.com
+      </a>
+      <a target="_blank" href="https://github.com/ppt-sr/ppt-sr.github.io/issues" class="hamburger-link"><icon class="icon-bug"> </icon>
+        <t data-translate="report_a_bug">Report a Bug</t>
+     </a>
+     <a target="_blank" href="https://github.com/ppt-sr/ppt-sr.github.io/issues/new/choose" class="hamburger-link"><icon class="icon-star-full"> </icon>
+       <t data-translate="request_video_or_feature">Request a Video or Feature</t>
+    </a>
+      <hr class="thin-separator"></hr>
+      <div class="hamburger-menu">
+      <div><h3 id="language-label-mobile" class="language-label" data-translate="language">LANGUAGE</h3></div>
+      <div class="language-picker">
+        <div id="lang-popup-mobile" class="languagepicker lang-popup hidden">
+          <ul id="lang-list-mobile" class="lang-list"></ul>
+        </div>
+        <div id="lang-button-mobile" class="lang-button">
+            <button id="current-lang-mobile" class="current-lang-btn"><img id="current-lang-icon-mobile" src="/flags/4x3/gb.svg"/> English</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+    </nav>
     <div id="search-bar">
       <input id="search-bar-input" type="text" data-translate="search_input" placeholder="Search..."></input><div id="search-icon" class="icon-search"></div>
       <div id="search-results" class="search-results"></div>
@@ -25,11 +70,11 @@
   </header>
     <div id="main">
       <div class="section">
-        <h1>Setup</h1>
-        <h3>Setup Guide for Poppy Playtime [PC]</h3>
-        <p>Setting up Poppy Playtime for speedruns is straightforward, but there are a few key tools and settings to familiarize yourself with:</p>
+        <h1 data-translate="setup">Setup</h1>
+        <h3 data-translate="setup_subtitle">Setup Guide for Poppy Playtime [PC]</h3>
+        <p data-translate="setup_p_1">Setting up Poppy Playtime for speedruns is straightforward, but there are a few key tools and settings to familiarize yourself with:</p>
         <ul>
-            <li>Poppy Playtime speedruns are done on different Steam versions of the game; to downpatch Poppy Playtime check out this guides:
+            <li><t data-translate="setup_li_1">Poppy Playtime speedruns are done on different Steam versions of the game; to downpatch Poppy Playtime check out this guides:</t>
               <div class="li-list">
                 <div>
                   <a href="/chapter-1/pc/guides/#6ahQYdI00Co"><div data-translate="downpatch_chapter1">Downpatch Chapter 1</div></a>
@@ -38,54 +83,54 @@
                 </div>
               </div>
             </li>
-            <li>Using an <strong>FPS Counter</strong> is optional but recommended if you wanna reach a high placement in the leaderboard (see below).</li>
-            <li><strong>LiveSplit</strong> is highly recommended for timing your runs. (runs without LiveSplit won't be retimed.)</li>
+            <li data-translate="setup_li_2">Using an <strong>FPS Counter</strong> is optional but recommended if you wanna reach a high placement in the leaderboard (see below).</li>
+            <li data-translate="setup_li_3"><strong>LiveSplit</strong> is highly recommended for timing your runs. (runs without LiveSplit won't be retimed.)</li>
         </ul>
       </div>
 
       <div class="section">
-          <h1>FPS Counter</h2>
-          <p>FPS can significantly influence how the games behave. For certain skips, having a higher or lower FPS may make them easier to execute. To ensure fair and accurate verification of high-level runs, we require the use of an FPS counter.</p>
-          <h3>Follow this next steps to get an FPS counter on the games:</h3>
+          <h1 data-translate="fps_counter">FPS Counter</h2>
+          <p data-translate="fps_counter_p_1">FPS can significantly influence how the games behave. For certain skips, having a higher or lower FPS may make them easier to execute. To ensure fair and accurate verification of high-level runs, we require the use of an FPS counter.</p>
+          <h3 data-translate="fps_counter_h3">Follow this next steps to get an FPS counter on the games:</h3>
           <ol>
-              <li>Click on "Steam" and open Settings</a>.</li>
-              <li>Click "In-Game" and make sure Enable the Steam Overlay while in-game is turned on.</li>
-              <li>Use the In-game FPS counter drop-down to decide where on the screen it should appear and the In-game FPS counter high contrast option to make it more visible.</li>
+              <li data-translate="fps_counter_li_1">Click on "Steam" and open Settings.</li>
+              <li data-translate="fps_counter_li_2">Click "In-Game" and make sure Enable the Steam Overlay while in-game is turned on.</li>
+              <li data-translate="fps_counter_li_3">Use the In-game FPS counter drop-down to decide where on the screen it should appear and the In-game FPS counter high contrast option to make it more visible.</li>
           </ol>
-          <strong>For the downpatched versions of the games:</strong>
+          <strong data-translate="fps_counter_strong">For the downpatched versions of the games:</strong>
           <ol>
-            <li>Same as before</a>.</li>
-            <li>Click on "Games" and "Add a Non-Steam Game to my Library...".</li>
-            <li>Click "Browse..." and look up for the .exe you normally use to launch the downpatch versions of the game.</li>
-            <li>Use Steam as the Game Launcher.</li>
+            <li data-translate="fps_counter_li_4">Same as before.</li>
+            <li data-translate="fps_counter_li_5">Click on "Games" and "Add a Non-Steam Game to my Library...".</li>
+            <li data-translate="fps_counter_li_6">Click "Browse..." and look up for the .exe you normally use to launch the downpatch versions of the game.</li>
+            <li data-translate="fps_counter_li_7">Use Steam as the Game Launcher.</li>
         </ol>
-          <p><strong>Note:</strong> The FPS counter is not required if you're not a top runner. Check the game <a href="https://speedrun.com/poppy_playtime">category rules</a> for details.</p>
+          <p data-translate="fps_counter_p_2"><strong>Note:</strong> The FPS counter is not required if you're not a top runner. Check the game <a href="https://speedrun.com/poppy_playtime">category rules</a> for details.</p>
       </div>
 
       <div class="section">
-        <h1>LiveSplit Configuration</h2>
-        <p>LiveSplit removes pauses and loads, tracks progress, enables comparisons, and automates timing for speedruns.</p>
-        <h3>We recommend using <a target="_blank" href="https://youtu.be/xq2MCodtH34" data-translate="faq_tech_a_1_2">Smallant's LiveSplit Tutorial</a>:</h3>
+        <h1 data-translate="livesplit_configuration">LiveSplit Configuration</h2>
+        <p data-translate="livesplit_configuration_p_1">LiveSplit removes pauses and loads, tracks progress, enables comparisons, and automates timing for speedruns.</p>
+        <h3 data-translate="livesplit_configuration_h3">We recommend using <a target="_blank" href="https://youtu.be/xq2MCodtH34" data-translate="faq_tech_a_1_2">Smallant's LiveSplit Tutorial</a>:</h3>
         <ol>
-          <t>SmallAnt offers a clear, detailed guide on using LiveSplit for Splits, Subsplits, Configuration, Hotkeys, and OBS setup. However, it lacks coverage of Autosplitters, which are crucial for Poppy Playtime.</t>
+          <t data-translate="livesplit_configuration_t_1">SmallAnt offers a clear, detailed guide on using LiveSplit for Splits, Subsplits, Configuration, Hotkeys, and OBS setup. However, it lacks coverage of Autosplitters, which are crucial for Poppy Playtime.</t>
         </ol>
-        <t><strong>That's why we made our own guides on how to use and Set-Up Autosplitters for Poppy Playtime!</strong></t>
+        <t data-translate="livesplit_configuration_t_2"><strong>That's why we made our own guides on how to use and Set-Up Autosplitters for Poppy Playtime!</strong></t>
         <ol>
-          <a href="/chapter-1/pc/guides/#uRdQF2G-p7g"><div data-translate="downpatch_chapter1">Chapter 1 Autosplitter and Load Remover</div></a>
-          <a href="/chapter-2/pc/guides/#2ydS3zatWeY"><div data-translate="downpatch_chapter2">Chapter 2 Autosplitter and Load Remover</div></a>
-          <a href="/chapter-3/pc/guides/#mAGW9vZM564"><div data-translate="downpatch_chapter3">Chapter 3 Autosplitter and Load Remover</div></a>
+          <a href="/chapter-1/pc/guides/#uRdQF2G-p7g"><div data-translate="autosplitter_chapter1">Chapter 1 Autosplitter and Load Remover</div></a>
+          <a href="/chapter-2/pc/guides/#2ydS3zatWeY"><div data-translate="autosplitter_chapter2">Chapter 2 Autosplitter and Load Remover</div></a>
+          <a href="/chapter-3/pc/guides/#mAGW9vZM564"><div data-translate="autosplitter_chapter3">Chapter 3 Autosplitter and Load Remover</div></a>
         </ol>
       </div>
 
       <div class="section">
-          <h1>Starting a Speedrun</h1>
-          <p>Once everything is set up, you can start a speedrun by following these steps:</p>
+          <h1 data-translate="starting_a_speedrun">Starting a Speedrun</h1>
+          <p data-translate="starting_a_speedrun_p_1">Once everything is set up, you can start a speedrun by following these steps:</p>
           <ol>
-              <li>Launch the appropriate chapter and ensure your FPS counter (if used) is running.</li>
-              <li>Reset your LiveSplit timer.</li>
-              <li>Load the game and begin your run from the appropriate starting point.</li>
+              <li data-translate="starting_a_speedrun_li_1">Launch the appropriate chapter and ensure your FPS counter (if used) is running.</li>
+              <li data-translate="starting_a_speedrun_li_2">Reset your LiveSplit timer.</li>
+              <li data-translate="starting_a_speedrun_li_3">Load the game and begin your run from the appropriate starting point.</li>
           </ol>
-          <p>For additional help, check out the <a href="https://discord.gg/rdwTbGRRwy">community Discord</a>.</p>
+          <p data-translate="starting_a_speedrun_p_2">For additional help, check out the <a href="https://discord.gg/rdwTbGRRwy">community Discord</a>.</p>
       </div>  
     </div>
       <footer class="footer">
@@ -122,15 +167,15 @@
                  Speedrun.com
               </a>
               <hr class="thin-separator"></hr>
-              <div><h3 id="language-label" data-translate="language">LANGUAGE</h3></div>
-              <div class="language-picker">
-                <div id="lang-popup" class="languagepicker hidden">
-                  <ul id="lang-list"></ul>
-                </div>
-                <div id="lang-button">
-                    <button id="current-lang" class="current-lang-btn"><img id="current-lang-icon" src="/flags/4x3/gb.svg"/> English</button>
-                </div>
+            <div><h3 id="language-label" class="language-label" data-translate="language">LANGUAGE</h3></div>
+            <div class="language-picker">
+              <div id="lang-popup" class="languagepicker lang-popup hidden">
+                <ul id="lang-list" class="lang-list"></ul>
               </div>
+              <div id="lang-button" class="lang-button">
+                  <button id="current-lang" class="current-lang-btn"><img id="current-lang-icon" src="/flags/4x3/gb.svg"/> English</button>
+              </div>
+            </div>
             </div>
             <div class="footer-contact footer-r">
               <h3 data-translate="explore">EXPLORE</h3>

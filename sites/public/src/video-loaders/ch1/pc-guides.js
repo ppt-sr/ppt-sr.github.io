@@ -1,3 +1,4 @@
+const isMobile = window.matchMedia("(max-width: 1023px)").matches;
 // Fetch the JSON for translations
 let translations = {};
 
@@ -34,12 +35,16 @@ const loadVideos = () => {
                     <div id="${video.id}" class="video-title-div">
                         <h3>${video.title}</h3>
                         <div class="video-div">
-                            <iframe width="640" height="360" 
-                                src="https://www.youtube.com/embed/${video.id}" 
-                                frameborder="0" 
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                                allowfullscreen>
-                            </iframe>
+                        ${isMobile 
+                            ? `<img src="https://img.youtube.com/vi/${video.id}/hqdefault.jpg" alt="${video.title} Thumbnail" class="video-thumbnail">
+                               <button onclick="window.location.href='https://www.youtube.com/watch?v=${video.id}'" class="video-button">▶</button>`
+                            : `<iframe width="640" height="360" 
+                                    src="https://www.youtube.com/embed/${video.id}" 
+                                    frameborder="0" 
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                    allowfullscreen>
+                                </iframe>`
+                            }
                         </div>
                     </div>
                     <div class="video-description-credits-div">

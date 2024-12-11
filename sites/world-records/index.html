@@ -81,49 +81,15 @@
     </div>
       <div class="tab-container">
         <div class="tab-buttons">
-          <button class="tab-button active" data-target="world-records"><icon class="icon-earth"></icon> World Records</button>
-          <button class="tab-button" data-target="iconic-runs"><icon class="icon-star-empty"></icon> Iconic Runs</button>
+          <button class="tab-button active" data-target="world-records"><icon class="icon-earth"></icon> <label data-translate="wr_button">World Records</label></button>
+          <button class="tab-button" data-target="iconic-runs"><icon class="icon-star-empty"></icon> <label data-translate="ir_button">Iconic Runs</label></button>
         </div>
         <div class="tab-contents">
           <div id="world-records" class="tab-content active">
             <!-- Contenido de World Records -->
-            <p>World Records Go Here!.</p>
+            <p data-traslate="wr_placeholder">World Records Will Go Here!.</p>
           </div>
             <div id="iconic-runs" class="tab-content iconic-container">
-              <div class="iconic-div">
-                <div id="rLiVVdySp14" class="video-title-div">
-                  <h4>I GOT the FIRST SUB 3 MINUTES in POPPY PLAYTIME 2 SPEEDRUN HISTORY / Any% oob / proacventure</h4>
-                  <div class="video-div">
-                      <iframe width="640" height="360" 
-                          src="https://www.youtube.com/embed/rLiVVdySp14" 
-                          frameborder="0" 
-                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                          allowfullscreen>
-                      </iframe>
-                  </div>
-                </div>
-                <div class="video-description-credits-div">
-                  <div class="video-description-div">
-                    <div>
-                      <h2>Breaking the 'Impossible' Barrier: The First Sub-3 Run Ever</h2>
-                    </div>
-                    <div>
-                        <label>Chapter 2 <label class="text-30">|</label> Any% <label class="text-30">|</label> Out of Bounds <label class="text-30">|</label> v1.0</label>
-                    </div>
-                    <div>
-                      <label>13/01/2024</label>
-                    </div>
-                    <div>
-                        <label data-translate="description_label">Description:</label> 
-                        <label class="text-30">This extraordinary and seemingly unbeatable run was achieved by Proacventure, making him the first and only player to complete Poppy Playtime Chapter 2 in under 3 minutes without using cheats. <br>After an astounding 40,000+ attempts, Proac accomplished what was once considered impossible and out of reach. <br>This remarkable achievement also earned him a $250 reward from AstralSpiff's bounty.</label>
-                    </div>
-                  </div>
-                  <div>
-                      <label data-translate="video_by_label">Video by:</label> 
-                      <label class="text-30">proac</label>
-                  </div>
-                </div>
-              </div>
             </div>
         </div>
       </div>      
@@ -163,12 +129,12 @@
                Speedrun.com
             </a>
             <hr class="thin-separator"></hr>
-            <div><h3 id="language-label" data-translate="language">LANGUAGE</h3></div>
+            <div><h3 id="language-label" class="language-label" data-translate="language">LANGUAGE</h3></div>
             <div class="language-picker">
-              <div id="lang-popup" class="languagepicker hidden">
-                <ul id="lang-list"></ul>
+              <div id="lang-popup" class="languagepicker lang-popup hidden">
+                <ul id="lang-list" class="lang-list"></ul>
               </div>
-              <div id="lang-button">
+              <div id="lang-button" class="lang-button">
                   <button id="current-lang" class="current-lang-btn"><img id="current-lang-icon" src="/flags/4x3/gb.svg"/> English</button>
               </div>
             </div>
@@ -203,5 +169,6 @@
     <script src="/src/scroll-to-hash.js"></script>
     <script src="/src/search.js"></script>
     <script src="/src/records.js"></script>
+    <script src="/src/video-loaders/misc/iconic-runs.js"></script>
   </body>
 </html>

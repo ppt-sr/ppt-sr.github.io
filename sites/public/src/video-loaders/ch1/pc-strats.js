@@ -1,8 +1,9 @@
+const isMobile = window.matchMedia("(max-width: 1023px)").matches;
 let currentBatch = 0;
 const batchSize = 5;
 let filteredData = [];
 let selectedVideoId = null; // Variable para almacenar el ID del video seleccionado
-const storagePrefix = 'pc-ch2-';
+const storagePrefix = 'pc-ch1-';
 let translations = {}; // Objeto para almacenar las traducciones
 let currentLang = localStorage.getItem('selectedLanguage') || 'en'; // Obtener el idioma almacenado o por defecto 'en'
 
@@ -109,12 +110,16 @@ function fetchVideos() {
                         <div id="${video.id}" class="video-title-div">
                             <h3>${video.title}</h3>
                             <div class="video-div">
-                                <iframe width="640" height="360" 
+                        ${isMobile 
+                            ? `<img src="https://img.youtube.com/vi/${video.id}/hqdefault.jpg" alt="${video.title} Thumbnail" class="video-thumbnail">
+                               <button onclick="window.location.href='https://www.youtube.com/watch?v=${video.id}'" class="video-button">▶</button>`
+                            : `<iframe width="640" height="360" 
                                     src="https://www.youtube.com/embed/${video.id}" 
                                     frameborder="0" 
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                                     allowfullscreen>
-                                </iframe>
+                                </iframe>`
+                            }
                             </div>
                         </div>
                         <div class="video-description-credits-div">

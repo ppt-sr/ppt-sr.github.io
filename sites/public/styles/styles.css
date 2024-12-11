@@ -895,6 +895,7 @@ input[type="checkbox"]:checked + .checkboxlabel::after {
     background-color: var(--cch3-50); /* Darker background on hover */
     box-shadow: 0px 0px 10px 10px var(--cch3-5);
 }
+
   
 /* When the button is visible (slide up) */
 #backToTop.show {
@@ -1001,4 +1002,8 @@ input[type="checkbox"]:checked + .checkboxlabel::after {
 .wr-png {
     justify-content: center;
     width: 55%;
+}
+
+.lemon {
+    display: none;
 }
