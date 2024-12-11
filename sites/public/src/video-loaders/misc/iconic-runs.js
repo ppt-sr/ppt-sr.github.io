@@ -79,7 +79,7 @@ function fetchVideos() {
                                         <label>Chapter ${video.chapter} <label class="text-30">|</label> ${video.category} <label class="text-30">|</label> ${video.route} <label class="text-30">|</label> ${video.version}</label>
                                     </div>
                                     <label class="text-30"> • </label>
-                                    <a href="javascript:void(0);" onclick="updateLocalStorageAndRedirect(${video.chapter}, '${video.route}', '${video.category}', '${video.version}')">SEE STRATS USED</a>
+                                    <a href="javascript:void(0);" onclick="updateLocalStorageAndRedirect(${video.chapter}, '${video.route}', '${video.category}', '${video.version}')" data-translate="see_strats_used">SEE STRATS USED</a>
                                 </div>
                                 <div>
                                     <label>${formattedDate}</label>
@@ -94,7 +94,7 @@ function fetchVideos() {
                                     <label data-translate="video_by_label">Video by:</label> 
                                     <label class="text-30">${video.author || 'Unknown'}</label>
                                 </div>
-                                ${video.src_id ? `<a class="see_on_src" target="_blank" href="https://speedrun.com/run/${video.src_id}">SEE ON SPEEDRUN.COM</a>` : ``}
+                                ${video.src_id ? `<a class="see_on_src" target="_blank" href="https://speedrun.com/run/${video.src_id}" data-translate="see_on_src">SEE ON SPEEDRUN.COM</a>` : ``}
                             </div>
                         </div>
                     `;

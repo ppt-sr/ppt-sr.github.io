@@ -301,11 +301,14 @@
     "starting_a_speedrun_li_3": "Load the game and begin your run from the appropriate starting point.",
     "starting_a_speedrun_p_2": "For additional help, check out the <a href=\"https://discord.gg/rdwTbGRRwy\">community Discord</a>.",
 
-    "proac_ch2_sub3_description": "This extraordinary and seemingly unbeatable run was achieved by Proacventure, making him the first and only player to complete Poppy Playtime Chapter 2 in under 3 minutes without using cheats. <br>After an astounding 40,000+ attempts, Proac accomplished what was once considered impossible and out of reach. <br>This remarkable achievement also earned him a $250 reward from AstralSpiff's bounty.",
-    "proac_ch2_sub3_title": "Breaking the 'Impossible' Barrier: The First Sub-3 Run Ever",
-
     "records_title": "WORLD RECORDS!",
     "wr_button": "World Records",
     "ir_button": "Iconic Runs",
-    "wr_placeholder": "World Records Will Go Gere!."
+    "wr_placeholder": "World Records Will Go Here!.",
+
+    "proac_ch2_sub3_description": "This extraordinary and seemingly unbeatable run was achieved by Proacventure, making him the first and only player to complete Poppy Playtime Chapter 2 in under 3 minutes without using cheats. <br>After an astounding 40,000+ attempts, Proac accomplished what was once considered impossible and out of reach. <br>This remarkable achievement also earned him a $250 reward from AstralSpiff's bounty.",
+    "proac_ch2_sub3_title": "Breaking the 'Impossible' Barrier: The First Sub-3 Run Ever",
+
+    "see_strats_used": "SEE STRATS USED",
+    "see_on_src": "SEE ON SPEEDRUN.COM"
 }
