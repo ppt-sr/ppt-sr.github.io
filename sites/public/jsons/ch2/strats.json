@@ -9,20 +9,17 @@
             "Any%": {
                 "Out of Bounds": true,
                 "Inbounds": true,
-                "No Major Glitches": true,
-                "No Major Skips": true
+                "No Major Glitches": true
             },
             "All Minigames": {
                 "Out of Bounds": true,
                 "Inbounds": true,
-                "No Major Glitches": true,
-                "No Major Skips": true
+                "No Major Glitches": true
             },
             "100%": {
                 "Out of Bounds": true,
                 "Inbounds": true,
-                "No Major Glitches": true,
-                "No Major Skips": true
+                "No Major Glitches": true
             }
         }
     },
