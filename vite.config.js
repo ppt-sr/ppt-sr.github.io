@@ -35,10 +35,8 @@ export default defineConfig({
                     chapter3console: resolve(__dirname, "sites/chapter-3/console/index.html"),
 
                 chapter4: resolve(__dirname, "sites/chapter-4/index.html"),
-                    chapter4mobile: resolve(__dirname, "sites/chapter-4/mobile/index.html"),
                     chapter4pcguides: resolve(__dirname, "sites/chapter-4/pc/guides/index.html"),
                     chapter4pcstrats: resolve(__dirname, "sites/chapter-4/pc/strats/index.html"),
-                    chapter4console: resolve(__dirname, "sites/chapter-4/console/index.html"),
             }
         }
     }
