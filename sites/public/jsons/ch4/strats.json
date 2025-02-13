@@ -1,0 +1,385 @@
+[
+    {
+        "title": "Full Elevator Skip",
+        "id": "qIETQkA7AuQ",
+        "description_key": "full_elevator_skip_description",
+        "author": "Weet",
+        "category": {
+            "Any%": {
+                "Unrestricted": true,
+                "Out of Bounds": true,
+                "Inbounds": true,
+                "No Major Skips": true
+            },
+            "100%": {
+                "Unrestricted": true,
+                "Out of Bounds": true,
+                "Inbounds": true,
+                "No Major Skips": true
+            }
+        }
+    },
+    {
+        "title": "Mug Skip",
+        "id": "60xJGGq6zBY",
+        "description_key": "mug_skip_description",
+        "author": "BarneyGoose",
+        "category": {
+            "Any%": {
+                "Unrestricted": true,
+                "Out of Bounds": true,
+                "Inbounds": true,
+                "No Major Skips": true
+            },
+            "100%": {
+                "Unrestricted": true,
+                "Out of Bounds": true,
+                "Inbounds": true,
+                "No Major Skips": true
+            }
+        }
+    },
+    {
+        "title": "Gouda Cheese Puzzle Skip",
+        "id": "Hehh430Azw0",
+        "description_key": "gouda_cheese_puzzle_skip_description",
+        "author": "Sangohanvde",
+        "category": {
+            "Any%": {
+                "Unrestricted": true,
+                "Out of Bounds": true,
+                "Inbounds": true,
+                "No Major Skips": true
+            },
+            "100%": {
+                "Unrestricted": true,
+                "Out of Bounds": true,
+                "Inbounds": true,
+                "No Major Skips": true
+            }
+        }
+    },
+    {
+        "title": "Proacventing",
+        "id": "TdEvu_JCg4M",
+        "description_key": "proacventing_description",
+        "author": "proac",
+        "category": {
+            "Any%": {
+                "Unrestricted": true,
+                "Out of Bounds": true,
+                "Inbounds": true
+            },
+            "100%": {
+                "Unrestricted": true,
+                "Out of Bounds": true,
+                "Inbounds": true
+            }
+        }
+    },
+    {
+        "title": "Prison Critters Skip",
+        "id": "AugaC6dccVM",
+        "description_key": "prison_critters_skip_description",
+        "author": "n0kitsune",
+        "category": {
+            "Any%": {
+                "Unrestricted": true,
+                "Out of Bounds": true,
+                "Inbounds": true
+            },
+            "100%": {
+                "Unrestricted": true,
+                "Out of Bounds": true,
+                "Inbounds": true
+            }
+        }
+    },
+    {
+        "title": "Jailbreak (Prison Skip)",
+        "id": "EM8ifBMwabc",
+        "description_key": "jailbreak_description",
+        "author": "Laupig",
+        "category": {
+            "Any%": {
+                "Unrestricted": true,
+                "Out of Bounds": true
+            },
+            "100%": {
+                "Unrestricted": true,
+                "Out of Bounds": true
+            }
+        }
+    },
+    {
+        "title": "IMTRWTRATRWTR Skip (Mix Skip)",
+        "id": "IQ3Y7lDr8cc",
+        "description_key": "imtrwtratrwtr_skip_description",
+        "author": "Weet",
+        "category": {
+            "Any%": {
+                "Out of Bounds": true
+            }
+        }
+    },
+    {
+        "title": "Small Yarnaby Skip",
+        "id": "OFyK8BmDTQI",
+        "description_key": "small_yarnaby_skip_description",
+        "author": "ontrigger",
+        "category": {
+            "Any%": {
+                "Out of Bounds": true
+            }
+        }
+    },
+    {
+        "title": "NASA Skip Tutorial",
+        "id": "f1bDGT2Jpm4",
+        "description_key": "nasa_skip_tutorial_description",
+        "author": "Nia",
+        "category": {
+            "Any%": {
+                "Unrestricted": true
+            }
+        }
+    },
+    {
+        "title": "Pianosaurus Skip",
+        "id": "aHbj3oxmP0c",
+        "description_key": "pianosaurus_skip_description",
+        "author": "BarneyGoose",
+        "category": {
+            "Any%": {
+                "Inbounds": true
+            },
+            "100%": {
+                "Unrestricted": true,
+                "Out of Bounds": true,
+                "Inbounds": true
+            }
+        }
+    },
+    {
+        "title": "Shimmying",
+        "id": "wKvSSlMnBWk",
+        "description_key": "shimmying_description",
+        "author": "ontrigger",
+        "category": {
+            "Any%": {
+                "Unrestricted": true,
+                "Out of Bounds": true,
+                "Inbounds": true,
+                "No Major Skips": true
+            },
+            "100%": {
+                "Unrestricted": true,
+                "Out of Bounds": true,
+                "Inbounds": true,
+                "No Major Skips": true
+            }
+        }
+    },
+    {
+        "title": "Thick Of It Skip (Safe Haven Skip)",
+        "id": "J9CnYkX20ss",
+        "description_key": "thick_of_it_skip_description",
+        "author": "proac",
+        "category": {
+            "Any%": {
+                "Out of Bounds": true
+            },
+            "100%": {
+                "Unrestricted": true,
+                "Out of Bounds": true
+            }
+        }
+    },
+    {
+        "title": "Big Yarnaby Skip",
+        "id": "0Y1ellsmlpw",
+        "description_key": "big_yarnaby_skip_description",
+        "author": "BarneyGoose",
+        "category": {
+            "Any%": {
+                "Out of Bounds": true,
+                "Inbounds": true
+            }
+        }
+    },
+    {
+        "title": "Big Yarnaby Skip (100%)",
+        "id": "gMY7OBxKwf4",
+        "description_key": "big_yarnaby_skip_100_description",
+        "author": "Nia",
+        "category": {
+            "100%": {
+                "Unrestricted": true,
+                "Out of Bounds": true,
+                "Inbounds": true
+            }
+        }
+    },
+    {
+        "title": "Quick AC Puzzle",
+        "id": "weJXK5_jcYI",
+        "description_key": "quick_ac_puzzle_description",
+        "author": "n0kitsune",
+        "category": {
+            "Any%": {
+                "Unrestricted": true,
+                "Out of Bounds": true,
+                "Inbounds": true,
+                "No Major Skips": true
+            },
+            "100%": {
+                "Unrestricted": true,
+                "Out of Bounds": true,
+                "Inbounds": true,
+                "No Major Skips": true
+            }
+        }
+    },
+    {
+        "title": "Frozen Hand Bypass",
+        "id": "F7xWoQJ4ah8",
+        "description_key": "frozen_hand_bypass_description",
+        "author": "n0kitsune",
+        "category": {
+            "Any%": {
+                "Unrestricted": true,
+                "Out of Bounds": true,
+                "Inbounds": true,
+                "No Major Skips": true
+            },
+            "100%": {
+                "Unrestricted": true,
+                "Out of Bounds": true,
+                "Inbounds": true,
+                "No Major Skips": true
+            }
+        }
+    },
+    {
+        "title": "Full Morgue Skip",
+        "id": "NdzquCagLuE",
+        "description_key": "full_morgue_skip_description",
+        "author": "Danger1451",
+        "category": {
+            "Any%": {
+                "Unrestricted": true
+            }
+        }
+    },
+    {
+        "title": "Baba Chops Bossfight Skip (easy)",
+        "id": "WeNR2kRJKJA",
+        "description_key": "baba_chops_bossfight_skip_description",
+        "author": "n0kitsune",
+        "category": {
+            "Any%": {
+                "Out of Bounds": true,
+                "Inbounds": true
+            },
+            "100%": {
+                "Unrestricted": true,
+                "Out of Bounds": true,
+                "Inbounds": true
+            }
+        }
+    },
+    {
+        "title": "Baba Chops + Elevator Skip (hard)",
+        "id": "hJtrdSEgD20",
+        "description_key": "baba_chops_elevator_skip_description",
+        "author": "Nerd Squared",
+        "category": {
+            "Any%": {
+                "Out of Bounds": true,
+                "Inbounds": true
+            },
+            "100%": {
+                "Unrestricted": true,
+                "Out of Bounds": true,
+                "Inbounds": true
+            }
+        }
+    },
+    {
+        "title": "Doctor Fight Skip",
+        "id": "KLvPEmIoVto",
+        "description_key": "doctor_fight_skip_description",
+        "author": "Nia",
+        "category": {
+            "Any%": {
+                "Unrestricted": true,
+                "Out of Bounds": true,
+                "Inbounds": true
+            }
+        }
+    },
+    {
+        "title": "Doctor Fight Skip (100%)",
+        "id": "cRrvjuGMKUY",
+        "description_key": "doctor_fight_skip_100_description",
+        "author": "Nia",
+        "category": {
+            "100%": {
+                "Unrestricted": true,
+                "Out of Bounds": true,
+                "Inbounds": true
+            }
+        }
+    },
+    {
+        "title": "Le Parkour",
+        "id": "URySFMRsFDQ",
+        "description_key": "le_parkour_description",
+        "author": "RNG_Retr0",
+        "category": {
+            "Any%": {
+                "Out of Bounds": true,
+                "Inbounds": true,
+                "No Major Skips": true
+            },
+            "100%": {
+                "Unrestricted": true,
+                "Out of Bounds": true,
+                "Inbounds": true,
+                "No Major Skips": true
+            }
+        }
+    },
+    {
+        "title": "Fundation Skip",
+        "id": "a2rjZrDu7qM",
+        "description_key": "fundation_skip_description",
+        "author": "n0kitsune",
+        "category": {
+            "Any%": {
+                "Out of Bounds": true,
+                "Inbounds": true
+            },
+            "100%": {
+                "Restricted": true,
+                "Out of Bounds": true,
+                "Inbounds": true
+            }
+        }
+    },
+    {
+        "title": "Aidful Skip",
+        "id": "7R7oSOLPwdQ",
+        "description_key": "aidful_skip_description",
+        "author": "Danger1451",
+        "category": {
+            "Any%": {
+                "Out of Bounds": true
+            },
+            "100%": {
+                "Unrestricted": true,
+                "Out of Bounds": true
+            }
+        }
+    }
+]

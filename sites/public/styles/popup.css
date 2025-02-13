@@ -146,6 +146,20 @@
     border: solid 2px var(--cch3-75);
 }
 
+.ch4 .popup {
+    border: 5px solid var(--cch4-75);
+}
+.ch4 .popup::after {
+    border-color: var(--cch4-75) transparent transparent transparent;
+}
+.ch4 .popup .popup-content::before {
+    background-color: var(--cch4-75);
+}
+.ch4 .popup .popup-button:hover {
+    background-color: var(--cch4-50);
+    border: solid 2px var(--cch4-75);
+}
+
 #info-popup {
     left: calc((90% - 1.2%) - 23.5%);
     top: calc((-2rem + 50%) - 20px);
@@ -159,6 +173,12 @@
 .ch3 #info-popup {
     left: calc((90%) - 27.5%);
     top: calc((-2rem + 50%));
+    height: auto;
+}
+
+.ch4 #info-popup {
+    left: calc((90%) - 52%);
+    top: calc((-3rem + 50%) - 10px);
     height: auto;
 }
 
@@ -188,6 +208,9 @@
 }
 .ch3 .info-popup::after {
     border-color: transparent transparent var(--cch3-75) transparent;
+}
+.ch4 .info-popup::after {
+    border-color: transparent transparent var(--cch4-75) transparent;
 }
 
 .opened-top-popup {

@@ -3,10 +3,12 @@ const jsonFilesMapping = {
     '/chapter-1/pc/strats/': '/jsons/ch1/strats.json',
     '/chapter-2/pc/strats/': '/jsons/ch2/strats.json',
     '/chapter-3/pc/strats/': '/jsons/ch3/strats.json',
+    '/chapter-4/pc/strats/': '/jsons/ch4/strats.json',
     '/chapter-1/pc/guides/': '/jsons/ch1/guides.json',
     '/chapter-2/pc/guides/': '/jsons/ch2/guides.json',
     '/chapter-2/mobile/': '/jsons/ch2/mobile.json',
     '/chapter-3/pc/guides/': '/jsons/ch3/guides.json',
+    '/chapter-4/pc/guides/': '/jsons/ch4/guides.json',
     // Añadir más rutas y archivos JSON según sea necesario
 };
 
@@ -18,6 +20,8 @@ function getChapterIcon(chapter) {
             return '/images/svgs/c2.svg';
         case 3:
             return '/images/svgs/c3.svg';
+        case 4:
+            return '/images/svgs/c4.svg';
         default:
             return '/images/bunzo_nerdge.webp'; 
     }
@@ -25,13 +29,12 @@ function getChapterIcon(chapter) {
 
 function getPlatformIcon(url) {
     if (url.includes('/pc/')) {
-        return '/images/svgs/pc-icon.svg'; // Cambia la ruta a tu ícono de PC
+        return '/images/svgs/pc-icon.svg';
     } else if (url.includes('/mobile/')) {
-        return '/images/svgs/mobile-icon.svg'; // Cambia la ruta a tu ícono de móvil
+        return '/images/svgs/mobile-icon.svg';
     } else if (url.includes('/console/')) {
-        return '/images/svgs/console-icon.svg'; // Cambia la ruta a tu ícono de consola
+        return '/images/svgs/console-icon.svg';
     }
-    return '/images/svgs/default-icon.svg'; // Ícono por defecto
 }
 
 
@@ -78,7 +81,6 @@ async function loadAllData() {
 
 
 
-// Llama a la función para cargar todos los datos
 loadAllData();
 
 // Evento input para buscar en tiempo real

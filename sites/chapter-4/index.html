@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/public/styles/styles.css">
+    <link rel="stylesheet" href="/public/styles/scrollbar.css">
+    <link rel="icon" type="image/png" href="/images/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PPT SR Documentation</title>
+  </head>
+  <body class="ch4">
+    <div id="fake-header"></div>
+    <header id="header" class="header container slide-in">
+      <a class="header-logo-link" href="/">
+        <img draggable="false" id="header-logo" src="/images/logo.png"></img>
+      </a>
+      <button id="menu-toggle" class="menu-toggle">
+        ☰
+      </button>
+      <div id="overlay" class="overlay"></div>
+      <div class="hamburger-align">
+        <nav id="mobile-menu" class="mobile-menu">
+          <div class="mobile-header">
+            <a href="/">
+              <img draggable="false" id="header-logo" src="/images/logo.png"></img>
+            </a>
+            <div id="hamburger-text">
+              <h1>Poppy Playtime Speedrunning</h1>
+            </div>
+          </div>
+          <div class="lemon">
+            <img draggable="false" id="controller-svg" src="/images/svgs/lemon.svg"></img>
+            <span data-translate="lemon_easter_egg">Who placed a lemon here?</span>
+          </div>
+        </nav>
+      </div>
+      <div class="container" id="header-title">
+        <h1 data-translate="c_chapter_4" style="margin-right:20px">CHAPTER 4</h1>
+        <h1 data-translate="documentation" style="margin-left:20px">DOCUMENTATION!</h1>
+      </div>
+      <a id="about-us" href="/about/"><div id="about-us-link" data-translate="about_us">About Us</div></a>
+    </header>
+    <main id="main" class="platforms-main">
+        <div class="platforms single-menu">
+            <div class="platform platform-div pc">
+              <a class="plat-svg" id="pc-button-img"><img draggable="false" id="pc-svg" src="/images/svgs/pc-icon.svg"></a>
+              <div id="pc-button-text"><h4 data-translate="pc">PC</h4></div>
+            </div>
+
+            <!-- Popup structure -->
+            <div id="pc-popup" class="popup hidden popup-ch4">
+              <div class="popup-content">
+                <button class="popup-button" onclick="window.location.href='/chapter-4/pc/strats/'" id="left-button" data-translate="strats">Strats</button>
+                <button class="popup-button" onclick="window.location.href='/chapter-4/pc/guides/'" id="right-button" data-translate="guides">Guides</button>
+            </div>
+            </div>
+          </div>
+      </main>
+      <script src="/src/language-manager.js"></script>
+      <script src="/src/pc-popup.js"></script>
+      <script src="/src/show-header.js"></script>
+    <script src="/src/hamburger-menu.js"></script>
+  </body>
+</html>

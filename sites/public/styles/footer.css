@@ -7,7 +7,7 @@
 }
 
 .footer-main {
-    height: 300px; /* Ajusta la altura según el contenido */
+    height: 350px;
     padding: 1rem 2rem;
     width: 80%;
     background-color: var(--secondary50);
@@ -34,6 +34,11 @@
     border: solid 0.5rem var(--cch3-50);
     border-bottom: none;
 }
+.ch4 .footer-main {
+    background-color: var(--cch4-35);
+    border: solid 0.5rem var(--cch4-50);
+    border-bottom: none;
+}
 .welcome .footer-main {
     background-color: var(--primary35);
     border: solid 0.5rem var(--primary50);
@@ -44,8 +49,10 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    justify-content: space-between;
     flex: 4;
     width: 100%;
+    height: 100%;
 }
 
 .footer-pptsr {
@@ -85,6 +92,9 @@
 .footer-bottom {
     font-size: 0.9rem;
     color: var(--text50);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .footer-r {
@@ -107,6 +117,8 @@
     color: var(--text);
     font-weight: 500;
     transition: color 0.3s ease;
+    white-space: nowrap;
+
 }
 
 .footer-r a:hover {
@@ -152,7 +164,7 @@
 }
 
 #powered-by {
-    margin: 2rem 0;
+    margin: 1.65rem 0;
 }
 
 #powered-by h1 {
@@ -229,6 +241,9 @@
 .ch3 #lang-button {
     border: 2.5px solid var(--cch3);
 }
+.ch4 #lang-button {
+    border: 2.5px solid var(--cch4);
+}
 .scdr #lang-button {
     border: 2.5px solid var(--secondary);
 }
@@ -254,6 +269,9 @@
 }
 .ch3 .lang-popup {
     border: 2.5px solid var(--cch3);
+}
+.ch4 .lang-popup {
+    border: 2.5px solid var(--cch4);
 }
 .scdr .lang-popup {
     border: 2.5px solid var(--secondary);

@@ -40,6 +40,10 @@
     background-color: var(--cch3);
 }
 
+.ch4 .header {
+    background-color: var(--cch4);
+}
+
 .scdr .header {
     background-color: var(--secondary);
 }

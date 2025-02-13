@@ -5,7 +5,6 @@ main p {
     font-size: 20px;
 }
 
-/* Estilos básicos */
 .faq-section {
     margin: 20px;
 }
@@ -42,7 +41,7 @@ main h1, h2, h3 {
 
 .faq-content.show {
     opacity: 1;
-    max-height: 5000px; /* Adjust this to the max height of your content */
+    max-height: 5000px;
 }
 
 
@@ -131,6 +130,14 @@ main .hidden {
 }
 #acronyms-chapter3 {
     border-color: var(--cch3);
+}
+
+.chapter4.toggle-btn {
+    color: var(--bg);
+    background-color: var(--cch4);
+}
+#acronyms-chapter4 {
+    border-color: var(--cch4);
 }
 
 

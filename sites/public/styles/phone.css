@@ -674,6 +674,16 @@
     .ch3 .guides-container div.video-div img {
         border: solid 3px var(--cch3-50);
     }
+    
+    .ch4 button.video-button {
+        color: var(--cch4)
+    }
+    .ch4 .strats-container div.video-div img {
+        border: solid 3px var(--cch4-50);
+    }
+    .ch4 .guides-container div.video-div img {
+        border: solid 3px var(--cch4-50);
+    }
 
     button#backToTop {
         bottom: 1.5rem;

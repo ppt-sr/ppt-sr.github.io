@@ -27,7 +27,7 @@
 #search-results {
     top: 50px;
     margin-left: -15px;
-    background-color: var(--bg);
+    background-color: hsl(0, 0%, 13%);
     border-radius: 1rem;
     display: flex;
     justify-content: left;
@@ -40,9 +40,8 @@
 .search-result-item {
     margin-left: -15px;
     padding: 10px;
-    border-bottom: 1px solid var(--text50);
+    border-bottom: 1px solid var(--text40);
     cursor: pointer;
-    background-color: var(--text10);
 }
 
 .search-result-item:first-child {

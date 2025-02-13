@@ -178,6 +178,28 @@
     --cch3-90: hsl(272, 71%, 63%, 90%);
     --cch3-95: hsl(272, 71%, 63%, 95%);
 
+    --cch4: hsl(219, 72%, 34%);
+
+    --cch4-5: hsl(219, 72%, 34%, 5%);
+    --cch4-10: hsl(219, 72%, 34%, 10%);
+    --cch4-15: hsl(219, 72%, 34%, 15%);
+    --cch4-20: hsl(219, 72%, 34%, 20%);
+    --cch4-25: hsl(219, 72%, 34%, 25%);
+    --cch4-30: hsl(219, 72%, 34%, 30%);
+    --cch4-35: hsl(219, 72%, 34%, 35%);
+    --cch4-40: hsl(219, 72%, 34%, 40%);
+    --cch4-45: hsl(219, 72%, 34%, 45%);
+    --cch4-50: hsl(219, 72%, 34%, 50%);
+    --cch4-55: hsl(219, 72%, 34%, 55%);
+    --cch4-60: hsl(219, 72%, 34%, 60%);
+    --cch4-65: hsl(219, 72%, 34%, 65%);
+    --cch4-70: hsl(219, 72%, 34%, 70%);
+    --cch4-75: hsl(219, 72%, 34%, 75%);
+    --cch4-80: hsl(219, 72%, 34%, 80%);
+    --cch4-85: hsl(219, 72%, 34%, 85%);
+    --cch4-90: hsl(219, 72%, 34%, 90%);
+    --cch4-95: hsl(219, 72%, 34%, 95%);
+
 
     --font_cursive: 'Caveat';
     --font_main: 'Poppins';
@@ -221,6 +243,10 @@
     border: solid 2px var(--cch3-50);
     color: var(--cch3-50);
 }
+.ch4 .copy-btn:active {
+    border: solid 2px var(--cch4-50);
+    color: var(--cch4-50);
+}
 
 .ch1 .copy-btn.copied {
     border: solid 2px var(--cch1-50);
@@ -233,6 +259,10 @@
 .ch3 .copy-btn.copied {
     border: solid 2px var(--cch3-50);
     color: var(--cch3-50);
+}
+.ch4 .copy-btn.copied {
+    border: solid 2px var(--cch4-50);
+    color: var(--cch4-50);
 }
 
 
@@ -292,6 +322,10 @@ body {
 .ch3 .wip-container {
     background-color: var(--cch3-30);
     box-shadow: 10px 10px var(--cch3-80);
+}
+.ch4 .wip-container {
+    background-color: var(--cch4-30);
+    box-shadow: 10px 10px var(--cch4-80);
 }
 
 .wip-container {
@@ -368,6 +402,16 @@ p {
 
 .triple-menu {
     width: 80%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 1rem;
+}
+
+.single-menu {
+    width: 15%;
     display: flex;
     align-items: center;
     flex-direction: row;
@@ -550,6 +594,20 @@ p {
     cursor: pointer;
 }
 
+.ch4 .plat-svg {
+    color: var(--text);
+    position: relative;
+    background-color: var(--cch4-50);
+    border-radius: 40%;
+    border: solid 0.5rem var(--cch4);
+    width: 100%;
+    height: max-content;
+    padding: 20%;
+    display: inline-block;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
 .platforms.triple-menu .pc {
     width: 30%;
 }
@@ -587,6 +645,11 @@ p {
     border: solid 3px var(--cch3-50);
 }
 
+.ch4 .guides-container iframe {
+    border-radius: 1.5rem;
+    border: solid 3px var(--cch4-50);
+}
+
 .ch2 .guides-container iframe {
     border-radius: 1.5rem;
     border: solid 3px var(--cch2-50);
@@ -600,6 +663,11 @@ p {
 .ch3 .strats-container iframe {
     border-radius: 1.5rem;
     border: solid 3px var(--cch3-50);
+}
+
+.ch4 .strats-container iframe {
+    border-radius: 1.5rem;
+    border: solid 3px var(--cch4-50);
 }
 
 .ch2 .strats-container iframe {
@@ -800,6 +868,9 @@ input[type="checkbox"] {
 .ch3 input[type="checkbox"]:checked + .checkboxlabel::before {
     border-color: var(--cch3-65);
 }
+.ch4 input[type="checkbox"]:checked + .checkboxlabel::before {
+    border-color: var(--cch4-65);
+}
 .ch1 input[type="checkbox"]:checked + .checkboxlabel {
     color: var(--cch1-65);
 }
@@ -809,6 +880,10 @@ input[type="checkbox"] {
 .ch3 input[type="checkbox"]:checked + .checkboxlabel {
     color: var(--cch3-65);
 }
+.ch4 input[type="checkbox"]:checked + .checkboxlabel {
+    color: var(--cch4-65);
+}
+
 
 
 .checkboxlabel::after {
@@ -855,6 +930,9 @@ input[type="checkbox"]:checked + .checkboxlabel::after {
 .ch3 #filters-info:hover {
     color: var(--cch3-60);
 }
+.ch4 #filters-info:hover {
+    color: var(--cch4-60);
+}
 
 /* Style the back to top button */
 #backToTop {
@@ -894,6 +972,10 @@ input[type="checkbox"]:checked + .checkboxlabel::after {
 .ch3 #backToTop:hover {
     background-color: var(--cch3-50); /* Darker background on hover */
     box-shadow: 0px 0px 10px 10px var(--cch3-5);
+}
+.ch4 #backToTop:hover {
+    background-color: var(--cch4-50); /* Darker background on hover */
+    box-shadow: 0px 0px 10px 10px var(--cch4-5);
 }
 
   
@@ -936,6 +1018,9 @@ input[type="checkbox"]:checked + .checkboxlabel::after {
 .ch3 #about-us {
     border-color: var(--cch3);
 }
+.ch4 #about-us {
+    border-color: var(--cch4);
+}
 .scdr #about-us {
     border-color: var(--secondary);
 }
@@ -972,11 +1057,25 @@ input[type="checkbox"]:checked + .checkboxlabel::after {
     border: solid 0.5rem hsl(203, 72%, 55%);
     width: calc(42.5% - 3rem);
     height: 450px;
-    padding: 0 2rem 0 4rem;
+    padding: 0 4rem 0 2rem;
     margin: 0px;
 }
 
 .beginner-guide-section .hero-text {
+    width: 50%;
+}
+
+.frequently-asked-questions-section {
+    background-color: hsla(118, 72%, 55%, 0.3);
+    border-radius: 2rem;
+    border: solid 0.5rem hsl(118, 72%, 55%);
+    width: calc(42.5% - 3rem);
+    height: 450px;
+    padding: 0 4rem 0 2rem;
+    margin: 0px;
+}
+
+.frequently-asked-questions-section .hero-text {
     width: 50%;
 }
 
