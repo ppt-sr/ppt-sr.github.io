@@ -29,10 +29,16 @@ export default defineConfig({
                     chapter2console: resolve(__dirname, "sites/chapter-2/console/index.html"),
 
                 chapter3: resolve(__dirname, "sites/chapter-3/index.html"),
+                    chapter3mobile: resolve(__dirname, "sites/chapter-3/mobile/index.html"),
                     chapter3pcguides: resolve(__dirname, "sites/chapter-3/pc/guides/index.html"),
                     chapter3pcstrats: resolve(__dirname, "sites/chapter-3/pc/strats/index.html"),
                     chapter3console: resolve(__dirname, "sites/chapter-3/console/index.html"),
-                
+
+                chapter4: resolve(__dirname, "sites/chapter-4/index.html"),
+                    chapter4mobile: resolve(__dirname, "sites/chapter-4/mobile/index.html"),
+                    chapter4pcguides: resolve(__dirname, "sites/chapter-4/pc/guides/index.html"),
+                    chapter4pcstrats: resolve(__dirname, "sites/chapter-4/pc/strats/index.html"),
+                    chapter4console: resolve(__dirname, "sites/chapter-4/console/index.html"),
             }
         }
     }
