@@ -117,6 +117,7 @@
     "c_chapter_1": "CHAPTER 1",
     "c_chapter_2": "CHAPTER 2",
     "c_chapter_3": "CHAPTER 3",
+    "c_chapter_4": "CHAPTER 4",
 
     "mobile": "Mobile",
     "pc": "PC",
@@ -147,6 +148,11 @@
     "chapter_3_pc_guides": "CHAPTER 3 - PC GUIDES",
     "chapter_3_console": "CHAPTER 3 - CONSOLE",
     "ch3_popup_text": " - If no Category (Any%, All Stages...) is selected, nothing will show up!!!",
+
+    "chapter_4_pc_strats": "CHAPTER 4 - PC STRATS",
+    "chapter_4_pc_guides": "CHAPTER 4 - PC GUIDES",
+    "chapter_4_console": "CHAPTER 4 - CONSOLE",
+    "ch4_popup_text": " - If no Category (Any%, 100%) is selected, nothing will show up!!!",
 
     "version_label": "Version:",
     "description_label": "Description:",
@@ -276,6 +282,7 @@
     "downpatch_chapter1": "Downpatch Chapter 1",
     "downpatch_chapter2": "Downpatch Chapter 2",
     "downpatch_chapter3": "Downpatch Chapter 3",
+    "downpatch_chapter4": "Downpatch Chapter 4",
     "setup_li_2": "Using an <strong>FPS Counter</strong> is optional but recommended if you wanna reach a high placement in the leaderboard (see below).",
     "setup_li_3": "<strong>LiveSplit</strong> is highly recommended for timing your runs. (runs without LiveSplit won't be retimed.)",
     "fps_counter": "FPS Counter",
@@ -298,6 +305,7 @@
     "autosplitter_chapter1": "Chapter 1 Autosplitter and Load Remover",
     "autosplitter_chapter2": "Chapter 2 Autosplitter and Load Remover",
     "autosplitter_chapter3": "Chapter 3 Autosplitter and Load Remover",
+    "autosplitter_chapter4": "Chapter 4 Autosplitter and Load Remover",
     "starting_a_speedrun": "Starting a Speedrun",
     "starting_a_speedrun_p_1": "Once everything is set up, you can start a speedrun by following these steps:",
     "starting_a_speedrun_li_1": "Launch the appropriate chapter and ensure your FPS counter (if used) is running.",
@@ -312,6 +320,7 @@
     "prison_critters_skip_description": "Move forwards and spam jump and \"E\".",
     "jailbreak_description": "You need to do Prison Critters Skip to spawn the Nightmare Critters, some work better than the others, test by yourself.",
     "imtrwtratrwtr_skip_description": "Full name is:\"I mix the Rick with the Raft and the Raft with the Rick\" such a long name broke the page. <br>For the box to start dancing place your hands under it like shown.",
+    "little_yarnaby_skip_description": "For 100% just take the note.",
     "small_yarnaby_skip_description": "For the little jumps on the pipe you press \"A\" and \"W\", remember to touch all the triggers shown.",
     "nasa_skip_tutorial_description": "Follow all the steps in order to do it, It is not 100% consistent so take your time to learn it.",
     "pianosaurus_skip_description": "Place your crosshair where it's shown, it only works with the right hand.",

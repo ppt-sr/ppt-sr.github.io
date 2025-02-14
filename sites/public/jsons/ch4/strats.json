@@ -123,6 +123,24 @@
         }
     },
     {
+        "title": "Little Yarnaby Skip",
+        "id": "iRLPyT7DAJY",
+        "description_key": "little_yarnaby_skip_description",
+        "author": "ZacGames25",
+        "category": {
+            "Any%": {
+                "Out of Bounds": true,
+                "Inbounds": true,
+                "Unrestricted": true
+            },
+            "100%": {
+                "Out of Bounds": true,
+                "Inbounds": true,
+                "Unrestricted": true
+            }
+        }
+    },
+    {
         "title": "Small Yarnaby Skip",
         "id": "OFyK8BmDTQI",
         "description_key": "small_yarnaby_skip_description",
