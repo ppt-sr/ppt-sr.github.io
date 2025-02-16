@@ -317,7 +317,7 @@
     {
         "title": "Catnap Jumpscare Skip",
         "id": "sjvielVNElA",
-        "description": "catnap_jumpscare_skip_description",
+        "description_key": "catnap_jumpscare_skip_description",
         "author": "Cindorian",
         "category": {
             "Any%": {

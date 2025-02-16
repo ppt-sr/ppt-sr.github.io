@@ -268,7 +268,7 @@
     "replace_checkpoints_tutorial_description": "Este es un tutorial que explica cómo reemplazar los puntos de control para el Capítulo 1. <br> <a target='_blank' href='https://www.speedrun.com/static/resource/t0782.zip?v=8aaec2d'>Descargar los Puntos de Control del Capítulo 3</a>",
 
     "beginner_guide_title": "¿Nuevo en Speedrunning?",
-    "beginner_guide": "Guía de Principiantes",
+    "beginner-guide": "Guía de Principiantes",
     "beginner_guide_link": "¡Echa un vistazo a nuestra <a href='/beginner-guide/'>Guía de Principiantes</a> para comenzar con todos los conceptos básicos!",
     "world_records_title": "Historial de Récords Mundiales:",
     "world_records_link": "¡Explora el <a href='/world-records/''>Historial de Récords Mundiales</a> y descubre las runs más icónicas!",
