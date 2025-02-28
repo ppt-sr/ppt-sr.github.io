@@ -201,57 +201,62 @@
 
 
 .language-picker {
-    position: relative;
+    position: absolute;
+    right: 25px;
+}
+
+#current-lang-icon {
+    margin: 0px;
+    width: 30px;
+    height: 26px;
+    border-radius: 0.5rem;
+}
+
+#current-lang {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .current-lang-btn {
-    background: none;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     color: var(--text);
     border: none;
-    padding: 10px 20px;
     cursor: pointer;
-    border-radius: 0.5rem;
+    border-radius: 9999px;
     font-weight: 1000;
-    margin-top: 0px;
-    width: 100%;
     display: flex;
     align-items: left;
     justify-content: left;
     flex-direction: row;
     font-size: 14px;
+    background: none;
+}
+
+.lang-button:hover {
+    box-shadow: 0px 0 5px 5px var(--text20);
+    background-color: var(--text20);
 }
 
 .lang-button {
-    bottom: 120%;
-    left: 0;
-    border: 2.5px solid var(--primary);
-    background: none;
-    border-radius: 0.5rem;
-    width: 200px;
-    max-height: 200px;
-    overflow-y: auto;
-    z-index: 1;
-}
-.ch1 #lang-button {
-    border: 2.5px solid var(--cch1);
-}
-.ch2 #lang-button {
-    border: 2.5px solid var(--cch2);
-}
-.ch3 #lang-button {
-    border: 2.5px solid var(--cch3);
-}
-.ch4 #lang-button {
-    border: 2.5px solid var(--cch4);
-}
-.scdr #lang-button {
-    border: 2.5px solid var(--secondary);
+    background-color: rgba(244, 244, 239, 0);
+    box-shadow: 0px 0 30px 30px rgba(244, 244, 239, 0);
+    color: var(--text);
+    font-family: var(--font_main);
+    border-radius: 9999px;
+    transition: background-color 0.3s ease, box-shadow 0.2s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+    transition: 0.15s all ease;
 }
 
 .lang-popup {
     position: absolute;
-    bottom: 120%;
-    left: 0;
+    top: 130%;
+    right: 0;
     background-color: var(--bg);
     border: 2.5px solid var(--primary);
     border-radius: 0.5rem;
@@ -292,11 +297,15 @@
 .languagepicker li {
     padding: 10px 17.5px;
     cursor: pointer;
+    display: block;
+    width: calc(100% - 35px);
 }
 
-.languagepicker li {
-    display: block; /* Asegura que el li ocupe el 100% del ancho disponible */
-    width: calc(100% - 35px);    /* Asegura que el ancho sea del 100% */
+.languagepicker li a {
+    text-decoration: none;
+    color: var(--text);
+    display: flex;
+    align-items: center;
 }
 
 .languagepicker li:hover {

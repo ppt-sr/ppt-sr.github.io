@@ -107,7 +107,7 @@
     "faq_src_a_2_2": "Solicitudes para ser Verifier",
     "faq_src_a_2_3": " para más información, lee ",
     "faq_src_a_2_4": "ROLES de DISCORD",
-    "acronyms": "ACRÓNIMOS!",
+    "faq_acronyms": "ACRÓNIMOS!",
     "acronyms_text": "Para cualquier otro acrónimo, pregunta en Discord #general o #ask-for-help",
     "categories": "Categorías",
 
@@ -275,6 +275,8 @@
     "faq_section_title": "Tienes preguntas?",
     "faq_section_link": "Nuestra <a href=\"/faq/\">página de Preguntas Frecuentes</a> cubre todo, ¡encuentra las respuestas que necesitas ahora!",
 
+    "guide_title": "¡GUÍA DE SPEEDRUN DE POPPY PLAYTIME!",
+
     "setup": "Configuración",
     "setup_subtitle": "Guía de configuración para Poppy Playtime [PC]",
     "setup_p_1": "Configurar Poppy Playtime para speedruns es sencillo, pero hay algunas herramientas y configuraciones clave con las que debes familiarizarte:",
@@ -338,6 +340,24 @@
     "le_parkour_description": "Un salto fácil ahorra como 15s.",
     "fundation_skip_description": "Tan fácil como colocar el engranaje en su lugar. <br>Para 100%, coloca la cinta antes de hacerlo.",
     "aidful_skip_description": "¡Sigue las instrucciones del video!",
+
+    "crouch_trick_description": "Un poco dificil ¡pero merece la pena para No Major Skips!",
+    "limon_skip_description": "Salta antes de atascarte sino, tendrás que intentarlo de nuevo.",
+    "prison_rail_jump_description": "El video es autoexplicativo.",
+    "no_boxes_skip_description": "El video es autoexplicativo.",
+    "yarnaby_cutscene_skip_description": "¡Pequeños Saltos!",
+    "cave_jump_description": "Uno de los saltos más dificiles del juego.",
+    "no_mans_land_puzzle_skip_description": "El video es autoexplicativo.",
+    "grapple_skip_description": "Salto fácil.",
+
+    "vhs_intro_skip_description": "El video es autoexplicativo.",
+    "cubes_puzzle_skip_description": "El video es autoexplicativo.",
+    "catclip_v1_3_description": "El video es autoexplicativo.",
+    "unpowered_pole_description": "El video es autoexplicativo.",
+    "anti_stuck_jump_description": "El video es autoexplicativo.",
+
+    "faq_tech_q_6": "¿Por qué mi LiveSplit no Autosplittea al final del Capítulo 1?",
+    "faq_tech_a_6": "Ahora mismo, la Split de \"Poppy Case Opening\" (La split del final) no está funcionando. ¡Se retimeará cuando subas la run!",
 
     "downpatching_chapter_4_tutorial_description": "Este es un tutorial para hacer downpatch a cualquier capítulo de Poppy Playtime. <br> <button style='display: none;'></button> Código de la consola de Steam: <label class='code'>steam://open/console</label><button class='copy-btn'>COPIAR CÓDIGO</button> <br> Depot: <label class='code'>download_depot 3008670 3008670 1278777716171617955</label><button class='copy-btn'>COPIAR CÓDIGO</button>",
 

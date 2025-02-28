@@ -59,7 +59,22 @@
     width: 100%;
     position: absolute;
     z-index: -1;
-    transition: transform 0.3s ease;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Mueve el título */
+#header-title.moved-right {
+    transform: translateX(250px);
+    opacity: 0%;
+}
+
+@media (max-width: 1565px) {
+    #header-title {
+        opacity: 0%;
+    }
 }
 
 .header h1 {

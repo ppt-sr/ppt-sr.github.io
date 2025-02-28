@@ -3,7 +3,8 @@ function loadAvailableLanguages() {
     const languages = [
         { code: 'en', name: 'English', flag: '/flags/4x3/gb.svg' },
         { code: 'es', name: 'Español', flag: '/flags/4x3/es.svg' },
-        { code: 'pt-BR', name: 'Português', flag: '/flags/4x3/br.svg' }
+        { code: 'pt-BR', name: 'Português', flag: '/flags/4x3/br.svg' },
+        { code: 'nl', name: 'Nederlands', flag: '/flags/4x3/nl.svg' }
     ];
 
     const langList = document.getElementById('lang-list');
@@ -63,11 +64,9 @@ function updateCurrentLanguageButton() {
     const selectedLangElement = document.querySelector(`a[href="?${storedLang}"]`);
     
     if (selectedLangElement) {
-        const newLangText = selectedLangElement.innerText;
         const newIconSrc = selectedLangElement.querySelector('img').src;
         const currentLangIcon = document.getElementById('current-lang-icon');
         currentLangIcon.src = newIconSrc; // Update icon
-        currentLangBtn.lastChild.nodeValue = ` ${newLangText}`; // Update button text
     }
 }
 
@@ -111,6 +110,12 @@ function loadLanguage(langCode) {
                     }
                 } else {
                     console.warn(`Translation key "${translateKey}" not found in language data for ${langCode}`);
+                    if (element.tagName.toLowerCase() === 'input') {
+                        element.setAttribute('placeholder', "No translation found.");
+                    } else {
+                        // Otherwise, update the innerHTML
+                        element.innerHTML = "No translation found.";
+                    }
                 }
             });
         })
@@ -151,14 +156,12 @@ if (currentLangBtn || currentLangBtnMobile) {
         const selectedLang = event.target.closest('a'); // Selects the clicked link
         if (!selectedLang) return; // Exit if no link is clicked
 
-        const newLangText = selectedLang.innerText;
         const newIconSrc = selectedLang.querySelector('img').src;
         const langCode = selectedLang.getAttribute('href').substring(1); // Extract lang code from href
 
         // Update the text and icon of the language button
         const currentLangIcon = document.getElementById('current-lang-icon');
         currentLangIcon.src = newIconSrc;
-        currentLangBtn.lastChild.nodeValue = ` ${newLangText}`; // Update button text
 
         // Move the selected language to the top of the list
         langList.prepend(selectedLang.parentElement);

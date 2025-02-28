@@ -13,6 +13,23 @@
         }
     },
     {
+        "title": "VHS Intro Skip",
+        "id": "xDBjyu_9oVs",
+        "version": "1.3",
+        "description_key": "vhs_intro_skip_description",
+        "author": "Mago",
+        "category": {
+            "Any%": {
+                "All Tapes": true,
+                "Any Tapes": true
+            },
+            "No Major Glitches": {
+                "All Tapes": true,
+                "Any Tapes": true
+            }
+        }
+    },
+    {
         "title": "Unopened Door",
         "id": "QgDjy8MAOZ8",
         "version": "<1.1",
@@ -35,6 +52,23 @@
         "version": "<1.1, 1.2",
         "description_key": "hyperspeed_hallway_description",
         "author": "Nia",
+        "category": {
+            "Any%": {
+                "All Tapes": true,
+                "Any Tapes": true
+            },
+            "No Major Glitches": {
+                "All Tapes": true,
+                "Any Tapes": true
+            }
+        }
+    },
+    {
+        "title": "Cubes Puzzle Skip",
+        "id": "tlxYrFR3L4o",
+        "version": "1.3",
+        "description_key": "cubes_puzzle_skip_description",
+        "author": "Mago",
         "category": {
             "Any%": {
                 "All Tapes": true,
@@ -116,6 +150,23 @@
         }
     },
     {
+        "title": "Unpowered Pole",
+        "id": "0ZhO4evCif8",
+        "version": "1.3",
+        "description_key": "unpowered_pole_description",
+        "author": "Mago",
+        "category": {
+            "Any%": {
+                "All Tapes": true,
+                "Any Tapes": true
+            },
+            "No Major Glitches": {
+                "All Tapes": true,
+                "Any Tapes": true
+            }
+        }
+    },
+    {
         "title": "No Slide Reload",
         "id": "Md7_Y-Kesb8",
         "version": "<1.1",
@@ -180,11 +231,45 @@
         }
     },
     {
+        "title": "Catclip | 1.3",
+        "id": "uXYnafCMPXA",
+        "version": "1.3",
+        "description_key": "catclip_v1_3_description",
+        "author": "Mago",
+        "category": {
+            "Any%": {
+                "All Tapes": true,
+                "Any Tapes": true
+            },
+            "No Major Glitches": {
+                "All Tapes": true,
+                "Any Tapes": true
+            }
+        }
+    },
+    {
         "title": "Entarino Slide",
         "id": "Z0jEhJsyJQ8",
         "version": "<1.1, 1.2",
         "description_key": "entarino_slide_description",
         "author": "MythicCheese",
+        "category": {
+            "Any%": {
+                "All Tapes": true,
+                "Any Tapes": true
+            },
+            "No Major Glitches": {
+                "All Tapes": true,
+                "Any Tapes": true
+            }
+        }
+    },
+    {
+        "title": "Anti-Stuck Jump",
+        "id": "zc-DRhZhn5E",
+        "version": "1.3",
+        "description_key": "anti_stuck_jump_description",
+        "author": "Mago",
         "category": {
             "Any%": {
                 "All Tapes": true,

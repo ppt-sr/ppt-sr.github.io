@@ -124,7 +124,7 @@
         "title": "Second Floor Skip",
         "id": "YwBX4QDMpso",
         "description_key": "second_floor_skip_description",
-        "author": "Lilleman",
+        "author": "LA",
         "category": {
             "Any%": {
                 "Inbounds": true
@@ -143,7 +143,7 @@
         "title": "Early Dome",
         "id": "Vsr8tfY0xhk",
         "description_key": "early_dome_description",
-        "author": "Lilleman",
+        "author": "LA",
         "category": {
             "Any%": {
                 "Inbounds": true
@@ -161,7 +161,7 @@
         "title": "Dome Elevator Skip",
         "id": "ciDdzeHyM40",
         "description_key": "dome_elevator_skip_description",
-        "author": "Lilleman",
+        "author": "LA",
         "category": {
             "Any%": {
                 "No Major Skips": true

@@ -60,10 +60,42 @@
         }
     },
     {
+        "title": "Crouch Trick",
+        "id": "VV5TYzxxYVo",
+        "description_key": "crouch_trick_description",
+        "author": "LA",
+        "category": {
+            "Any%": {
+                "No Major Skips": true
+            },
+            "100%": {
+                "No Major Skips": true
+            }
+        }
+    },
+    {
         "title": "Proacventing",
         "id": "TdEvu_JCg4M",
         "description_key": "proacventing_description",
         "author": "proac",
+        "category": {
+            "Any%": {
+                "Unrestricted": true,
+                "Out of Bounds": true,
+                "Inbounds": true
+            },
+            "100%": {
+                "Unrestricted": true,
+                "Out of Bounds": true,
+                "Inbounds": true
+            }
+        }
+    },
+    {
+        "title": "Limon Skip",
+        "id": "nsDaUU8oM2o",
+        "description_key": "limon_skip_description",
+        "author": "LA",
         "category": {
             "Any%": {
                 "Unrestricted": true,
@@ -112,6 +144,22 @@
         }
     },
     {
+        "title": "Prison Rail Jump",
+        "id": "s-hbIPkz9cQ",
+        "description_key": "prison_rail_jump_description",
+        "author": "LA",
+        "category": {
+            "Any%": {
+                "Inbounds": true,
+                "No Major Skips": true
+            },
+            "100%": {
+                "Inbounds": true,
+                "No Major Skips": true
+            }
+        }
+    },
+    {
         "title": "IMTRWTRATRWTR Skip (Mix Skip)",
         "id": "IQ3Y7lDr8cc",
         "description_key": "imtrwtratrwtr_skip_description",
@@ -119,6 +167,24 @@
         "category": {
             "Any%": {
                 "Out of Bounds": true
+            }
+        }
+    },
+    {
+        "title": "No Boxes Skip",
+        "id": "klGDuGQRg1E",
+        "description_key": "no_boxes_skip_description",
+        "author": "LA",
+        "category": {
+            "Any%": {
+                "Unrestricted": true,
+                "Out of Bounds": true,
+                "Inbounds": true
+            },
+            "100%": {
+                "Unrestricted": true,
+                "Out of Bounds": true,
+                "Inbounds": true
             }
         }
     },
@@ -137,6 +203,24 @@
                 "Out of Bounds": true,
                 "Inbounds": true,
                 "Unrestricted": true
+            }
+        }
+    },
+    {
+        "title": "Yarnaby Cutscene Skip",
+        "id": "ze17WlDp_AI",
+        "description_key": "yarnaby_cutscene_skip_description",
+        "author": "LA",
+        "category": {
+            "Any%": {
+                "Out of Bounds": true,
+                "Inbounds": true,
+                "No Major Skips": true
+            },
+            "100%": {
+                "Out of Bounds": true,
+                "Inbounds": true,
+                "No Major Skips": true
             }
         }
     },
@@ -179,6 +263,22 @@
         }
     },
     {
+        "title": "Cave Jump",
+        "id": "HcYNMeEG70I",
+        "description_key": "cave_jump_description",
+        "author": "LA",
+        "category": {
+            "Any%": {
+                "Out of Bounds": true,
+                "Inbounds": true
+            },
+            "100%": {
+                "Out of Bounds": true,
+                "Inbounds": true
+            }
+        }
+    },
+    {
         "title": "Shimmying",
         "id": "wKvSSlMnBWk",
         "description_key": "shimmying_description",
@@ -210,6 +310,24 @@
             "100%": {
                 "Unrestricted": true,
                 "Out of Bounds": true
+            }
+        }
+    },
+    {
+        "title": "No Man's Land Puzzle Skip",
+        "id": "sX63cpBnDb4",
+        "description_key": "no_mans_land_puzzle_skip_description",
+        "author": "LA",
+        "category": {
+            "Any%": {
+                "Out of Bounds": true,
+                "Inbounds": true,
+                "No Major Skips": true
+            },
+            "100%": {
+                "Out of Bounds": true,
+                "Inbounds": true,
+                "No Major Skips": true
             }
         }
     },
@@ -286,6 +404,24 @@
         "category": {
             "Any%": {
                 "Unrestricted": true
+            }
+        }
+    },
+    {
+        "title": "Grapple Skip",
+        "id": "DG6M5MKyK5g",
+        "description_key": "grapple_skip_description",
+        "author": "LA",
+        "category": {
+            "Any%": {
+                "Out of Bounds": true,
+                "Inbounds": true,
+                "No Major Skips": true
+            },
+            "100%": {
+                "Out of Bounds": true,
+                "Inbounds": true,
+                "No Major Skips": true
             }
         }
     },

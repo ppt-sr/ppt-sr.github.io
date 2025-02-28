@@ -99,6 +99,8 @@
     "faq_tech_a_5_2": "Chapter 3 Checkpoint Loader",
     "faq_tech_a_5_3": " We also provide a guide by ",
     "faq_tech_a_5_4": " to manually load checkpoints: ",
+    "faq_tech_q_6": "Why is my Livesplit not autosplitting at the end of Chapter 1?",
+    "faq_tech_a_6": "Right now the split for Poppy Case opening (final split) is not working, it will get retimed once you submit the run!",
     "faq_src": "FAQ about Speedrun.com!",
     "faq_src_q": "How long does it take to verify a run?",
     "faq_src_a": "Usually between 1 or 2 weeks but remember Verifiers and Moderators don't get paid and have lives outside.",
@@ -278,6 +280,8 @@
     "faq_section_title": "Got questions?",
     "faq_section_link": "Our <a href=\"/faq/\">Frequently Asked Questions page</a> covers everything, find the answers you need now!",
 
+    "guide_title": "POPPY PLAYTIME SPEEDRUNNING GUIDE!",
+
     "setup": "Setup",
     "setup_subtitle": "Setup Guide for Poppy Playtime [PC]",
     "setup_p_1": "Setting up Poppy Playtime for speedruns is straightforward, but there are a few key tools and settings to familiarize yourself with:",
@@ -341,6 +345,21 @@
     "le_parkour_description": "Easy jump skips like 15s.",
     "fundation_skip_description": "As easy as placing the cog in the spot. <br>For 100% place the tape before doing it!",
     "aidful_skip_description": "Follow the video instructions!",
+
+    "crouch_trick_description": "A little hard but worth for No Major Skips!",
+    "limon_skip_description": "Jump before you get stuck otherwise you will need to try again.",
+    "prison_rail_jump_description": "Video is self explanatory.",
+    "no_boxes_skip_description": "Video is self explanatory.",
+    "yarnaby_cutscene_skip_description": "Little Jumps!",
+    "cave_jump_description": "One of the hardest jumps in the game",
+    "no_mans_land_puzzle_skip_description": "Video is self explanatory.",
+    "grapple_skip_description": "Easy jump.",
+
+    "vhs_intro_skip_description": "Video is self explanatory.",
+    "cubes_puzzle_skip_description": "Video is self explanatory.",
+    "catclip_v1_3_description": "Video is self explanatory.",
+    "unpowered_pole_description": "Video is self explanatory.",
+    "anti_stuck_jump_description": "Video is self explanatory.",
 
     "downpatching_chapter_4_tutorial_description": "This is a tutorial to downpatch any Poppy Playtime Chapter. <br> <button style='display: none;'></button> Steam Console code: <label class='code'>steam://open/console</label><button class='copy-btn'>COPY CODE</button> <br> Depot: <label class='code'>download_depot 3008670 3008670 1278777716171617955</label><button class='copy-btn'>COPY CODE</button>",
 

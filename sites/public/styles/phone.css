@@ -771,4 +771,71 @@
     .guide #main p {
         font-size: 1.2rem;
     }
+
+    #current-lang {
+        display: none;
+    }
+
+    .language-picker {
+        position: relative;
+        top: 0px;
+        left: 0px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    #current-lang-mobile {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .current-lang-btn {
+        width: inherit;
+        height: inherit;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: var(--text);
+        border: none;
+        cursor: pointer;
+        border-radius: 9999px;
+        font-weight: 1000;
+        display: flex;
+        align-items: left;
+        justify-content: left;
+        flex-direction: row;
+        font-size: 14px;
+        background: none;
+    }
+    
+    .lang-button:hover {
+        box-shadow: none;
+        background: none;
+    }
+    
+    .lang-button {
+        background-color: none;
+        box-shadow: none;
+        color: var(--text);
+        font-family: var(--font_main);
+        border-radius: 9999px;
+        transition: none;
+    }
+    
+    .lang-popup {
+        position: absolute;
+        top: 125%;
+        left: 0px;
+        background-color: var(--bg);
+        border: 2.5px solid var(--primary);
+        border-radius: 0.5rem;
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.5);
+        width: 200px;
+        max-height: 220px;
+        overflow-y: auto;
+        z-index: 1;
+    }
 }

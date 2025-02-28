@@ -19,11 +19,6 @@
     opacity: 0;
 }
 
-/* Mueve el título */
-#header-title.moved-right {
-    transform: translateX(250px); /* Ajusta según sea necesario */
-}
-
 #search-results {
     top: 50px;
     margin-left: -15px;
