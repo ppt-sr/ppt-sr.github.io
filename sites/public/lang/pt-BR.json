@@ -1,6 +1,4 @@
 {
-  "guide_title": "GUIA DE SPEEDRUN DO POPPY PLAYTIME!",
-
   "main_title": "SPEEDRUN DE POPPY PLAYTIME DOCUMENTADO!",
   "about_us": "Sobre Nós",
   "search_input": "Pesquisar...",
@@ -329,5 +327,22 @@
   "proac_ch2_sub3_description": "Esta corrida extraordinária e aparentemente imbatível foi feita por Proacventure, tornando-o o primeiro e único jogador a completar Poppy Playtime Capítulo 2 em menos de 3 minutos sem usar cheats. <br>Após incríveis mais de 40.000 tentativas, Proac realizou o que antes era considerado impossível e fora de alcance. <br>Esta conquista notável também lhe rendeu uma recompensa de $250 da oferta de AstralSpiff.",
   "proac_ch2_sub3_title": "Quebrando a Barreira 'Impossível' : A primeira Sub-3 de TODAS",
   "see_strats_used": "VEJA AS ESTRATÉGIAS USADAS",
-  "see_on_src": "VEJA EM SPEEDRUN.COM"
+  "see_on_src": "VEJA EM SPEEDRUN.COM",
+
+  "guide_title": "GUIA DE SPEEDRUNNING DE POPPY PLAYTIME!",
+  "crouch_trick_description": "Um pouco difícil, mas vale a pena para No Major Skips!",
+  "limon_skip_description": "Pule antes de ficar preso, caso contrário, você precisará tentar novamente.",
+  "prison_rail_jump_description": "O vídeo se explica sozinho.",
+  "no_boxes_skip_description": "O vídeo se explica sozinho.",
+  "yarnaby_cutscene_skip_description": "Pequenos Saltos!",
+  "cave_jump_description": "Um dos saltos mais difíceis do jogo",
+  "no_mans_land_puzzle_skip_description": "O vídeo se explica sozinho.",
+  "grapple_skip_description": "Salto fácil.",
+  "vhs_intro_skip_description": "O vídeo se explica sozinho.",
+  "cubes_puzzle_skip_description": "O vídeo se explica sozinho.",
+  "catclip_v1_3_description": "O vídeo se explica sozinho.",
+  "unpowered_pole_description": "O vídeo se explica sozinho.",
+  "anti_stuck_jump_description": "O vídeo se explica sozinho.",
+  "faq_tech_q_6": "Por que meu Livesplit não está fazendo autosplit no final do Capítulo 1?",
+  "faq_tech_a_6": "No momento, o split para a abertura do Poppy Case (split final) não está funcionando, ele será reajustado assim que você enviar a corrida!"
 }
